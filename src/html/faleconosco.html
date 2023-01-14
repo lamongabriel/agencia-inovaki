@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+  
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+  
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="faleconosco.css">
+      
+      <title>Inovaki</title>
+  
+  </head>
+<body>
+
+  <section id="top">
+    <div class="p-5 d-flex justify-content-between align-items-start">
+      <p>
+        AGÊNCIA
+        <span class="d-block">INOVAKI</span>
+      </p>
+
+      <div class="dropdown-center">
+        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+          MENU <i class="bi bi-list"></i>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">Home</a></li>
+          <li><a class="dropdown-item" href="#">Quem Somos</a></li>
+          <li><a class="dropdown-item" href="#">Serviços</a></li>
+          <li><a class="dropdown-item" href="#">Cases/Projetos</a></li>
+          <li><a class="dropdown-item" href="#">Fale Conosco</a></li>
+          <li><a class="dropdown-item" href="#">Orçamento</a></li>
+        </ul>
+      </div>
+    </div>
+    
+
+    <div class="pt-4">
+      <p>Conheça nossa Agência!</p>
+
+      <div class="text-top">
+        <div>
+          <span>ATUAÇÃO</span> E SERVIÇOS <span>ATUAÇÃO</span> E SERVIÇOS
+          <span>ATUAÇÃO</span> E SERVIÇOS <span>ATUAÇÃO</span> E SERVIÇOS
+          <span>ATUAÇÃO</span> E SERVIÇOS <span>ATUAÇÃO</span> E SERVIÇOS
+          <span>ATUAÇÃO</span> E SERVIÇOS <span>ATUAÇÃO</span> E SERVIÇOS
+          <span>ATUAÇÃO</span> E SERVIÇOS <span>ATUAÇÃO</span> E SERVIÇOS 
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+
+    <div class="container mx-auto row position-relative">
+
+      <div class="chat-img d-flex justify-content-center">
+        <img src="src/assets/img/SETA.png" alt="#">
+      </div>
+
+      <p>
+        Utilize o formulário abaixo para os enviar uma mensagem direta. Após o recebimento da mensagem entraremos em cotato pelo e-mail informado baixo. Para que o contato seja feito corretamente, preencha todos os campos.
+      </p>
+
+      <form action="">
+          <div class="row">
+            <div class="col-lg-6">
+              <label for="fname">SEU NOME</label>
+              <input type="text" id="fname" name="fname">
+            </div>
+
+            <div class="col-lg-6">
+              <label for="lname">NOME DA EMPRESA</label>
+              <input type="text" id="lname" name="lname">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-lg-6">
+              <label for="fname">SEU NOME</label>
+              <input type="text" id="fname" name="fname">
+            </div>
+
+            <div class="col-lg-6">
+              <label for="lname">NOME DA EMPRESA</label>
+              <input type="text" id="lname" name="lname">
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <label for="fname">SEU NOME</label>
+              <input type="text" id="fname" name="fname">
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <label for="lname">MENSAGEM</label>
+              <textarea name="message" rows="10" cols="30"></textarea>
+            </div>
+          </div>
+
+        <div class="botao">
+          <input type="submit" value="ENVIAR">
+        </div>
+      </form>
+    </div>
+
+  </section>
+
+
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>

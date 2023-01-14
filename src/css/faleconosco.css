@@ -1,0 +1,101 @@
+hr{
+  margin: 0;
+  padding: 5rem 0;
+  opacity: 1;
+}
+
+#contact{
+  background-color: transparent;
+
+  padding-bottom: 80px;
+}
+
+#contact > div{
+  background-color: var(--amarelo);
+}
+
+.container{
+  margin-top: -50px;
+}
+
+.chat-img{
+ text-align: center;
+}
+
+.chat-img > img{
+  margin-top: -35px;
+ }
+
+#contact img{
+  width: 70px;
+  height: 70px;
+}
+
+#contact p{
+  text-align: center;
+  padding: 2rem 0;
+
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5em;
+  color: var(--preto);
+
+  width: 90%;
+  margin: 0 auto;
+}
+
+form{
+  width: 90% !important;
+  margin: 2rem auto;
+}
+
+form > div > div{
+  padding-bottom: 2rem;
+}
+
+label{
+  display: block;
+
+  padding-bottom: 1rem;
+
+  font-size: 24px;
+  font-weight: 800;
+  color: var(--preto);
+}
+
+input{
+  background: none;
+  border-bottom: 1px solid var(--preto);
+
+  width: 100%;
+}
+
+textarea{
+width: 100%;
+
+background-color: var(--preto);
+
+resize: none;
+}
+
+textarea:focus, input:focus {
+  box-shadow: 0 0 0 0;
+  outline: 0;
+}
+
+.botao{
+  display: flex;
+  justify-content: center;
+}
+
+.botao > input{
+  background-color: #333333;
+  border-radius: 50px;
+
+  width: 200px;
+  height: 50px;
+
+  font-size: 20px;
+  font-weight: 800;
+  color: var(--branco);
+}

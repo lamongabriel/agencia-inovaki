@@ -1,0 +1,158 @@
+hr{
+  margin: 0;
+  opacity: 1;
+  margin-bottom: 0.2rem;
+}
+
+#agency{
+  background-color: var(--amarelo);
+}
+
+.agency-content > div:first-child > div:nth-child(1){
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.agency-content > div:first-child > div:nth-child(2){
+  margin-top: -50px;
+  padding: 0;
+}
+
+.agency-content > div:first-child > div > img{
+  width: 100%;
+
+  border-radius: 0px;
+}
+
+.agency-content > div:last-child{
+  padding: 81px 0 100px 0;
+}
+
+.agency-content > div > div > img{
+  width: 74px;
+}
+
+.agency-content > div > h2,
+.agency-content > div > div > h2{
+  font-weight: 800;
+  text-transform: uppercase;
+  font-size: 31px;
+  line-height: 38px;
+
+  color: var(--preto);
+}
+
+.agency-content > div > p,
+.agency-content > div > div > p{
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 35px;
+
+  color: var(--preto);
+}
+
+.agency-content > div > a,
+.agency-content > div > div > a{
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--preto);
+}
+
+#partner{
+  background-image: url(../assets/img/bg-pc.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 586px;
+}
+
+#partner > div{
+  text-align: center;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+}
+
+#partner p{
+  font-weight: 300;
+  font-size: 1.8rem;
+  line-height: 2rem;
+
+  color: var(--branco);
+}
+
+#partner span{
+ font-weight: 800;
+ text-transform: uppercase;
+ 
+ color: var(--amarelo);
+}
+
+#interact{
+  background-color: #e6e6e6;
+}
+
+#interact > div{
+  padding: 5rem 0;
+}
+
+#interact > div > div:first-child{
+  padding-bottom: 4rem;
+}
+
+#interact p{
+  font-weight: 300;
+  font-size: 2.5rem;
+  line-height: 1em;
+
+  color: var(--preto);
+}
+
+#interact span{
+  font-weight: 800;
+}
+
+#our-clients{
+  background-color: #F5F5F5;
+
+  padding-bottom: 80px;
+}
+
+#our-clients > div:first-child{
+  padding-top: 6rem;
+}
+
+#our-clients h2{
+  font-weight: 300;
+  font-size: 3rem;
+  text-transform: uppercase;
+  
+  color: var(--preto);
+}
+
+#our-clients span{
+  font-weight: 800;
+}
+
+#our-clients p{
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1em;
+  
+  color: var(--preto);
+}
+
+.clients-logo > div{
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 300px;
+}

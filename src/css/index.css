@@ -1,0 +1,479 @@
+/*BANNER HOME*/
+
+#top-home > div > p{
+  font-weight: 900;
+  font-size: 1.87rem;
+  line-height: 1.62rem;
+
+	color: #494949;
+}
+
+#top-home > div > p > span{
+	color: var(--amarelo-escuro);
+}
+
+#top-home .slide{
+  background-image: center center no-repeat !important; 
+  background-size: cover !important;
+  height: 1000px;
+
+  position: relative;
+}
+
+#top-home .swiper-wrapper{
+  height: 800px;
+}
+
+#banner-top .swiper-slide > div{
+  height: 100%;
+}
+
+#top-home .swiper-slide > div > img{
+  object-fit: cover;
+  object-position: center;
+  height: 100%;
+}
+
+#top-home .button-top-next, 
+#top-home .button-top-prev{
+  width: 3rem;
+  height: 3rem;
+
+  color: var(--preto);
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-align: center;
+  border-radius: 50%;
+
+  background-color: var(--amarelo-escuro);
+
+  content: ' ';
+}
+
+#top-home .button-top-next{
+  top: auto;
+  left: 50%;
+  bottom: 40px;
+  margin-left: 24px;
+}
+
+#top-home .button-top-prev{
+  top: auto;
+  left: 50%;
+  bottom: 40px;
+  margin-left: -24px;
+}
+
+#top-home .button-top-next::after,
+#top-home .button-top-prev::after{
+  content: ' ';
+}
+
+/*FIM-BANNER HOME*/
+
+/*QUEM-SOMOS*/
+#who-we-are{
+	background-color: var(--amarelo);
+}
+
+.group-1{
+	width: 25rem;
+}
+
+.who-we-are-title{
+  font-weight: 400;
+  font-size: 3.75rem;
+  color: var(--amarelo-escuro);
+
+	padding: 6rem 0 4rem 30rem;
+	overflow: hidden;
+
+  padding-left: 30%;
+}
+
+.who-we-are-title > span{
+  font-weight: 900;
+}
+
+.who-we-are-content > div > img{
+  width: 28rem;
+}
+
+.who-we-are-content > div:first-child > p{
+  font-weight: 300;
+  font-size: 2.2rem;
+  line-height: 3rem;
+
+  color: var(--branco);
+  background-color: #1c1c1c;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.who-we-are-content > div:first-child > p > span{
+  font-weight: 800;
+}
+
+.who-we-are-content > div:last-child > h2{
+  font-weight: 800;
+  font-size: 1.9rem;
+
+  text-transform: uppercase;
+  padding-bottom: 1rem;
+}
+
+.who-we-are-content > div:last-child > p{
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 2.2rem;
+
+  padding-bottom: 2.2rem;
+}
+
+.who-we-are-content > div:last-child > a{
+  font-weight: 700;
+  font-size: 1.5rem;
+
+  color: var(--preto);
+}
+
+.areas-of-expertise::before,
+.areas-of-expertise::after{
+  content: ' ';
+  display: block;
+
+  height: 90px; 
+  width: 1px; 
+
+  margin: 40px auto; 
+  border-left: 1px solid var(--preto);
+}
+
+.areas-of-expertise > h2{
+  font-weight: 300;
+  font-size: 3.125rem;
+  line-height: 4.125rem;
+
+  text-align: center;
+  padding: 1.8rem 0;
+}
+
+.areas-of-expertise > h2 > strong{
+  font-weight: 800;
+  font-size: 3.125rem;
+  line-height: 4.125rem;
+}
+
+.areas-bg{
+  margin-bottom: 25px;
+  min-height: 298px;
+}
+
+.areas-bg > div{
+  border-radius: 30px;
+  padding: 15px; 
+  height: 100%;
+}
+
+.areas-bg > div > img{
+  width: 8.1rem;
+}
+
+.areas-bg > div > p{
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  width: 75%;
+
+  padding-bottom: 2rem;
+}
+
+.areas-bg > div > a{
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--preto);
+}
+
+.areas-of-expertise-bg{
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*FIM-QUEM-SOMOS*/
+
+/*CASES-E-PROJETOS*/
+
+#cases-and-projects{
+  background-image: url(../assets/img/clouds\ 1.png);
+  background: no-repeat;
+}
+
+.cases-aplication{
+  display: flex;
+  justify-content: space-between;
+}
+
+.cases-aplication > div > button{
+  width: 4rem;
+  height: 4rem;
+
+  color: var(--branco);
+  font-weight: 700;
+  font-size: 2.75rem;
+  text-align: center;
+
+  background-color: var(--preto);
+}
+
+#cases-and-projects > h1,
+#cases-and-projects > h1 > strong{
+  text-align: center;
+
+  font-size: 3.125rem;
+  line-height: 4.125rem;
+}
+
+#cases-and-projects > h1 > strong{
+  font-weight: 800;
+}
+
+#cases-and-projects > h1{
+  font-weight: 300;
+
+  padding-top: 5rem;
+}
+
+.cases-and-projects-button{
+  background-color: var(--amarelo);
+  padding: 0 0.9rem;
+  height: 3rem;
+
+  font-weight: 400;
+  font-size: 1.25rem;
+
+  border: none;
+
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  cursor: pointer;
+
+  position: absolute;
+  top: -65px;
+}
+
+.cases-and-projects-button > img{
+  width: 2rem;
+}
+
+#swiper-case{
+  padding-top: 64px;
+}
+
+#swiper-case .row{
+  border-top: 1px solid var(--preto);
+  border-bottom: 1px solid var(--preto);
+  padding: 4rem 0;
+}
+
+#swiper-case h2{
+  font-weight: 800;
+  font-size: 2.24rem;
+  line-height: 2.87rem;
+  text-transform: uppercase;
+
+  padding-bottom: 1.4rem;
+}
+
+#swiper-case p{
+  font-weight: 400;
+  font-size: 1.125rem;
+  line-height: 2.18rem;
+  
+}
+
+#swiper-case .row div:nth-child(2){
+  text-align: center;
+}
+
+.cases-button{
+  padding: 3.75rem 0;
+  text-align: center;
+}
+
+#swiper-case .swiper-button-next, 
+#swiper-case .swiper-button-prev{
+  top: 22px;
+  width: 4rem;
+  height: 4rem;
+
+  color: var(--branco);
+  font-weight: 700;
+  font-size: 2.75rem;
+  text-align: center;
+
+  background-color: var(--preto);
+
+  content: ' ';
+}
+
+#swiper-case .swiper-button-next{
+  right: 0;
+  left: auto;
+}
+
+#swiper-case .swiper-button-prev{
+  right: 70px;
+  left: auto;
+}
+
+#swiper-case .swiper-button-next::after,
+#swiper-case .swiper-button-prev::after{
+  content: ' ';
+}
+
+/*FIM-CASES-E-PROJETOS*/
+
+/*CARDS*/
+
+.cards-img{
+  background-image: center center no-repeat !important; 
+  background-size: cover !important; 
+
+  padding: 25px; 
+  min-height: 368px;
+
+  transition: transform 200ms, filter 200ms ease-in-out;
+
+  position: relative;
+}
+
+.cards-img::after{
+  content: ' ';
+
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+
+  opacity: 0.5;
+  background: var(--preto);
+}
+
+.cards-img > p {
+  position: absolute;
+  z-index: 2 ;
+
+  bottom: 25px;
+  left: 30px;
+
+  color: var(--branco);
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  text-shadow: var(--preto) 0 0.25rem 0.87rem;
+}
+
+.cards-img > p > b{
+  display: block;
+}
+
+.cards-img:hover{
+  transform: scale(1.1);
+  z-index: 2;
+}
+
+.cards-img:hover::after{
+  opacity: 0;
+}
+
+/*FIM-CARDS*/
+
+/*CLIENTES*/
+
+#clients{
+  background-color: #FFFFE4;
+}
+
+#clients > div > div > h3{
+  color: #D80404;
+
+  font-weight: 300;
+  font-size: 1.87rem;
+
+  padding-bottom: 1.4rem;
+}
+
+#clients > div > div > h3 > strong{
+  font-weight: 800;
+}
+
+#clients > div > div > p{
+  font-weight: 300;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+
+  padding-bottom: 1.87rem;
+}
+
+#clients > div > div > a{
+  color: var(--preto);
+
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 1.5rem;
+}
+
+#clients > div > div > a:hover{
+  text-decoration: underline;
+}
+
+/*CLIENTES*/
+
+@media (max-width: 991px){
+
+  #swiper-case .row div:nth-child(2){
+    padding-bottom: 4rem;
+  }
+
+  .cards-img{
+    min-height: 250px;
+  } 
+
+  .clients-img > img{
+    width: 45%;
+  }
+
+  .contact-title > h2{
+    font-size: 3.5rem;
+  }
+
+  #contact-us > div > p{
+    font-weight: 1.2rem;
+  }
+}
+
+@media (max-width: 575px){
+
+  .clients-img > img{
+    width: 70%;
+  }
+
+  .contact-title > h2{
+    font-size: 3rem;
+  }
+
+  #contact-us > div > p{
+    font-size: 1rem;
+  }
+}

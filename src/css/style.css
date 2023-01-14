@@ -1,0 +1,266 @@
+/*RESET*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, select, textarea, option, address {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	box-sizing: border-box;
+	max-width: 100vw;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+}
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	position: relative;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+  width: 100%;
+}
+
+*{
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  overflow-x: hidden;
+
+  color: #000;
+}
+
+a{
+  text-decoration: none;
+}
+
+/*FIM-RESET*/
+
+/*VARIAVEIS PADRAO*/
+:root{
+  --amarelo: #FFE604;
+  --amarelo-escuro: #FFC804;
+  --branco: #fff;
+  --preto: #000;
+}
+/*FIM-VARIAVEIS PADRAO*/
+
+/*BOTOES PADRAO*/
+
+.yellow-button{
+  background-color: var(--amarelo);
+  padding: 0 2.3rem;
+  height: 4rem;
+
+  font-weight: 700;
+  font-size: 1.25rem;
+
+  border: none;
+  border-radius: 3.75rem;
+
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  transition: transform 200ms;
+  cursor: pointer;
+}
+
+.yellow-button > img{
+  width: 2rem;
+}
+
+.yellow-button:hover{
+  transform: scale(1.1);
+}
+
+/*FIM-BOTAO*/
+
+/*TOP-INTERNA*/
+
+#top{
+  background-image: url(../assets/img/bg-quemsomos.png);  
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 430px;
+
+  overflow: hidden;
+
+  padding-top: 180px;
+}
+
+#top .text-top{
+  overflow: hidden;
+  height: 80px;
+  max-width: 5000px;
+}
+
+#top .text-top > div{
+  font-size: 60px;
+  width: 5000px;
+  max-width: inherit;
+  line-height: 1.3em;
+}
+
+#top > div > p{
+  font-size: 40px;
+  font-weight: 300;
+  text-align: center;
+
+  color: #E7E8EA;
+}
+
+#top > div > div{
+  font-size: 60px;
+  font-weight: 400;
+
+  color: var(--amarelo-escuro);
+}
+
+#top .text-top span{
+  font-weight: 900;
+}
+
+/*FIM-TOP-INTERNA*/
+
+/*FALE-CONOSCO*/
+
+#contact-us{
+  background-color: #DF5E00;
+
+  padding: 4.37rem 0;
+}
+
+.contact-title > h2{
+  padding-top: 3.5rem;
+
+  font-weight: 800;
+  font-size: 4.37rem;
+  line-height: 1em;
+  
+  color: var(--branco);
+}
+
+#contact-us > div > p{
+  padding: 4rem 0 2.125rem;
+
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.87rem;
+  line-height: 1em;
+  word-spacing: 1rem;
+  letter-spacing: 0.2rem;
+
+  color: var(--branco);
+}
+
+/*FIM-FALE-CONOSCO*/
+
+/*RODAPE*/
+
+footer{
+  background-color: #222;
+  color: var(--branco);
+}
+
+.footer-content{
+  padding: 3.75rem 0;
+}
+
+.footer-info{
+  padding: 3.125rem 0;
+  border-top: 1px solid #333;
+  border-bottom: 1px solid #333;
+}
+
+.footer-contact > div > h2,
+.footer-contact > div > h2 > strong{
+  font-size: 3.75rem;
+  font-weight: 900;
+  line-height: 3rem;
+}
+
+.footer-contact > div > h2 > strong{
+  display: block;
+
+  color: var(--amarelo);
+}
+
+.contacts > a{
+  color: var(--branco);
+  font-weight: 700;
+  font-size: 1.5rem;
+
+  display: block;
+}
+
+.footer-contact-container > a{
+  color: var(--amarelo);
+  font-weight: 300;
+  font-size: 1.5rem;
+}
+
+.footer-contact-container > p{
+  font-weight: 300;
+  font-size: 0.87rem;
+  line-height: 1.375rem;
+}
+
+.footer-navigation nav > ul > li{
+  font-weight: 300;
+  font-size: 1.25rem;
+  line-height: 2.5rem;
+}
+
+.footer-navigation nav > div{
+  padding-top: 1rem;
+}
+
+.footer-navigation nav > div > a{
+  width: 3.18rem;
+  padding-right: 0.75rem;
+}
+
+.footer-copyright{
+  text-align: center;
+
+  padding: 1rem 0;
+  border-bottom: 1px solid #333;
+}
+
+/*FIM-RODAPE*/
