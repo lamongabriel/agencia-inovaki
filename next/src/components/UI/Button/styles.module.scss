@@ -1,0 +1,22 @@
+.button {
+  padding: 0 2.3rem;
+  height: 4rem;
+
+  font-weight: 700;
+  font-size: 1.25rem;
+	line-height: 1rem;
+
+  border: none;
+  border-radius: 3.75rem;
+
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+
+  transition: filter 200ms;
+
+	&:hover {
+		filter: contrast(0.8);
+	}
+}
