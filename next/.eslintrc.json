@@ -1,3 +1,6 @@
 {
-  "extends": ["next/core-web-vitals", "airbnb-base"]
+  "extends": ["next/core-web-vitals", "airbnb-base"],
+	"rules": {
+		"no-tabs": "off"
+	}
 }
