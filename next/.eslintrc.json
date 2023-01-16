@@ -2,6 +2,7 @@
   "extends": ["next/core-web-vitals", "airbnb-base"],
 	"rules": {
 		"no-tabs": "off",
-		"import/extensions": "off"
+		"import/extensions": "off",
+		"no-mixed-spaces-and-tabs": "off"
 	}
 }
