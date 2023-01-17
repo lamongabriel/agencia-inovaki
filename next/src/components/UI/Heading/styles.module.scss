@@ -1,13 +1,27 @@
-.heading {
-		color: var(--black);
-		font-weight: 300;
+.small {
+	color: var(--black);
+	font-weight: 300;
+	font-size: 2rem;
+	line-height: 2rem;
+	text-align: center;
+
+	>strong {
+		font-weight: 800;
+		font-size: 2rem;
+		line-height: 2rem;
+	}
+}
+
+.normal {
+	color: var(--black);
+	font-weight: 300;
+	font-size: 3.125rem;
+	line-height: 4.125rem;
+	text-align: center;
+
+	>strong {
+		font-weight: 800;
 		font-size: 3.125rem;
 		line-height: 4.125rem;
-		text-align: center;
-
-		>strong {
-			font-weight: 800;
-			font-size: 3.125rem;
-			line-height: 4.125rem;
-		}
 	}
+}

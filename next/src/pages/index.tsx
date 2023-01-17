@@ -24,6 +24,8 @@ import card2 from '../assets/images/Home/card-2.png';
 import card3 from '../assets/images/Home/card-3.png';
 import card4 from '../assets/images/Home/card-4.png';
 
+import accAmaral from '../assets/images/logos/logo-acc-amaral.png';
+
 import blingLogo from '../assets/images/logos/logo-bling.png';
 import bgBling from '../assets/images/Home/bgBling.png';
 
@@ -65,7 +67,7 @@ export default function Home() {
   return (
 		<>
 			<Header />
-			<section id="top-home">
+			<section>
 				<TopSwiper slides={slides} />
 			</section>
 			<section className={styles.whoWeAre}>
@@ -174,7 +176,7 @@ export default function Home() {
 					</Button>
 				</div>
 			</section>
-			<section className={`${styles.cards} container-fluid`}>
+			<section className={styles.cards}>
 				<div className="row">
 					<div className={`${styles.cardImg} col-12 col-sm-6 col-lg-3`} style={{ backgroundImage: ` url(${card1.src})` }}>
 						<Text>
@@ -198,6 +200,34 @@ export default function Home() {
 						<Text>
 							<b>SISTEMAS</b> PERSONALIZADOS
 						</Text>
+					</div>
+				</div>
+			</section>
+			<section className={styles.clients}>
+				<div className="container mx-auto p-5 row">
+					<div className="col-lg-6 order-lg-1 order-2 mx-auto">
+						<div className="clients-img row row-cols-lg-3 row-cols-sm-2">
+							<Image src={accAmaral} alt='Acc Amaral Logo'/>
+							<Image src={accAmaral} alt='Acc Amaral Logo'/>
+							<Image src={accAmaral} alt='Acc Amaral Logo'/>
+							<Image src={accAmaral} alt='Acc Amaral Logo'/>
+							<Image src={accAmaral} alt='Acc Amaral Logo'/>
+							<Image src={accAmaral} alt='Acc Amaral Logo'/>
+							<Image src={accAmaral} alt='Acc Amaral Logo'/>
+							<Image src={accAmaral} alt='Acc Amaral Logo'/>
+							<Image src={accAmaral} alt='Acc Amaral Logo'/>
+						</div>
+					</div>
+
+					<div className="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center order-lg-2 order-1 pb-5">
+						<Heading small>
+							Mais de <strong>65 CLIENTES</strong> atendidos
+						</Heading>
+						<Text>
+							Temos a sorte de ter desenvolvido projeto para todos os setores de atividade
+							e portes de empresas, em diversas formas de programação e universos gráficos.
+						</Text>
+						<a href="#">&gt; Torne-se nosso parceiro! </a>
 					</div>
 				</div>
 			</section>

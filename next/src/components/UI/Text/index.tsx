@@ -3,10 +3,11 @@ import styles from './styles.module.scss';
 
 interface TextProps {
 	children?: ReactNode
+	className?: string
 }
 
-export default function Text({ children }: TextProps) {
+export default function Text({ children, className }: TextProps) {
   return (
-		<p className={styles.text}>{children}</p>
+		<p className={`${styles.text} ${className}`}>{children}</p>
   );
 }
