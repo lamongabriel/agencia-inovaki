@@ -8,17 +8,19 @@
 	top: 0;
 	right: 0;
 
-	padding: 1rem;
+	padding: 1.2rem;
 	position: fixed;
 
 	z-index: 1005;
 
 	img {
-		width: 160px;
+		width: 140px;
 		height: auto;
 	}
 
 	@media (min-width: 992px) {
+		padding: 2rem 3rem 3rem;
+
 		img {width: 214px;}
 	}
 }
@@ -38,7 +40,7 @@
 		width: 0;
 		height: 100vh;
 		padding: 5em 3em 3em;
-		background: #FFE604;
+		background: var(--yellow-500);
 		position: fixed;
 		right: 0;
 		overflow: hidden;
@@ -57,10 +59,12 @@
 					height: 100%;
 					display: flex;
 					flex-direction: column;
+					align-items: center;
+					justify-content: center;
 
 					.fsmenu--list-element {
 						width: 100%;
-						height: 17%;
+						height: 5rem;
 						list-style-type: none;
 						text-align: right;
 
@@ -68,36 +72,42 @@
 							width: 100%;
 							height: 100%;
 							text-decoration: none;
-							color: #FFC804;
+							color: var(--yellow-600);
 							display: flex;
 							justify-content: flex-end;
 							align-items: center;
 							transition: 0.2s ease;
 
 							&:hover {
-								color: #000;
+								color: var(--black)
 							}
 
 							span {
-								font-size: 3rem;
-								font-weight: 700;
-								letter-spacing: 10px;
+								font-size: 3.5rem;
+								font-weight: 800;
+								letter-spacing: 0px;
 								text-transform: uppercase;
 								line-height: 1;
 								height: 1em;
 								display: inline-block;
 								position: relative;
 								z-index: 1002;
+								white-space: pre;
 
 								&:before {
 									content: "";
 									display: block;
 									width: 100%;
 									height: 100%;
-									background: #FFC804;
+									background: var(--yellow-600);
 									position: absolute;
 									left: 0;
 									z-index: 1003;
+								}
+
+								@media (max-width: 991px){
+									font-size: 2.2rem;
+									color: var(--black);
 								}
 							}
 						}
@@ -113,12 +123,12 @@
 								height: 1em;
 								font-size: 6em;
 								font-weight: 900;
-								letter-spacing: 10px;
 								text-transform: uppercase;
 								line-height: 1;
-								color: #333333;
+								color: rgba($color: #000000, $alpha: 0.1);
 								display: inline-block;
 								margin-right: 1em;
+								white-space: pre;
 							}
 
 						}
@@ -234,7 +244,7 @@
 							&:before {
 								left: auto;
 								right: 0;
-								background: #FFC804;
+								background: var(--yellow-600);
 								-webkit-animation: animMenuCloseLinks 0.4s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0s forwards;
 								animation: animMenuCloseLinks 0.4s cubic-bezier(0.13, 0.13, 0.02, 1.07) 0s forwards;
 							}

@@ -9,6 +9,40 @@ import styles from './styles.module.scss';
 import Button from '../UI/Button';
 import MenuItem from './MenuItem';
 
+interface HeaderLink {
+	name: string
+	image: string
+	href: string
+}
+
+const headerLinks: HeaderLink[] = [
+  {
+    name: 'QUEM SOMOS',
+    image: 'https://witwinkel.ch/themes/witwinkel/assets/images/content/WITWINKEL-buero-albisrieden-2019.jpg',
+    href: 'https://google.com.br',
+  },
+  {
+    name: 'SERVIÇOS',
+    image: 'https://witwinkel.ch/themes/witwinkel/assets/projects/gourmet-festival-2019/content12.jpg',
+    href: 'https://google.com.br',
+  },
+  {
+    name: 'PROJETOS',
+    image: 'https://witwinkel.ch/themes/witwinkel/assets/images/team/wirsind-witwinkel.jpg',
+    href: 'https://google.com.br',
+  },
+  {
+    name: 'CONTATO',
+    image: 'https://witwinkel.ch/themes/witwinkel/assets/images/content/WITWINKEL-buero-albisrieden-2019.jpg',
+    href: 'https://google.com.br',
+  },
+  {
+    name: 'ORÇAMENTO',
+    image: 'https://witwinkel.ch/themes/witwinkel/assets/projects/metzler/content1.jpg',
+    href: 'https://google.com.br',
+  },
+];
+
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef<HTMLDivElement>(null);
@@ -34,7 +68,7 @@ export default function Header() {
 
   return (
 		<>
-			<header className={`${styles.header} container px-2  px-md-0`}>
+			<header className={styles.header}>
 				<Image
 					src={menuOpen ? logoInovakiWhite : logoInovaki}
 					alt='Logo Inovaki'
@@ -55,26 +89,14 @@ export default function Header() {
 					<div className={styles['fsmenu--text-block']}>
 						<div className={styles['fsmenu--text-container']}>
 							<ul className={styles['fsmenu--list']}>
-								<MenuItem
-									name='Agentur'
-									image='https://witwinkel.ch/themes/witwinkel/assets/images/content/WITWINKEL-buero-albisrieden-2019.jpg'
-									href='https://google.com.br'
-								/>
-								<MenuItem
-									name='Portfolio'
-									image='https://witwinkel.ch/themes/witwinkel/assets/projects/gourmet-festival-2019/content12.jpg'
-									href='https://google.com.br'
-								/>
-								<MenuItem
-									name='Team'
-									image='https://witwinkel.ch/themes/witwinkel/assets/images/team/wirsind-witwinkel.jpg'
-									href='https://google.com.br'
-								/>
-								<MenuItem
-									name='Kontakt'
-									image='https://witwinkel.ch/themes/witwinkel/assets/projects/metzler/content1.jpg'
-									href='https://google.com.br'
-								/>
+								{headerLinks.map((opt, index) => (
+									<MenuItem
+										key={index}
+										name={opt.name}
+										image={opt.image}
+										href={opt.href}
+									/>
+								))}
 							</ul>
 						</div>
 					</div>
