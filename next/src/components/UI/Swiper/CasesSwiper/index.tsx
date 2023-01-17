@@ -7,6 +7,8 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 import { FaAngleLeft, FaAngleRight, FaTag } from 'react-icons/fa';
+import Text from '../../Text';
+
 import styles from './styles.module.scss';
 
 interface Slide {
@@ -37,7 +39,7 @@ export default function CasesSwiper({ slides }: CasesSwiperProps) {
 					<div>
 						<div>
 							<h2>{slide.title}</h2>
-							<p>{slide.text}</p>
+							<Text>{slide.text}</Text>
 						</div>
 						<Image src={slide.image} alt={slide.title} />
 					</div>

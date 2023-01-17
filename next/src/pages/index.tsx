@@ -34,6 +34,8 @@ import bgWordpress from '../assets/images/Home/bgWordpress.png';
 
 // Styles
 import styles from '../styles/pages/home.module.scss';
+import Text from '../components/UI/Text';
+import Heading from '../components/UI/Heading';
 
 const slides = [
   { image: swiperTop1, alt: 'Conheça nossas soluções.', href: 'https://google.com.br' },
@@ -85,20 +87,20 @@ export default function Home() {
 
 					<div className="col-lg-5 col-12 justify-content-center">
 						<h2>Aqui, cada projeto é único!</h2>
-						<p>
+						<Text>
 							Nós pensamos no seu diferencial, SEJA ÚNICO! <br />
 							Sua identidade digital começa aqui. A INOVAKI oferece todo suporte para você
 							começar bem, nossa equipe é especializada no desenvolvimento
 							de identidade visual e comunicação digital.
-						</p>
+						</Text>
 						<a href="#">&#62; Conheça nossa Agência &#60;</a>
 					</div>
 				</div>
 
 				<div className={`${styles.areasOfExpertise} container mx-auto`}>
-					<h2>
+					<Heading>
 						<strong>ÁREAS</strong> DE ATUAÇÃO
-					</h2>
+					</Heading>
 
 					<div className="row mx-auto">
 

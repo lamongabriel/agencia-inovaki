@@ -38,20 +38,6 @@
 				width: 28rem;
 				object-fit: contain;
 			}
-			&:first-child {
-				>p {
-					font-weight: 300;
-					font-size: 2.2rem;
-					line-height: 3rem;
-					color: var(--branco);
-					background-color: #1c1c1c;
-					padding-left: 1rem;
-					padding-right: 1rem;
-					>span {
-						font-weight: 800;
-					}
-				}
-			}
 			&:last-child {
 				>h2 {
 					font-weight: 800;
@@ -92,16 +78,7 @@
 			border-left: 1px solid var(--black);
 		}
 		>h2 {
-			font-weight: 300;
-			font-size: 3.125rem;
-			line-height: 4.125rem;
-			text-align: center;
 			padding: 1.8rem 0;
-			>strong {
-				font-weight: 800;
-				font-size: 3.125rem;
-				line-height: 4.125rem;
-			}
 		}
 
 		.areasBg {
