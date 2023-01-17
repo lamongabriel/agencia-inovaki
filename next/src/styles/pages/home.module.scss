@@ -146,3 +146,30 @@
 		}
 	}
 }
+
+.casesAndProjects {
+	width: 100%;
+  background: no-repeat;
+	background-position: center center;
+	background-size: cover;
+
+	h1, h1 > strong{
+		text-align: center;
+
+		font-size: 3.125rem;
+		line-height: 4.125rem;
+	}
+
+	h1{
+		font-weight: 300;
+		padding-top: 5rem;
+	}
+
+	h1 > strong{
+		font-weight: 800;
+	}
+
+	button {
+		margin: 0 auto 5rem auto
+	}
+}

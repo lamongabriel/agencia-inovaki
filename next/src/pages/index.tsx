@@ -1,16 +1,22 @@
 import Image from 'next/image';
 
 // Components
+import { FiArrowRightCircle } from 'react-icons/fi';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
+import Button from '../components/UI/Button';
 import TopSwiper from '../components/UI/Swiper/TopSwiper';
+import CasesSwiper from '../components/UI/Swiper/CasesSwiper';
 
 // Swiper Images
 import swiperTop1 from '../assets/images/Home/swiper-1.png';
 import swiperTop2 from '../assets/images/Home/swiper-2.png';
 
+import casesSwiper1 from '../assets/images/Home/casesSwiper-1.png';
+
 // Other images
 import dottedPattern from '../assets/images/dotted-pattern.png';
+import clouds from '../assets/images/Home/clouds.png';
 import avatarSlogan from '../assets/images/Home/avatar-slogan.png';
 import video from '../assets/images/Home/video.png';
 
@@ -32,6 +38,21 @@ import styles from '../styles/pages/home.module.scss';
 const slides = [
   { image: swiperTop1, alt: 'Conheça nossas soluções.', href: 'https://google.com.br' },
   { image: swiperTop2, alt: 'Nós desenvolvemos sua solução com e-commerce.', href: 'https://google.com.br' },
+];
+
+const casesSlides = [
+  {
+    title: 'igreja presbiteriana do brasil - site oficial',
+    tag: 'Desenvolvimento Web',
+    text: 'Nossa agência foi responsável pelo desenvolvimento do novo site oficial da instituição religiosa no Brasil. O atual website conta com áreas para notícias, eventos, compartilhamento de documenntos e outras funcionalidades importantes para divulgação de conteúdos institucionais e evangelísticos.',
+    image: casesSwiper1,
+  },
+  {
+    title: 'igreja presbiteriana do brasil - site oficial',
+    tag: 'Desenvolvimento Web',
+    text: 'Nossa agência foi responsável pelo desenvolvimento do novo site oficial da instituição religiosa no Brasil. O atual website conta com áreas para notícias, eventos, compartilhamento de documenntos e outras funcionalidades importantes para divulgação de conteúdos institucionais e evangelísticos.',
+    image: casesSwiper1,
+  },
 ];
 
 export default function Home() {
@@ -132,6 +153,19 @@ export default function Home() {
 
 				<div className={styles.dottedPattern}>
 					<Image src={dottedPattern} className="w-100" alt='Textura de bolinhas' />
+				</div>
+			</section>
+			<section className={styles.casesAndProjects} style={{ backgroundImage: ` url(${clouds.src})` }}>
+				<div className='container'>
+					<h1>
+						<strong>CASES</strong> E PROJETOS
+					</h1>
+
+					<CasesSwiper slides={casesSlides} />
+
+					<Button rightIcon={FiArrowRightCircle}>
+						VER TODOS OS PROJETOS
+					</Button>
 				</div>
 			</section>
 			<Footer />

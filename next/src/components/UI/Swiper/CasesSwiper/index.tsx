@@ -1,5 +1,4 @@
 import { useRef } from 'react';
-import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
 
 // swiper
@@ -7,20 +6,21 @@ import { Swiper, SwiperSlide, SwiperRef } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 
-import { FaAngleLeft, FaAngleRight } from 'react-icons/fa';
+import { FaAngleLeft, FaAngleRight, FaTag } from 'react-icons/fa';
 import styles from './styles.module.scss';
 
 interface Slide {
-	image: StaticImageData;
-	alt: string;
-	href: string;
+	title: string
+	text: string
+	image: StaticImageData
+	tag: string
 }
 
-interface TopSwiperProps {
+interface CasesSwiperProps {
 	slides: Slide[]
 }
 
-export default function TopSwiper({ slides }: TopSwiperProps) {
+export default function CasesSwiper({ slides }: CasesSwiperProps) {
   const swiper = useRef<SwiperRef>(null);
 
   return (
@@ -31,10 +31,17 @@ export default function TopSwiper({ slides }: TopSwiperProps) {
 		slidesPerView={1}
 	>
 		{slides.map((slide, index) => (
-			<SwiperSlide key={index} className={styles.slide}>
-				<Link href={slide.href}>
-					<Image src={slide.image} alt={slide.alt} />
-				</Link>
+			<SwiperSlide key={index} className={styles.slideWrapper}>
+				<div className={styles.slide}>
+					<span className={styles.tag}><FaTag /> {slide.tag}</span>
+					<div>
+						<div>
+							<h2>{slide.title}</h2>
+							<p>{slide.text}</p>
+						</div>
+						<Image src={slide.image} alt={slide.title} />
+					</div>
+				</div>
 			</SwiperSlide>
 		))}
 		<div className={styles.navigation}>
