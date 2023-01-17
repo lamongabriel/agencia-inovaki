@@ -2,8 +2,8 @@ import { useEffect, useState, useRef } from 'react';
 import Image from 'next/image';
 
 import { FaBars, FaTimes } from 'react-icons/fa';
-import logoInovaki from '../../assets/images/logo-inovaki.png';
-import logoInovakiWhite from '../../assets/images/logo-inovaki-white.png';
+import logoInovaki from '../../assets/images/logos/logo-inovaki.png';
+import logoInovakiWhite from '../../assets/images/logos/logo-inovaki-white.png';
 import styles from './styles.module.scss';
 
 import Button from '../UI/Button';
@@ -15,10 +15,10 @@ export default function Header() {
 
   useEffect(() => {
     if (menuOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflowY = 'hidden';
       return;
     }
-    document.body.style.overflow = 'auto';
+    document.body.style.overflowY = 'auto';
   }, [menuOpen]);
 
   function handleToggleMenu() {

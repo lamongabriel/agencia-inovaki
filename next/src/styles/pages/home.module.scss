@@ -1,0 +1,148 @@
+.whoWeAre {
+	background-color: var(--yellow-500);
+
+	.dottedPattern {
+		width: 25rem;
+		margin: 0 auto;
+	}
+
+	.video {
+		margin-bottom: 3rem;
+		img {
+			aspect-ratio: 16/9;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.whoWeAreTitle {
+		font-weight: 400;
+		font-size: clamp(3rem, 10vw, 4.37rem);
+		color: var(--yellow-600);
+		padding: 6rem 0 4rem 30rem;
+		overflow: hidden;
+		padding-left: 20%;
+
+		@media( max-width: 578px){
+			padding-left: 0;
+		}
+
+		>span {
+			font-weight: 900;
+		}
+	}
+
+	.whoWeAreContent{
+		>div {
+			>img {
+				width: 28rem;
+				object-fit: contain;
+			}
+			&:first-child {
+				>p {
+					font-weight: 300;
+					font-size: 2.2rem;
+					line-height: 3rem;
+					color: var(--branco);
+					background-color: #1c1c1c;
+					padding-left: 1rem;
+					padding-right: 1rem;
+					>span {
+						font-weight: 800;
+					}
+				}
+			}
+			&:last-child {
+				>h2 {
+					font-weight: 800;
+					font-size: 1.9rem;
+					text-transform: uppercase;
+					padding-bottom: 1rem;
+				}
+				>p {
+					font-weight: 400;
+					font-size: 1.125rem;
+					line-height: 2.2rem;
+					padding-bottom: 2.2rem;
+				}
+				>a {
+					font-weight: 700;
+					font-size: 1.5rem;
+					color: var(--preto);
+				}
+			}
+		}
+	}
+
+	.areasOfExpertise {
+		&::before {
+			content: ' ';
+			display: block;
+			height: 90px;
+			width: 1px;
+			margin: 40px auto;
+			border-left: 1px solid var(--black);
+		}
+		&::after {
+			content: ' ';
+			display: block;
+			height: 90px;
+			width: 1px;
+			margin: 20px auto 40px auto;
+			border-left: 1px solid var(--black);
+		}
+		>h2 {
+			font-weight: 300;
+			font-size: 3.125rem;
+			line-height: 4.125rem;
+			text-align: center;
+			padding: 1.8rem 0;
+			>strong {
+				font-weight: 800;
+				font-size: 3.125rem;
+				line-height: 4.125rem;
+			}
+		}
+
+		.areasBg {
+			margin-bottom: 25px;
+			min-height: 298px;
+
+			>div {
+				border-radius: 30px;
+				padding: 15px;
+				height: 100%;
+
+				>img {
+					width: 8.1rem;
+				}
+				>p {
+					font-weight: 400;
+					font-size: 1rem;
+					line-height: 1.5rem;
+					width: 75%;
+					padding-bottom: 2rem;
+				}
+				>a {
+					font-weight: 700;
+					font-size: 1rem;
+					line-height: 1.5rem;
+					color: var(--preto);
+				}
+			}
+
+			.areasOfExpertiseBg{
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: cover;
+
+				padding: 2rem;
+
+				img {
+					width: auto;
+					margin-bottom: 1rem;
+				}
+			}
+		}
+	}
+}
