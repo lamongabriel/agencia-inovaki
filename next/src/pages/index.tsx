@@ -11,14 +11,18 @@ import CasesSwiper from '../components/UI/Swiper/CasesSwiper';
 // Swiper Images
 import swiperTop1 from '../assets/images/Home/swiper-1.png';
 import swiperTop2 from '../assets/images/Home/swiper-2.png';
-
-import casesSwiper1 from '../assets/images/Home/casesSwiper-1.png';
+import casesSwiper1 from '../assets/images/Home/swiper-cases-1.png';
 
 // Other images
 import dottedPattern from '../assets/images/dotted-pattern.png';
 import clouds from '../assets/images/Home/clouds.png';
 import avatarSlogan from '../assets/images/Home/avatar-slogan.png';
 import video from '../assets/images/Home/video.png';
+
+import card1 from '../assets/images/Home/card-1.png';
+import card2 from '../assets/images/Home/card-2.png';
+import card3 from '../assets/images/Home/card-3.png';
+import card4 from '../assets/images/Home/card-4.png';
 
 import blingLogo from '../assets/images/logos/logo-bling.png';
 import bgBling from '../assets/images/Home/bgBling.png';
@@ -168,6 +172,33 @@ export default function Home() {
 					<Button rightIcon={FiArrowRightCircle}>
 						VER TODOS OS PROJETOS
 					</Button>
+				</div>
+			</section>
+			<section className={`${styles.cards} container-fluid`}>
+				<div className="row">
+					<div className={`${styles.cardImg} col-12 col-sm-6 col-lg-3`} style={{ backgroundImage: ` url(${card1.src})` }}>
+						<Text>
+							<b>DESENVOLVIMENTO</b> E INOVAÇÃO
+						</Text>
+					</div>
+
+					<div className={`${styles.cardImg} col-12 col-sm-6 col-lg-3`} style={{ backgroundImage: ` url(${card2.src})` }}>
+						<p>
+							<b>MARKETING</b> ESTRATÉGICO
+						</p>
+					</div>
+
+					<div className={`${styles.cardImg} col-12 col-sm-6 col-lg-3`} style={{ backgroundImage: ` url(${card3.src})` }}>
+						<Text>
+							<b>COMUNICAÇÃO</b> VISUAL
+						</Text>
+					</div>
+
+					<div className={`${styles.cardImg} col-12 col-sm-6 col-lg-3`} style={{ backgroundImage: ` url(${card4.src})` }}>
+						<Text>
+							<b>SISTEMAS</b> PERSONALIZADOS
+						</Text>
+					</div>
 				</div>
 			</section>
 			<Footer />
