@@ -1,19 +1,23 @@
+import { ReactNode } from 'react';
 import { StaticImageData } from 'next/image';
+import InfiniteText from '../../InfiniteText';
 
 import styles from './styles.module.scss';
 
 interface BannerTopProps {
-	topText: string
-	infiniteText: string
+	auxiliaryText?: string
+	children: ReactNode
 	image: StaticImageData
 }
 
-export default function BannerTop({ image, infiniteText, topText }: BannerTopProps) {
+export default function BannerTop({ image, children, auxiliaryText }: BannerTopProps) {
   return (
 		<div className={styles.bannerTop} style={{ backgroundImage: `url(${image.src})` }}>
 			<div>
-				<p>{topText}</p>
-				<h2>{infiniteText}</h2>
+				{auxiliaryText && <p>{auxiliaryText}</p>}
+				<InfiniteText>
+					{children}
+				</InfiniteText>
 			</div>
 		</div>
   );
