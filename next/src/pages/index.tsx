@@ -204,7 +204,7 @@ export default function Home() {
 				</div>
 			</section>
 			<section className={styles.clients}>
-				<div className="container mx-auto p-5 row">
+				<div className="container mx-auto row">
 					<div className="col-lg-6 order-lg-1 order-2 mx-auto">
 						<div className="clients-img row row-cols-lg-3 row-cols-sm-2">
 							<Image src={accAmaral} alt='Acc Amaral Logo'/>
@@ -219,7 +219,7 @@ export default function Home() {
 						</div>
 					</div>
 
-					<div className="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center order-lg-2 order-1 pb-5">
+					<div className="col-lg-5 offset-lg-1 d-flex flex-column justify-content-center order-lg-2 order-1 mb-5 mb-lg-0">
 						<Heading small>
 							Mais de <strong>65 CLIENTES</strong> atendidos
 						</Heading>

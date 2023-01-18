@@ -10,6 +10,7 @@ import { FaAngleLeft, FaAngleRight, FaTag } from 'react-icons/fa';
 import Text from '../../Text';
 
 import styles from './styles.module.scss';
+import Heading from '../../Heading';
 
 interface Slide {
 	title: string
@@ -38,7 +39,7 @@ export default function CasesSwiper({ slides }: CasesSwiperProps) {
 					<span className={styles.tag}><FaTag /> {slide.tag}</span>
 					<div>
 						<div>
-							<h2>{slide.title}</h2>
+							<Heading><strong>{slide.title}</strong></Heading>
 							<Text>{slide.text}</Text>
 						</div>
 						<Image src={slide.image} alt={slide.title} />
