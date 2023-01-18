@@ -1,0 +1,19 @@
+.bannerTop {
+	background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+
+  min-height: 430px;
+  overflow: hidden;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	p {
+		font-size: 2.5rem;
+		font-weight: 300;
+		text-align: center;
+		color: #E7E8EA;
+	}
+}

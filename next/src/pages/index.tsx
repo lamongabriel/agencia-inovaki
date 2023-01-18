@@ -7,6 +7,8 @@ import Header from '../components/Header';
 import Button from '../components/UI/Button';
 import TopSwiper from '../components/UI/Swiper/TopSwiper';
 import CasesSwiper from '../components/UI/Swiper/CasesSwiper';
+import Text from '../components/UI/Text';
+import Heading from '../components/UI/Heading';
 
 // Swiper Images
 import swiperTop1 from '../assets/images/Home/swiper-1.png';
@@ -40,8 +42,6 @@ import bgWordpress from '../assets/images/Home/bgWordpress.png';
 
 // Styles
 import styles from '../styles/pages/home.module.scss';
-import Text from '../components/UI/Text';
-import Heading from '../components/UI/Heading';
 
 const slides = [
   { image: swiperTop1, alt: 'Conheça nossas soluções.', href: 'https://google.com.br' },
