@@ -2,13 +2,12 @@ import Image from 'next/image';
 
 // Components
 import { FiArrowRightCircle } from 'react-icons/fi';
-import Footer from '../components/Footer';
-import Header from '../components/Header';
 import Button from '../components/UI/Button';
 import TopSwiper from '../components/UI/Swiper/TopSwiper';
 import CasesSwiper from '../components/UI/Swiper/CasesSwiper';
 import Text from '../components/UI/Text';
 import Heading from '../components/UI/Heading';
+import Layout from '../components/UI/Layout';
 
 // Swiper Images
 import swiperTop1 from '../assets/images/Home/swiper-1.png';
@@ -42,6 +41,7 @@ import bgWordpress from '../assets/images/Home/bgWordpress.png';
 
 // Styles
 import styles from '../styles/pages/home.module.scss';
+import InfiniteText from '../components/UI/InfiniteText';
 
 const slides = [
   { image: swiperTop1, alt: 'Conheça nossas soluções.', href: 'https://google.com.br' },
@@ -65,8 +65,7 @@ const casesSlides = [
 
 export default function Home() {
   return (
-		<>
-			<Header />
+		<Layout>
 			<section>
 				<TopSwiper slides={slides} />
 			</section>
@@ -76,13 +75,9 @@ export default function Home() {
 					<Image src={dottedPattern} className="w-100" alt='Textura de bolinhas' />
 				</div>
 
-				<p className={`${styles.whoWeAreTitle} d-flex py-3 py-lg-5`}>
-					<span>QUEM</span> SOMOS <span>QUEM</span> SOMOS <span>QUEM</span> SOMOS
-					<span>QUEM</span> SOMOS <span>QUEM</span> SOMOS <span>QUEM</span> SOMOS
-					<span>QUEM</span> SOMOS <span>QUEM</span> SOMOS <span>QUEM</span> SOMOS
-					<span>QUEM</span> SOMOS <span>QUEM</span> SOMOS <span>QUEM</span> SOMOS
-					<span>QUEM</span> SOMOS <span>QUEM</span> SOMOS <span>QUEM</span> SOMOS
-				</p>
+				<InfiniteText className={`${styles.whoWeAreTitle} d-flex py-3 py-lg-5`}>
+					<strong>QUEM</strong>SOMOS
+				</InfiniteText>
 
 				<div className={`${styles.whoWeAreContent} container mx-auto row`}>
 					<div className="col-xl-5 col-lg-6 col-12 pb-5 row justify-content-center">
@@ -231,7 +226,6 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
-			<Footer />
-		</>
+		</Layout>
   );
 }

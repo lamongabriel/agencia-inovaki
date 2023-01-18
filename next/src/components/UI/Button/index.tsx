@@ -19,11 +19,12 @@ export default function Button({
   color = '#000000',
   leftIcon,
   rightIcon,
+  className,
   ...rest
 }: ButtonProps) {
   return (
 		<button
-			className={styles.button}
+			className={`${styles.button} ${className}`}
 			style={{
 			  background: bg,
 			  color,

@@ -16,19 +16,10 @@
 	}
 
 	.whoWeAreTitle {
-		font-weight: 400;
-		font-size: clamp(3rem, 10vw, 4.37rem);
-		color: var(--yellow-600);
-		padding: 6rem 0 4rem 30rem;
-		overflow: hidden;
 		padding-left: 20%;
 
 		@media( max-width: 767px){
 			padding-left: 0;
-		}
-
-		>span {
-			font-weight: 900;
 		}
 	}
 
