@@ -22,4 +22,5 @@
 body, html {
 	scrollbar-width: thin;
 	scrollbar-color: var(--yellow-600) var(--gray-300);
+	scroll-behavior: smooth;
 }

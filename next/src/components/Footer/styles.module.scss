@@ -1,10 +1,10 @@
 footer {
 	.contactUs {
 		background-color: var(--orange-700);
-  	padding: 4.37rem 0;
+  	padding: 4rem 0;
 
-		>div >p {
-			padding: 4rem 0 2.125rem;
+		aside{
+			padding: 4rem 0 2rem;
 
 			text-align: center;
 			font-weight: 300;
@@ -17,15 +17,11 @@ footer {
 		}
 
 		.contactTitle {
-			>h2 {
-				padding-top: 3.5rem;
+			font-weight: 800;
+			font-size: clamp(3rem, 10vw, 4.37rem);
+			line-height: 1em;
 
-				font-weight: 800;
-				font-size: clamp(3rem, 10vw, 4.37rem);
-				line-height: 1em;
-
-				color: var(--white);
-			}
+			color: var(--white);
 		}
 	}
 
@@ -77,8 +73,6 @@ footer {
 								color: var(--white);
 								font-weight: 700;
 								font-size: 1.5rem;
-
-								display: block;
 							}
 						}
 					}
@@ -111,6 +105,13 @@ footer {
 							font-weight: 300;
 							font-size: 1.25rem;
 							line-height: 2.5rem;
+
+							a {
+								color: var(--white);
+								&:hover {
+									text-decoration: underline;
+								}
+							}
 						}
 					}
 				}
