@@ -13,7 +13,18 @@ import Heading from '../components/UI/Heading';
 
 import pc from '../assets/images/Sobre/agency-pc.png';
 import bgPartner from '../assets/images/Sobre/bg-partner.png';
-import logoIPB from '../assets/images/Sobre/logo-ipb.png';
+import logoApae from '../assets/images/logos/logo-apae.png';
+import logoApecom from '../assets/images/logos/logo-apecom.png';
+import logoAquamar from '../assets/images/logos/logo-aquamar.png';
+import logoContabilidade from '../assets/images/logos/logo-contabilidade.png';
+import logoCustaPouco from '../assets/images/logos/logo-custapouco.png';
+import logoFashly from '../assets/images/logos/logo-fashly.png';
+import logoForeverLiss from '../assets/images/logos/logo-foreveliss.png';
+import logoHope from '../assets/images/logos/logo-hope.png';
+import logoIPB from '../assets/images/logos/logo-ipb.png';
+import logoMaktub from '../assets/images/logos/logo-maktub.png';
+import logoMastercar from '../assets/images/logos/logo-mastercar.png';
+import logoPestalozzi from '../assets/images/logos/logo-pestalozzi.png';
 
 import Button from '../components/UI/Button';
 
@@ -45,7 +56,7 @@ export default function Sobre() {
 					<hr />
 					<hr />
 
-					<div className="row">
+					<div className="row py-5">
 						<div className="col-lg-6 col-12 pb-5">
 							<Gi3DGlasses className='mb-3' size={90} color='#000'/>
 							<Heading small className='text-start'>
@@ -125,37 +136,37 @@ export default function Sobre() {
 						<Image src={logoIPB} alt='Logo IPB'/>
 					</div>
 					<div>
-						<Image src={logoIPB} alt='Logo IPB'/>
+						<Image src={logoApecom} alt='Logo Apecom'/>
 					</div>
 					<div>
-						<Image src={logoIPB} alt='Logo IPB'/>
+						<Image src={logoHope} alt='Logo IPB'/>
 					</div>
 					<div>
-						<Image src={logoIPB} alt='Logo IPB'/>
+						<Image src={logoForeverLiss} alt='Logo IPB'/>
 					</div>
 					<div>
-						<Image src={logoIPB} alt='Logo IPB'/>
+						<Image src={logoAquamar} alt='Logo IPB'/>
 					</div>
 					<div>
-						<Image src={logoIPB} alt='Logo IPB'/>
+						<Image src={logoFashly} alt='Logo IPB'/>
 					</div>
 					<div>
-						<Image src={logoIPB} alt='Logo IPB'/>
+						<Image src={logoCustaPouco} alt='Logo IPB'/>
 					</div>
 					<div>
-						<Image src={logoIPB} alt='Logo IPB'/>
+						<Image src={logoContabilidade} alt='Logo IPB'/>
 					</div>
 					<div>
-						<Image src={logoIPB} alt='Logo IPB'/>
+						<Image src={logoMaktub} alt='Logo IPB'/>
 					</div>
 					<div>
-						<Image src={logoIPB} alt='Logo IPB'/>
+						<Image src={logoMastercar} alt='Logo IPB'/>
 					</div>
 					<div>
-						<Image src={logoIPB} alt='Logo IPB'/>
+						<Image src={logoApae} alt='Logo IPB'/>
 					</div>
 					<div>
-						<Image src={logoIPB} alt='Logo IPB'/>
+						<Image src={logoPestalozzi} alt='Logo IPB'/>
 					</div>
 				</div>
   		</section>
