@@ -139,34 +139,34 @@ export default function Sobre() {
 						<Image src={logoApecom} alt='Logo Apecom'/>
 					</div>
 					<div>
-						<Image src={logoHope} alt='Logo IPB'/>
+						<Image src={logoHope} alt='Logo Hope'/>
 					</div>
 					<div>
-						<Image src={logoForeverLiss} alt='Logo IPB'/>
+						<Image src={logoForeverLiss} alt='Logo Forever Liss'/>
 					</div>
 					<div>
-						<Image src={logoAquamar} alt='Logo IPB'/>
+						<Image src={logoAquamar} alt='Logo Aquamar'/>
 					</div>
 					<div>
-						<Image src={logoFashly} alt='Logo IPB'/>
+						<Image src={logoFashly} alt='Logo Fashly'/>
 					</div>
 					<div>
-						<Image src={logoCustaPouco} alt='Logo IPB'/>
+						<Image src={logoCustaPouco} alt='Logo Custa Pouco'/>
 					</div>
 					<div>
-						<Image src={logoContabilidade} alt='Logo IPB'/>
+						<Image src={logoContabilidade} alt='Logo Contabilidade'/>
 					</div>
 					<div>
-						<Image src={logoMaktub} alt='Logo IPB'/>
+						<Image src={logoMaktub} alt='Logo Maktub'/>
 					</div>
 					<div>
-						<Image src={logoMastercar} alt='Logo IPB'/>
+						<Image src={logoMastercar} alt='Logo Mastercar'/>
 					</div>
 					<div>
-						<Image src={logoApae} alt='Logo IPB'/>
+						<Image src={logoApae} alt='Logo Apae'/>
 					</div>
 					<div>
-						<Image src={logoPestalozzi} alt='Logo IPB'/>
+						<Image src={logoPestalozzi} alt='Logo Pestalozzi'/>
 					</div>
 				</div>
   		</section>
