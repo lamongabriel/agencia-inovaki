@@ -1,8 +1,9 @@
 .infiniteText {
 	font-weight: 400;
-	font-size: clamp(3rem, 10vw, 4.37rem);
+	font-size: clamp(2rem, 8vw, 4.37rem);
 	overflow: hidden;
 	white-space: nowrap;
+	align-self: flex-start;
 
 	span {
 		letter-spacing: 0;
