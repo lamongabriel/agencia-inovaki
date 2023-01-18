@@ -78,3 +78,19 @@
 		color: var(--yellow-500);
 	 }
 }
+
+.interact{
+  background-color: #e6e6e6;
+
+	>div{
+		padding: 5rem 0;
+	}
+
+	>div > div:first-child{
+		padding-bottom: 4rem;
+	}
+
+	span{
+		font-weight: 800;
+	}
+}

@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Gi3DGlasses } from 'react-icons/gi';
 import { IoIosRocket } from 'react-icons/io';
+import { FiArrowRightCircle } from 'react-icons/fi';
 import BannerTop from '../components/UI/Banner/BannerTop';
 
 import bg from '../assets/images/Sobre/bg-sobre.png';
@@ -12,6 +13,8 @@ import Heading from '../components/UI/Heading';
 
 import pc from '../assets/images/Sobre/agency-pc.png';
 import bgPartner from '../assets/images/Sobre/bg-partner.png';
+
+import Button from '../components/UI/Button';
 
 export default function Sobre() {
   return (
@@ -78,6 +81,28 @@ export default function Sobre() {
 					</Text>
 				</div>
   		</section>
+			<section className={styles.interact}>
+				<div className="container mx-auto text-center row">
+					<div className="col-12">
+						<Heading>
+							<span>INTERAJA</span> CONOSCO
+						</Heading>
+						<Heading>
+							Veja o que fazemos pelo <span>seu negócio.</span>
+						</Heading>
+					</div>
+					<div className="col-lg-6 col-12 pb-5">
+					<Button rightIcon={FiArrowRightCircle}>
+						CONHEÇA NOSSOS SERVIÇOS
+					</Button>
+					</div>
+					<div className="col-lg-6 col-12">
+					<Button rightIcon={FiArrowRightCircle}>
+						ENVIE-NOS UMA MENSAGEM
+					</Button>
+					</div>
+				</div>
+			</section>
 		</Layout>
   );
 }
