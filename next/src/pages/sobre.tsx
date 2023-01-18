@@ -13,6 +13,7 @@ import Heading from '../components/UI/Heading';
 
 import pc from '../assets/images/Sobre/agency-pc.png';
 import bgPartner from '../assets/images/Sobre/bg-partner.png';
+import logoIPB from '../assets/images/Sobre/logo-ipb.png';
 
 import Button from '../components/UI/Button';
 
@@ -103,6 +104,61 @@ export default function Sobre() {
 					</div>
 				</div>
 			</section>
+			<section className={styles.ourClients}>
+				<div className="container mx-auto row pb-5">
+					<div className="col-lg-5 col-12 pb-2">
+						<Heading>
+							<span>NOSSOS</span> CLIENTES
+						</Heading>
+					</div>
+					<div className="col-lg-5 col-12 offset-lg-2">
+						<Text>
+							Nosso compromisso com a qualidade dos projetos executados,
+							ampla experiência e esforço genuíno para alcançar os objetivos
+							de cada desafio nos garantiram clientes e parcceiros satisfeitos e
+							bons resultados frente ao mercado.
+						</Text>
+					</div>
+				</div>
+				<div className={`${styles.clientsLogo} container mx-auto row row-cols-lg-4 row-cols-sm-2`}>
+					<div>
+						<Image src={logoIPB} alt='Logo IPB'/>
+					</div>
+					<div>
+						<Image src={logoIPB} alt='Logo IPB'/>
+					</div>
+					<div>
+						<Image src={logoIPB} alt='Logo IPB'/>
+					</div>
+					<div>
+						<Image src={logoIPB} alt='Logo IPB'/>
+					</div>
+					<div>
+						<Image src={logoIPB} alt='Logo IPB'/>
+					</div>
+					<div>
+						<Image src={logoIPB} alt='Logo IPB'/>
+					</div>
+					<div>
+						<Image src={logoIPB} alt='Logo IPB'/>
+					</div>
+					<div>
+						<Image src={logoIPB} alt='Logo IPB'/>
+					</div>
+					<div>
+						<Image src={logoIPB} alt='Logo IPB'/>
+					</div>
+					<div>
+						<Image src={logoIPB} alt='Logo IPB'/>
+					</div>
+					<div>
+						<Image src={logoIPB} alt='Logo IPB'/>
+					</div>
+					<div>
+						<Image src={logoIPB} alt='Logo IPB'/>
+					</div>
+				</div>
+  		</section>
 		</Layout>
   );
 }

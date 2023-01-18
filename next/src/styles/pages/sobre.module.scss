@@ -79,18 +79,46 @@
 	 }
 }
 
-.interact{
+.interact {
   background-color: #e6e6e6;
 
-	>div{
+	>div {
 		padding: 5rem 0;
 	}
 
-	>div > div:first-child{
+	>div > div:first-child {
 		padding-bottom: 4rem;
 	}
 
-	span{
+	span {
 		font-weight: 800;
+	}
+}
+
+.ourClients {
+  background-color: #F5F5F5;
+
+  padding-bottom: 80px;
+
+	>div:first-child {
+		padding-top: 6rem;
+	}
+
+	span {
+		font-weight: 800;
+	}
+
+	.clientsLogo > div {
+		border: 1px solid rgba(0, 0, 0, 0.1);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		max-height: 300px;
+
+		img{
+			width: 100%;
+			height: auto;
+		}
 	}
 }
