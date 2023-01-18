@@ -11,6 +11,7 @@ import Text from '../components/UI/Text';
 import Heading from '../components/UI/Heading';
 
 import pc from '../assets/images/Sobre/agency-pc.png';
+import bgPartner from '../assets/images/Sobre/bg-partner.png';
 
 export default function Sobre() {
   return (
@@ -67,6 +68,16 @@ export default function Sobre() {
 					</div>
 				</div>
 			</section>
+			<section className={styles.partner} style={{ backgroundImage: `url(${bgPartner.src})` }}>
+				<div className="container">
+					<Text>
+						Somos um <span>parceiro estratégico</span> para nossos clientes.
+						Ajudaremos você a <span> idealizar, projetar e implementar </span>
+						seu produto desde a concepção até o suporte ao desenvolvimento interativo,
+						sempre <span>tomando a iniciativa</span> e <span>trabalhando de forma proativa.</span>
+					</Text>
+				</div>
+  		</section>
 		</Layout>
   );
 }
