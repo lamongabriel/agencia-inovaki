@@ -1,4 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
+import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
 
 import { FaBars, FaTimes } from 'react-icons/fa';
@@ -76,10 +77,12 @@ export default function Header() {
   return (
 		<>
 			<header className={styles.header}>
-				<Image
-					src={menuOpen ? logoInovakiWhite : logoInovaki}
-					alt='Logo Inovaki'
-				/>
+				<Link href='/'>
+					<Image
+						src={menuOpen ? logoInovakiWhite : logoInovaki}
+						alt='Logo Inovaki'
+					/>
+				</Link>
 				<Button
 					color={menuOpen ? '#fff' : '#000'}
 					bg={menuOpen ? '#000' : undefined}
