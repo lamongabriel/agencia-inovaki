@@ -28,7 +28,8 @@ export default function Button({
 			style={{
 			  background: bg,
 			  color,
-			  height: small ? '2rem' : '4rem',
+			  fontSize: small ? '1rem' : '1.25rem',
+			  height: small ? '2.5rem' : '4rem',
 			  padding: small ? '0 1.5rem' : '0 2.3rem',
 			}}
 			{...rest}

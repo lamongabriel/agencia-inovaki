@@ -1,0 +1,112 @@
+.arrowDown {
+	img{
+		width: clamp(100px, 25vw, 186px);
+		height: clamp(100px, 25vw, 186px);
+		margin-top: clamp(-93px, -12.5vw, -50px);
+	}
+}
+
+.areasOfExperience {
+	background-color: var(--white-100);
+
+	hr{
+		color: rgba($color: #000000, $alpha: 0.5);
+		margin: 8rem 0;
+	}
+
+	.hr1{
+		transform: rotate(-3.39deg);
+	}
+
+	.hr2{
+		transform: rotate(3.39deg);
+	}
+
+	.experience {
+
+		>div:last-child {
+			padding-bottom: 10rem;
+		}
+
+		.experienceContent {
+
+			img {
+				width: 80%;
+				height: auto;
+			}
+
+			p {
+				padding-bottom: 2rem;
+			}
+		}
+
+	}
+
+	@media (max-width: 992px){
+		hr {
+			margin: 4rem 0;
+		}
+
+		.experience {
+			.experienceContent {
+				img {
+					width: 50%;
+					margin-bottom: 2rem;
+				}
+			}
+		}
+	}
+}
+
+.services {
+	background-color: var(--yellow-500);
+	padding-bottom: 2rem;
+
+	h3 {
+		font-size: 28px;
+		font-weight: 800;
+
+		color: var(--black);
+
+		margin-bottom: 3rem;
+		position: relative;
+
+		&::before {
+			content: '';
+			width: 50rem;
+			background-color: var(--black);
+			height: 1px;
+			position: absolute;
+			left: -52rem;
+			top: 50%;
+		}
+	}
+
+	.tabButton {
+		font-weight: 800;
+		font-size: clamp(1rem, 8vw, 3rem);
+		line-height: 2.3rem;
+		color: var(--black);
+		text-transform: uppercase;
+		padding: 0;
+
+		&[aria-selected="false"]{
+			color: rgba($color: #000000, $alpha: 0.2);
+		}
+	}
+
+	.tabs {
+
+		button {
+			text-transform: uppercase;
+		}
+	}
+
+	@media (min-width: 992px) {
+		padding-bottom: 8rem;
+
+		.tabs {
+			border-bottom: solid 1px var(--black);
+		}
+	}
+}
