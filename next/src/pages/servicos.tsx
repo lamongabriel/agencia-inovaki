@@ -35,12 +35,12 @@ export default function Servicos() {
 					<Image src={arrowDown} alt='Seta apontando para baixo' />
 				</div>
 
-				<div className={`${styles.experience} container mx-auto`}>
-					<div className={`${styles.experienceContent} row pt-3`}>
-						<div className="col-lg-5 pb-5">
+				<div className={`${styles.experience} container mx-auto text-center text-lg-left`}>
+					<div className={`${styles.experienceContent} row`}>
+						<div className="col-lg-5">
 							<Image src={logoVtex} alt='Logo VTEX' />
 						</div>
-						<div className="col-lg-5 offset-lg-2 pb-5">
+						<div className="col-lg-5 offset-lg-2 text-start">
 							<Text>
 								Lorem Ipsum is simply dummy text of the printing and typesetting
 								industry. Lorem Ipsum has been the industrys standard
@@ -52,11 +52,11 @@ export default function Servicos() {
 
 					<hr className={styles.hr1} />
 
-					<div className={`${styles.experienceContent} row pt-3`}>
-						<div className="col-lg-5 offset-lg-2 order-lg-2 order-1 pb-5">
+					<div className={`${styles.experienceContent} row`}>
+						<div className="col-lg-5 offset-lg-2 order-lg-2 order-1">
 							<Image src={logoBling} alt='Logo bling' />
 						</div>
-						<div className="col-lg-5 order-lg-1 order-2 pb-5 text-end">
+						<div className="col-lg-5 order-lg-1 order-2 text-end">
 							<Text>
 								Nossa agência trabalha com a integração e desenvolvimento de
 								soluções que integrem sua plataforma com as aplicações da Bling.
@@ -67,11 +67,11 @@ export default function Servicos() {
 
 					<hr className={styles.hr2} />
 
-					<div className={`${styles.experienceContent} row pt-3`}>
-						<div className="col-lg-5 pb-5">
+					<div className={`${styles.experienceContent} row`}>
+						<div className="col-lg-5">
 							<Image src={logoSendgrid} alt='Logo Sendgrid' />
 						</div>
-						<div className="col-lg-5 offset-lg-2 pb-5">
+						<div className="col-lg-5 offset-lg-2 text-start">
 							<Text>
 								Gerenciamos e integramos a ferramenta SendGrid em sistema e
 								websites para disparos eficientes de e-mail e mail marketing.
@@ -82,11 +82,11 @@ export default function Servicos() {
 
 					<hr className={styles.hr1} />
 
-					<div className={`${styles.experienceContent} row pt-3`}>
-						<div className="col-lg-5 offset-lg-2 order-lg-2 order-1 pb-5">
+					<div className={`${styles.experienceContent} row`}>
+						<div className="col-lg-5 offset-lg-2 order-lg-2 order-1">
 							<Image src={logoWordpress} alt='Logo Wordpress' />
 						</div>
-						<div className="col-lg-5 order-lg-1 order-2 pb-5 text-end">
+						<div className="col-lg-5 order-lg-1 order-2 text-end">
 							<Text>
 								Desenvolvimento, Suporte e Manuteção em Websites com a
 								utilização da ferramenta Wordpress. A Inovaki conta com
@@ -133,7 +133,7 @@ export default function Servicos() {
 								</Nav>
 							</Col>
 							<Col lg={2} />
-							<Col lg={5}>
+							<Col lg={5} className={`${styles.tabs} mt-5 mt-lg-0`}>
 								<Tab.Content>
 									<Tab.Pane eventKey="first">
 										daniel
@@ -145,7 +145,18 @@ export default function Servicos() {
 										azevedo
 									</Tab.Pane>
 									<Tab.Pane eventKey="four">
-										<Button small color='#fff' bg='#333333'>WEBSITE</Button>
+										<div className='d-flex flex-wrap gap-2'>
+											<Button small color='#fff' bg='#333333'>WEBSITE</Button>
+											<Button small color='#fff' bg='#333333'>Hotsite</Button>
+											<Button small color='#fff' bg='#333333'>Landing Page</Button>
+											<Button small color='#fff' bg='#333333'>E-commerce</Button>
+											<Button small color='#fff' bg='#333333'>leads page</Button>
+										</div>
+										<Text className='mt-5'>
+											Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+											Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.
+										</Text>
+										<a href="#" className='mt-5'>&gt; Saiba Mais &lt;</a>
 									</Tab.Pane>
 								</Tab.Content>
 							</Col>
