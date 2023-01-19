@@ -1,0 +1,106 @@
+.contact {
+	background-color: transparent;
+
+	padding-bottom: 5rem;
+
+	>div {
+		background-color: var(--yellow-500);
+	}
+
+	.formContainer {
+		margin-top: -50px;
+		position: relative;
+
+		p {
+			text-align: center;
+			padding: 4rem 0;
+
+			width: 90%;
+			margin: 0 auto;
+		}
+
+		form {
+			width: 90% !important;
+			margin: 2rem auto;
+
+			>div > div {
+				padding-bottom: 2rem;
+			}
+		}
+
+		label {
+			display: block;
+
+			padding-bottom: 1rem;
+
+			font-size: 1.5rem;
+			font-weight: 800;
+			color: var(--black);
+		}
+
+		input {
+			background: none;
+			border-bottom: 1px solid var(--black);
+
+			width: 100%;
+			padding: 0.1rem;
+		}
+
+		textarea {
+			width: 100%;
+			color: var(--white);
+
+			background-color: var(--black);
+
+			resize: none;
+			padding: 1rem;
+		}
+
+		textarea:focus,
+		input:focus {
+			box-shadow: 0 0 0 0;
+			outline: 0;
+		}
+
+		.botao {
+			display: flex;
+			justify-content: center;
+
+			> input {
+				background-color: #333333;
+				border-radius: 3.125rem;
+
+				width: 12.5rem;
+				height: 3.125rem;
+
+				font-size: 1.25rem;
+				font-weight: 800;
+				color: var(--white);
+			}
+		}
+
+		.arrowUp {
+			width: 0;
+			height: 0;
+			border-left: 2rem solid transparent;
+			border-right: 2rem solid transparent;
+
+			border-bottom: 2rem solid var(--yellow-500);
+
+			position: absolute;
+			top: -2rem;
+			left: calc(50% - 2rem);
+		}
+	}
+}
+
+@media ( max-width: 576px ){
+
+	.contact {
+		padding-bottom: 0px;
+
+		form {
+			margin: 0 auto !important;
+		}
+	}
+}
