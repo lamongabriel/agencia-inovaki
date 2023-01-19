@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { BsFillChatDotsFill } from 'react-icons/bs';
 import BannerTop from '../components/UI/Banner/BannerTop';
 
@@ -7,7 +6,6 @@ import Layout from '../components/UI/Layout';
 
 import styles from '../styles/pages/contato.module.scss';
 import Text from '../components/UI/Text';
-import Heading from '../components/UI/Heading';
 
 export default function Contato() {
   return (
@@ -58,7 +56,7 @@ export default function Contato() {
 							<div>
 								<div>
 									<label htmlFor="lname">MENSAGEM</label>
-									<textarea name="message" rows="10" cols="30"></textarea>
+									<textarea name="message" rows={10} cols={30}></textarea>
 								</div>
 							</div>
 						<div className={`${styles.botao} pb-5`}>
