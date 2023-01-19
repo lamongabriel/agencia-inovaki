@@ -10,6 +10,8 @@ import Tab from 'react-bootstrap/Tab';
 import Layout from '../components/UI/Layout';
 import BannerTop from '../components/UI/Banner/BannerTop';
 import Text from '../components/UI/Text';
+import ArrowLink from '../components/UI/ArrowLink';
+import Button from '../components/UI/Button';
 
 // Images
 import bg from '../assets/images/Servicos/bg-sobre.png';
@@ -22,7 +24,6 @@ import logoWordpress from '../assets/images/logos/logo-wordpress.svg';
 
 // Styles
 import styles from '../styles/pages/servicos.module.scss';
-import Button from '../components/UI/Button';
 
 export default function Servicos() {
   return (
@@ -46,7 +47,9 @@ export default function Servicos() {
 								industry. Lorem Ipsum has been the industrys standard
 								dummy text ever since the 1500s.
 							</Text>
-							<a href="#">&gt; Saiba Mais &lt;</a>
+							<ArrowLink href='/home'>
+								Saiba mais
+							</ArrowLink>
 						</div>
 					</div>
 
@@ -61,7 +64,9 @@ export default function Servicos() {
 								Nossa agência trabalha com a integração e desenvolvimento de
 								soluções que integrem sua plataforma com as aplicações da Bling.
 							</Text>
-							<a href="#">&gt; Saiba Mais &lt;</a>
+							<ArrowLink href='#'>
+								Saiba mais
+							</ArrowLink>
 						</div>
 					</div>
 
@@ -76,7 +81,9 @@ export default function Servicos() {
 								Gerenciamos e integramos a ferramenta SendGrid em sistema e
 								websites para disparos eficientes de e-mail e mail marketing.
 							</Text>
-							<a href="#">&gt; Saiba Mais &lt;</a>
+							<ArrowLink href='#'>
+								Saiba mais
+							</ArrowLink>
 						</div>
 					</div>
 
@@ -92,7 +99,9 @@ export default function Servicos() {
 								utilização da ferramenta Wordpress. A Inovaki conta com
 								profissionais capacitados e com experiência.
 							</Text>
-							<a href="#">&gt; Saiba Mais &lt;</a>
+							<ArrowLink href='#'>
+								Saiba mais
+							</ArrowLink>
 						</div>
 					</div>
 				</div>
@@ -156,7 +165,9 @@ export default function Servicos() {
 											Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 											Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.
 										</Text>
-										<a href="#" className='mt-5'>&gt; Saiba Mais &lt;</a>
+										<ArrowLink href='#' className='mt-5 d-block'>
+											Saiba mais
+										</ArrowLink>
 									</Tab.Pane>
 								</Tab.Content>
 							</Col>

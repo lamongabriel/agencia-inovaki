@@ -38,17 +38,6 @@
 			p {
 				padding-bottom: 2rem;
 			}
-
-			a {
-				font-size: 24px;
-				font-weight: 700;
-				line-height: 1em;
-				color: var(--black);
-
-				&:hover {
-					text-decoration: underline;
-				}
-			}
 		}
 
 	}
@@ -107,6 +96,9 @@
 	}
 
 	.tabs {
+
+		border-bottom: solid 1px var(--black);
+
 		button {
 			text-transform: uppercase;
 		}
