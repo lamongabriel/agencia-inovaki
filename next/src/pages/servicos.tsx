@@ -22,6 +22,7 @@ import logoWordpress from '../assets/images/logos/logo-wordpress.svg';
 
 // Styles
 import styles from '../styles/pages/servicos.module.scss';
+import Button from '../components/UI/Button';
 
 export default function Servicos() {
   return (
@@ -144,7 +145,7 @@ export default function Servicos() {
 										azevedo
 									</Tab.Pane>
 									<Tab.Pane eventKey="four">
-										dutra
+										<Button small color='#fff' bg='#333333'>WEBSITE</Button>
 									</Tab.Pane>
 								</Tab.Content>
 							</Col>
