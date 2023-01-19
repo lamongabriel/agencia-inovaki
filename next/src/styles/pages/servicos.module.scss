@@ -60,10 +60,10 @@
 
 .services {
 	background-color: var(--yellow-500);
-	padding-bottom: 8rem;
+	padding-bottom: 2rem;
 
 	h3 {
-		font-size: 31px;
+		font-size: 28px;
 		font-weight: 800;
 
 		color: var(--black);
@@ -97,10 +97,16 @@
 
 	.tabs {
 
-		border-bottom: solid 1px var(--black);
-
 		button {
 			text-transform: uppercase;
+		}
+	}
+
+	@media (min-width: 992px) {
+		padding-bottom: 8rem;
+
+		.tabs {
+			border-bottom: solid 1px var(--black);
 		}
 	}
 }

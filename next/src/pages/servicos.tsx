@@ -115,7 +115,7 @@ export default function Servicos() {
 					<Tab.Container id="left-tabs-example" defaultActiveKey="first">
 						<Row>
 							<Col lg={5}>
-								<Nav className="flex-column gap-3 gap-lg-5">
+								<Nav className="flex-column gap-4 gap-lg-5">
 									<Nav.Item>
 										<Nav.Link eventKey="first" className={styles.tabButton}>
 											Desenvolvimento Digital
@@ -142,16 +142,55 @@ export default function Servicos() {
 								</Nav>
 							</Col>
 							<Col lg={2} />
-							<Col lg={5} className={`${styles.tabs} mt-5 mt-lg-0`}>
+							<Col lg={5} className={`${styles.tabs} py-5 py-lg-0`}>
 								<Tab.Content>
 									<Tab.Pane eventKey="first">
-										daniel
+										<div className='d-flex flex-wrap gap-2'>
+											<Button small color='#fff' bg='#333333'>WEBSITE</Button>
+											<Button small color='#fff' bg='#333333'>Hotsite</Button>
+											<Button small color='#fff' bg='#333333'>Landing Page</Button>
+											<Button small color='#fff' bg='#333333'>E-commerce</Button>
+											<Button small color='#fff' bg='#333333'>leads page</Button>
+										</div>
+										<Text className='my-5'>
+											Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+											Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.
+										</Text>
+										<ArrowLink href='#'>
+											Saiba mais
+										</ArrowLink>
 									</Tab.Pane>
 									<Tab.Pane eventKey="second">
-										eller
+										<div className='d-flex flex-wrap gap-2'>
+											<Button small color='#fff' bg='#333333'>WEBSITE</Button>
+											<Button small color='#fff' bg='#333333'>Hotsite</Button>
+											<Button small color='#fff' bg='#333333'>Landing Page</Button>
+											<Button small color='#fff' bg='#333333'>E-commerce</Button>
+											<Button small color='#fff' bg='#333333'>leads page</Button>
+										</div>
+										<Text className='my-5'>
+											Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+											Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.
+										</Text>
+										<ArrowLink href='#'>
+											Saiba mais
+										</ArrowLink>
 									</Tab.Pane>
 									<Tab.Pane eventKey="third">
-										azevedo
+										<div className='d-flex flex-wrap gap-2'>
+											<Button small color='#fff' bg='#333333'>WEBSITE</Button>
+											<Button small color='#fff' bg='#333333'>Hotsite</Button>
+											<Button small color='#fff' bg='#333333'>Landing Page</Button>
+											<Button small color='#fff' bg='#333333'>E-commerce</Button>
+											<Button small color='#fff' bg='#333333'>leads page</Button>
+										</div>
+										<Text className='my-5'>
+											Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+											Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.
+										</Text>
+										<ArrowLink href='#'>
+											Saiba mais
+										</ArrowLink>
 									</Tab.Pane>
 									<Tab.Pane eventKey="four">
 										<div className='d-flex flex-wrap gap-2'>
@@ -161,11 +200,11 @@ export default function Servicos() {
 											<Button small color='#fff' bg='#333333'>E-commerce</Button>
 											<Button small color='#fff' bg='#333333'>leads page</Button>
 										</div>
-										<Text className='mt-5'>
+										<Text className='my-5'>
 											Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 											Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.
 										</Text>
-										<ArrowLink href='#' className='mt-5 d-block'>
+										<ArrowLink href='#'>
 											Saiba mais
 										</ArrowLink>
 									</Tab.Pane>
