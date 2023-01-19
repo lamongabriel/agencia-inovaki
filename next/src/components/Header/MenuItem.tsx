@@ -1,10 +1,12 @@
+import Image, { StaticImageData } from 'next/image';
+import Link from 'next/link';
 import { useRef } from 'react';
 import styles from './styles.module.scss';
 
 interface MenuItemProps {
 	name: string
 	href: string
-	image: string
+	image: StaticImageData
 }
 
 export default function MenuItem({ name, image, href }: MenuItemProps) {
@@ -27,9 +29,9 @@ export default function MenuItem({ name, image, href }: MenuItemProps) {
 			onMouseOut={() => handleHover(false)}
 			ref={ref}
 		>
-			<a href={href}>
+			<Link href={href}>
 				<span>{name}</span>
-			</a>
+			</Link>
 			<div className={styles['fsmenu--scrolling-text']}>
 				<span>{name}</span>
 				<span>{name}</span>
@@ -39,7 +41,7 @@ export default function MenuItem({ name, image, href }: MenuItemProps) {
 			</div>
 			<div className={styles['fsmenu--link-img']}>
 				<div className={styles['fsmenu--img-container']}>
-					<img src={image} alt={name} />
+					<Image src={image} alt={name} />
 				</div>
 			</div>
 		</li>

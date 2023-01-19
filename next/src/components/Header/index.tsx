@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
 
 import { FaBars, FaTimes } from 'react-icons/fa';
 import logoInovaki from '../../assets/images/logos/logo-inovaki.png';
@@ -9,37 +9,44 @@ import styles from './styles.module.scss';
 import Button from '../UI/Button';
 import MenuItem from './MenuItem';
 
+// images
+import imgContato from '../../assets/images/header/header-contato.png';
+import imgOrcamento from '../../assets/images/header/header-orcamentos.png';
+import imgProjetos from '../../assets/images/header/header-projetos.png';
+import imgServicos from '../../assets/images/header/header-servicos.png';
+import imgSobre from '../../assets/images/header/header-sobre.png';
+
 interface HeaderLink {
 	name: string
-	image: string
+	image: StaticImageData
 	href: string
 }
 
 const headerLinks: HeaderLink[] = [
   {
     name: 'QUEM SOMOS',
-    image: 'https://witwinkel.ch/themes/witwinkel/assets/images/content/WITWINKEL-buero-albisrieden-2019.jpg',
-    href: 'https://google.com.br',
+    image: imgSobre,
+    href: '/sobre',
   },
   {
     name: 'SERVIÇOS',
-    image: 'https://witwinkel.ch/themes/witwinkel/assets/projects/gourmet-festival-2019/content12.jpg',
-    href: 'https://google.com.br',
+    image: imgServicos,
+    href: '/servicos',
   },
   {
     name: 'PROJETOS',
-    image: 'https://witwinkel.ch/themes/witwinkel/assets/images/team/wirsind-witwinkel.jpg',
-    href: 'https://google.com.br',
+    image: imgProjetos,
+    href: '/projetos',
   },
   {
     name: 'CONTATO',
-    image: 'https://witwinkel.ch/themes/witwinkel/assets/images/content/WITWINKEL-buero-albisrieden-2019.jpg',
-    href: 'https://google.com.br',
+    image: imgContato,
+    href: '/contato',
   },
   {
     name: 'ORÇAMENTO',
-    image: 'https://witwinkel.ch/themes/witwinkel/assets/projects/metzler/content1.jpg',
-    href: 'https://google.com.br',
+    image: imgOrcamento,
+    href: '/404',
   },
 ];
 
