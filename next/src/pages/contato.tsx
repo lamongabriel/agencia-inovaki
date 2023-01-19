@@ -31,33 +31,33 @@ export default function Contato() {
 					<form action="">
 							<div className="row">
 								<div className="col-lg-6">
-									<label for="fname">SEU NOME</label>
+									<label htmlFor="fname">SEU NOME</label>
 									<input type="text" id="fname" name="fname" />
 								</div>
 								<div className="col-lg-6">
-									<label for="lname">NOME DA EMPRESA</label>
+									<label htmlFor="lname">NOME DA EMPRESA</label>
 									<input type="text" id="lname" name="lname" />
 								</div>
 							</div>
 							<div className="row">
 								<div className="col-lg-6">
-									<label for="fname">E-MAIL DE CONTATO</label>
+									<label htmlFor="fname">E-MAIL DE CONTATO</label>
 									<input type="text" id="fname" name="fname" />
 								</div>
 								<div className="col-lg-6">
-									<label for="lname">TELEFONE OU WHATSAPP</label>
+									<label htmlFor="lname">TELEFONE OU WHATSAPP</label>
 									<input type="text" id="lname" name="lname" />
 								</div>
 							</div>
 							<div>
 								<div>
-									<label for="fname">ASSUNTO</label>
+									<label htmlFor="fname">ASSUNTO</label>
 									<input type="text" id="fname" name="fname" />
 								</div>
 							</div>
 							<div>
 								<div>
-									<label for="lname">MENSAGEM</label>
+									<label htmlFor="lname">MENSAGEM</label>
 									<textarea name="message" rows="10" cols="30"></textarea>
 								</div>
 							</div>
