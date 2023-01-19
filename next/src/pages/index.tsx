@@ -2,6 +2,8 @@ import Image from 'next/image';
 
 // Components
 import { FiArrowRightCircle } from 'react-icons/fi';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination } from 'swiper';
 import Button from '../components/UI/Button';
 import TopSwiper from '../components/UI/Swiper/TopSwiper';
 import CasesSwiper from '../components/UI/Swiper/CasesSwiper';
@@ -42,6 +44,7 @@ import bgWordpress from '../assets/images/Home/bgWordpress.png';
 // Styles
 import styles from '../styles/pages/home.module.scss';
 import InfiniteText from '../components/UI/InfiniteText';
+import 'swiper/css/pagination';
 
 const slides = [
   { image: swiperTop1, alt: 'Conheça nossas soluções.', href: 'https://google.com.br' },
@@ -62,6 +65,17 @@ const casesSlides = [
     image: casesSwiper1,
   },
 ];
+
+const cardsSwiperConfig = {
+  breakpoints: {
+    576: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 4,
+    },
+  },
+};
 
 export default function Home() {
   return (
@@ -172,31 +186,40 @@ export default function Home() {
 				</div>
 			</section>
 			<section className={styles.cards}>
-				<div className="row">
-					<div className={`${styles.cardImg} col-12 col-sm-6 col-lg-3`} style={{ backgroundImage: ` url(${card1.src})` }}>
-						<Text>
-							<b>DESENVOLVIMENTO</b> E INOVAÇÃO
-						</Text>
-					</div>
-
-					<div className={`${styles.cardImg} col-12 col-sm-6 col-lg-3`} style={{ backgroundImage: ` url(${card2.src})` }}>
-						<p>
-							<b>MARKETING</b> ESTRATÉGICO
-						</p>
-					</div>
-
-					<div className={`${styles.cardImg} col-12 col-sm-6 col-lg-3`} style={{ backgroundImage: ` url(${card3.src})` }}>
-						<Text>
-							<b>COMUNICAÇÃO</b> VISUAL
-						</Text>
-					</div>
-
-					<div className={`${styles.cardImg} col-12 col-sm-6 col-lg-3`} style={{ backgroundImage: ` url(${card4.src})` }}>
-						<Text>
-							<b>SISTEMAS</b> PERSONALIZADOS
-						</Text>
-					</div>
-				</div>
+				<Swiper
+					breakpoints={cardsSwiperConfig.breakpoints}
+					modules={[Pagination]}
+					pagination={{ clickable: true }}
+				>
+					<SwiperSlide>
+						<div className={`${styles.cardImg} col-12 col-sm-6 col-lg-3`} style={{ backgroundImage: ` url(${card1.src})` }}>
+							<Text>
+								<b>DESENVOLVIMENTO</b> E INOVAÇÃO
+							</Text>
+						</div>
+					</SwiperSlide>
+					<SwiperSlide>
+						<div className={`${styles.cardImg} col-12 col-sm-6 col-lg-3`} style={{ backgroundImage: ` url(${card2.src})` }}>
+							<p>
+								<b>MARKETING</b> ESTRATÉGICO
+							</p>
+						</div>
+					</SwiperSlide>
+					<SwiperSlide>
+						<div className={`${styles.cardImg} col-12 col-sm-6 col-lg-3`} style={{ backgroundImage: ` url(${card3.src})` }}>
+							<Text>
+								<b>COMUNICAÇÃO</b> VISUAL
+							</Text>
+						</div>
+					</SwiperSlide>
+					<SwiperSlide>
+						<div className={`${styles.cardImg} col-12 col-sm-6 col-lg-3`} style={{ backgroundImage: ` url(${card4.src})` }}>
+							<Text>
+								<b>SISTEMAS</b> PERSONALIZADOS
+							</Text>
+						</div>
+					</SwiperSlide>
+				</Swiper>
 			</section>
 			<section className={styles.clients}>
 				<div className="container mx-auto row">

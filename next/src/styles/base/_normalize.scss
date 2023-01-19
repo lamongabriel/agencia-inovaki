@@ -42,6 +42,11 @@ a{
   text-decoration: none;
 }
 
+img {
+	width: auto;
+	height: auto;
+}
+
 @media(max-width: 1080px){
   html {
     font-size: 93.75%;

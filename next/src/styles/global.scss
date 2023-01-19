@@ -4,6 +4,9 @@
 // Base Rules
 @import "base/normalize";
 
+// Modules
+@import "modules/swiper";
+
 /* Scrollbar Styling */
 ::-webkit-scrollbar {
 	width: 10px;
