@@ -91,15 +91,24 @@
 				}
 			}
 
+			img {
+				filter: drop-shadow(1px 1px 0px var(--gray-200));
+			}
+
+			&.bling {
+				color: var(--white);
+			}
+
 			.areasOfExpertiseBg{
-				background-position: center center;
+				background-position: right bottom;
 				background-repeat: no-repeat;
 				background-size: cover;
 
 				padding: 2rem;
 
 				img {
-					width: auto;
+					width: 8rem;
+					height: auto;
 					margin-bottom: 1rem;
 				}
 			}

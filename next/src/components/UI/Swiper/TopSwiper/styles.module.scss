@@ -16,8 +16,8 @@
 		gap: 0.5rem;
 
 		position: absolute;
-		bottom: 7.5rem;
-		left: 15%;
+		bottom: 2rem;
+		left: calc(50% - 3.25rem);
 		z-index: 10;
 
 		.next, .prev {

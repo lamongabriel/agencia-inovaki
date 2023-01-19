@@ -29,16 +29,16 @@ import card4 from '../assets/images/Home/card-4.png';
 
 import accAmaral from '../assets/images/logos/logo-acc-amaral.png';
 
-import blingLogo from '../assets/images/logos/logo-bling.png';
+import blingLogo from '../assets/images/logos/logo-bling-white.svg';
 import bgBling from '../assets/images/Home/bgBling.png';
 
-import sendgridLogo from '../assets/images/logos/logo-sendgrid.png';
+import sendgridLogo from '../assets/images/logos/logo-sendgrid.svg';
 import bgSendgrid from '../assets/images/Home/bgSendgrid.png';
 
-import vtexLogo from '../assets/images/logos/logo-vtex.png';
+import vtexLogo from '../assets/images/logos/logo-vtex.svg';
 import bgVtex from '../assets/images/Home/bgVtex.png';
 
-import wordpressLogo from '../assets/images/logos/logo-wordpress.png';
+import wordpressLogo from '../assets/images/logos/logo-wordpress.svg';
 import bgWordpress from '../assets/images/Home/bgWordpress.png';
 
 // Styles
@@ -94,7 +94,7 @@ export default function Home() {
 				</InfiniteText>
 
 				<div className={`${styles.whoWeAreContent} container mx-auto row`}>
-					<div className="col-xl-5 col-lg-6 col-12 pb-5 row justify-content-center">
+					<div className="col-xl-5 col-lg-6 col-12 pb-5 row justify-content-center mx-auto">
 						<Image src={avatarSlogan} alt="Não há outro cliente como você ou outra ideia melhor que a sua" />
 					</div>
 
@@ -139,7 +139,7 @@ export default function Home() {
 							</div>
 						</div>
 
-						<div className={`${styles.areasBg} col-lg-8 order-lg-2 order-3`}>
+						<div className={`${styles.areasBg} ${styles.bling} col-lg-8 order-lg-2 order-3`}>
 							<div className={styles.areasOfExpertiseBg} style={{ backgroundImage: `url(${bgBling.src})` }}>
 								<Image src={blingLogo} alt="Bling Logo" />
 								<p>
