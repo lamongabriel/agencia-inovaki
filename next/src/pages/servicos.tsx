@@ -1,5 +1,11 @@
 import Image from 'next/image';
 
+// Bootstrap
+import Col from 'react-bootstrap/Col';
+import Nav from 'react-bootstrap/Nav';
+import Row from 'react-bootstrap/Row';
+import Tab from 'react-bootstrap/Tab';
+
 // Components
 import Layout from '../components/UI/Layout';
 import BannerTop from '../components/UI/Banner/BannerTop';
@@ -24,14 +30,14 @@ export default function Servicos() {
 				<strong>ATUAÇÃO</strong> E SERVIÇOS
 			</BannerTop>
 			<section className={styles.areasOfExperience}>
-				<div className="container d-flex justify-content-center align-items-center pb-5">
+				<div className={`${styles.arrowDown} container d-flex justify-content-center align-items-center pb-5`}>
 					<Image src={arrowDown} alt='Seta apontando para baixo' />
 				</div>
 
 				<div className={`${styles.experience} container mx-auto`}>
 					<div className={`${styles.experienceContent} row pt-3`}>
 						<div className="col-lg-5 pb-5">
-							<Image src={logoVtex} alt='Logo VTEX'/>
+							<Image src={logoVtex} alt='Logo VTEX' />
 						</div>
 						<div className="col-lg-5 offset-lg-2 pb-5">
 							<Text>
@@ -62,7 +68,7 @@ export default function Servicos() {
 
 					<div className={`${styles.experienceContent} row pt-3`}>
 						<div className="col-lg-5 pb-5">
-						<Image src={logoSendgrid} alt='Logo Sendgrid' />
+							<Image src={logoSendgrid} alt='Logo Sendgrid' />
 						</div>
 						<div className="col-lg-5 offset-lg-2 pb-5">
 							<Text>
@@ -88,6 +94,62 @@ export default function Servicos() {
 							<a href="#">&gt; Saiba Mais &lt;</a>
 						</div>
 					</div>
+				</div>
+			</section>
+			<section className={styles.services}>
+				<div className={`${styles.arrowDown} container d-flex justify-content-center align-items-center pb-5`}>
+					<Image src={arrowDown} alt='Seta apontando para baixo' />
+				</div>
+				<div className='container'>
+					<h3>SERVIÇOS</h3>
+					<Tab.Container id="left-tabs-example" defaultActiveKey="first">
+						<Row>
+							<Col lg={5}>
+								<Nav className="flex-column gap-3 gap-lg-5">
+									<Nav.Item>
+										<Nav.Link eventKey="first" className={styles.tabButton}>
+											Desenvolvimento Digital
+										</Nav.Link>
+									</Nav.Item>
+
+									<Nav.Item>
+										<Nav.Link eventKey="second" className={styles.tabButton}>
+											Marketing Estratégico
+										</Nav.Link>
+									</Nav.Item>
+
+									<Nav.Item>
+										<Nav.Link eventKey="third" className={styles.tabButton}>
+											Comunicação Visual
+										</Nav.Link>
+									</Nav.Item>
+
+									<Nav.Item>
+										<Nav.Link eventKey="four" className={styles.tabButton}>
+											Sistemas Personalizados
+										</Nav.Link>
+									</Nav.Item>
+								</Nav>
+							</Col>
+							<Col lg={2} />
+							<Col lg={5}>
+								<Tab.Content>
+									<Tab.Pane eventKey="first">
+										daniel
+									</Tab.Pane>
+									<Tab.Pane eventKey="second">
+										eller
+									</Tab.Pane>
+									<Tab.Pane eventKey="third">
+										azevedo
+									</Tab.Pane>
+									<Tab.Pane eventKey="four">
+										dutra
+									</Tab.Pane>
+								</Tab.Content>
+							</Col>
+						</Row>
+					</Tab.Container>
 				</div>
 			</section>
 		</Layout>
