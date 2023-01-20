@@ -1,3 +1,5 @@
+import ReCAPTCHA from 'react-google-recaptcha';
+
 import { SubmitHandler, useForm } from 'react-hook-form';
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
@@ -34,8 +36,12 @@ export default function Contato() {
   });
 
   const onSubmit: SubmitHandler<ContactFormData> = async (data) => {
-    await sendContactForm(data);
-    setFormSent(true);
+    try {
+      await sendContactForm(data);
+      setFormSent(true);
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
 		<Layout>
@@ -130,6 +136,10 @@ export default function Contato() {
 								errors={formState.errors.message}
 							/>
 						</div>
+						<ReCAPTCHA
+							sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY as string}
+							size='invisible'
+						/>
 						<div className={`${styles.botao} pb-5`}>
 							<input type="submit" value="ENVIAR" />
 						</div>

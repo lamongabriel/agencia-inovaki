@@ -4,14 +4,19 @@ const email = process.env.EMAIL;
 const pass = process.env.EMAIL_PASS;
 
 export const transport = createTransport({
-  service: 'gmail',
+  host: 'mail.inovaki.com.br',
+  port: 587,
+  secure: false,
   auth: {
     user: email,
     pass,
+  },
+  tls: {
+    rejectUnauthorized: false,
   },
 });
 
 export const mailOptions = {
   from: email,
-  to: 'daniel.ellerazevedo@gmail.com',
+  to: email,
 };

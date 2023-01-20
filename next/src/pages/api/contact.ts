@@ -10,13 +10,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
       return res.status(400).json({ message: 'Missing fields.' });
     }
 
-    const messageText = `E-mail: ${data.email}\nName: ${data.name}\n\nMessage: ${data.message}`;
+    const messageText = ` E-mail: ${data.email}\n Nome: ${data.name}\n Telefone: ${data.tel}\n\n Mensagem: ${data.message}`;
 
     try {
       await transport.sendMail({
         ...mailOptions,
         subject: data.subject,
         text: messageText,
+        replyTo: data.email,
       });
 
       return res.status(200).json({ message: 'Ok' });
