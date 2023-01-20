@@ -7,5 +7,5 @@ export interface ContactFormData {
 	message: string
 }
 export interface TokenContactFormData extends ContactFormData {
-  // token: string
+  token: string
 }

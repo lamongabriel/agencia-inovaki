@@ -1,3 +1,4 @@
+import { useRef, useState } from 'react';
 import ReCAPTCHA from 'react-google-recaptcha';
 
 import { SubmitHandler, useForm } from 'react-hook-form';
@@ -5,7 +6,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
 import { BsFillChatDotsFill } from 'react-icons/bs';
-import { useState } from 'react';
+import { toast } from 'react-toastify';
 import BannerTop from '../components/UI/Banner/BannerTop';
 
 import bg from '../assets/images/Sobre/bg-sobre.png';
@@ -30,6 +31,7 @@ const ContactFormDataSchema = yup.object().shape({
 
 export default function Contato() {
   const [formSent, setFormSent] = useState(false);
+  const reRef = useRef<ReCAPTCHA>(null);
 
   const { register, handleSubmit, formState } = useForm<ContactFormData>({
     resolver: yupResolver(ContactFormDataSchema),
@@ -37,10 +39,24 @@ export default function Contato() {
 
   const onSubmit: SubmitHandler<ContactFormData> = async (data) => {
     try {
-      await sendContactForm(data);
-      setFormSent(true);
+      const token = await reRef.current?.executeAsync();
+      reRef.current?.reset();
+
+      if (!token) {
+        throw new Error('No token was provided.');
+      }
+
+      const response = await sendContactForm({ ...data, token });
+
+      if (response.status === 200) {
+        setFormSent(true);
+        toast.success('Enviado');
+        return;
+      }
+
+      throw new Error();
     } catch (error) {
-      console.log(error);
+      toast.error('Erro, tente novamente');
     }
   };
   return (
@@ -139,6 +155,7 @@ export default function Contato() {
 						<ReCAPTCHA
 							sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY as string}
 							size='invisible'
+							ref={reRef}
 						/>
 						<div className={`${styles.botao} pb-5`}>
 							<input type="submit" value="ENVIAR" />
