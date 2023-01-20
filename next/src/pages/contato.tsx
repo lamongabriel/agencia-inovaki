@@ -13,14 +13,8 @@ import Text from '../components/UI/Text';
 import Input from '../components/Form/Input';
 import TextArea from '../components/Form/Textarea';
 
-interface ContactFormData {
-	name: string
-	organization: string
-	email: string
-	tel: string
-	subject: string
-	message: string
-}
+import { ContactFormData } from '../@types/form';
+import sendContactForm from '../lib/contact';
 
 const ContactFormDataSchema = yup.object().shape({
   name: yup.string().required('Campo obrigatório.'),
@@ -36,8 +30,9 @@ export default function Contato() {
     resolver: yupResolver(ContactFormDataSchema),
   });
 
-  const onSubmit: SubmitHandler<ContactFormData> = (data) => console.log(data);
-
+  const onSubmit: SubmitHandler<ContactFormData> = async (data) => {
+    await sendContactForm(data);
+  };
   return (
 		<Layout>
 			<BannerTop image={bg} auxiliaryText="Conheça nossa Agência!">
