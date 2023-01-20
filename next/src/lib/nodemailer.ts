@@ -13,5 +13,5 @@ export const transport = createTransport({
 
 export const mailOptions = {
   from: email,
-  to: 'gabriel@inovaki.com.br',
+  to: 'daniel.ellerazevedo@gmail.com',
 };

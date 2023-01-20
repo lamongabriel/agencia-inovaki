@@ -22,9 +22,17 @@
 		form {
 			width: 90% !important;
 			margin: 2rem auto;
+			max-height: 100rem;
+
+			transition: max-height 1s ease-in;
 
 			>div > div {
 				padding-bottom: 2rem;
+			}
+
+			&.sent{
+				max-height: 0;
+				overflow: hidden;
 			}
 		}
 

@@ -3,6 +3,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
 import { BsFillChatDotsFill } from 'react-icons/bs';
+import { useState } from 'react';
 import BannerTop from '../components/UI/Banner/BannerTop';
 
 import bg from '../assets/images/Sobre/bg-sobre.png';
@@ -26,12 +27,15 @@ const ContactFormDataSchema = yup.object().shape({
 });
 
 export default function Contato() {
+  const [formSent, setFormSent] = useState(false);
+
   const { register, handleSubmit, formState } = useForm<ContactFormData>({
     resolver: yupResolver(ContactFormDataSchema),
   });
 
   const onSubmit: SubmitHandler<ContactFormData> = async (data) => {
     await sendContactForm(data);
+    setFormSent(true);
   };
   return (
 		<Layout>
@@ -45,13 +49,16 @@ export default function Contato() {
 						<BsFillChatDotsFill size={64} color='#000' />
 					</div>
 					<Text>
-						Utilize o formulário abaixo para os enviar
-						uma mensagem direta. Após o recebimento da
-						mensagem entraremos em cotato pelo e-mail informado
-						baixo. Para que o contato seja feito corretamente,
-						preencha todos os campos.
+						{!formSent
+						  ?	`Utilize o formulário abaixo para os enviar
+								uma mensagem direta. Após o recebimento da
+								mensagem entraremos em cotato pelo e-mail informado
+								baixo. Para que o contato seja feito corretamente,
+								preencha todos os campos.`
+						  : 'Obrigado, em breve estaremos entrando em contato pelo e-mail informado.'
+						}
 					</Text>
-					<form onSubmit={handleSubmit(onSubmit)}>
+					<form className={formSent ? styles.sent : ''} onSubmit={handleSubmit(onSubmit)}>
 						<div className="row">
 							<div className="col-lg-6">
 								<Input
