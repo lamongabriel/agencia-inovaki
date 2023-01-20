@@ -73,6 +73,10 @@
 	}
 }
 
+.formLoading {
+	filter: blur(5px);
+}
+
 @media ( max-width: 576px ){
 
 	.contact {

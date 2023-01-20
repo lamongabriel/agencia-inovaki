@@ -19,6 +19,7 @@ import TextArea from '../components/Form/Textarea';
 
 import { ContactFormData } from '../@types/form';
 import sendContactForm from '../lib/contact';
+import LoadingSpinner from '../components/LoadingSpinner';
 
 const ContactFormDataSchema = yup.object().shape({
   name: yup.string().required('Campo obrigatório.'),
@@ -31,6 +32,7 @@ const ContactFormDataSchema = yup.object().shape({
 
 export default function Contato() {
   const [formSent, setFormSent] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const reRef = useRef<ReCAPTCHA>(null);
 
   const { register, handleSubmit, formState } = useForm<ContactFormData>({
@@ -46,17 +48,20 @@ export default function Contato() {
         throw new Error('No token was provided.');
       }
 
+      setIsLoading(true);
       const response = await sendContactForm({ ...data, token });
 
       if (response.status === 200) {
         setFormSent(true);
         toast.success('Enviado');
+        setIsLoading(false);
         return;
       }
 
       throw new Error();
     } catch (error) {
       toast.error('Erro, tente novamente');
+      setIsLoading(false);
     }
   };
   return (
@@ -68,7 +73,8 @@ export default function Contato() {
 				<div className={`${styles.formContainer} container`}>
 					<div className={`${styles.arrowUp} mx-auto`}></div>
 					<div className="text-center pt-4">
-						<BsFillChatDotsFill size={64} color='#000' />
+						<BsFillChatDotsFill size={64} color='#000' className='mb-4' />
+						{isLoading && <LoadingSpinner />}
 					</div>
 					<Text>
 						{!formSent
@@ -80,7 +86,10 @@ export default function Contato() {
 						  : 'Obrigado, em breve estaremos entrando em contato pelo e-mail informado.'
 						}
 					</Text>
-					<form className={formSent ? styles.sent : ''} onSubmit={handleSubmit(onSubmit)}>
+					<form
+						className={`${formSent ? styles.sent : ''} ${isLoading ? styles.formLoading : ''}`}
+						onSubmit={handleSubmit(onSubmit)}
+					>
 						<div className="row">
 							<div className="col-lg-6">
 								<Input
