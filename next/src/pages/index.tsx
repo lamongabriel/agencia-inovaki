@@ -27,8 +27,6 @@ import card2 from '../assets/images/Home/card-2.png';
 import card3 from '../assets/images/Home/card-3.png';
 import card4 from '../assets/images/Home/card-4.png';
 
-import accAmaral from '../assets/images/logos/logo-acc-amaral.png';
-
 import blingLogo from '../assets/images/logos/logo-bling-white.svg';
 import bgBling from '../assets/images/Home/bgBling.png';
 
@@ -40,6 +38,16 @@ import bgVtex from '../assets/images/Home/bgVtex.png';
 
 import wordpressLogo from '../assets/images/logos/logo-wordpress.svg';
 import bgWordpress from '../assets/images/Home/bgWordpress.png';
+
+import logoApae from '../assets/images/logos/logo-apae.png';
+import logoApecom from '../assets/images/logos/logo-apecom.png';
+import logoAquamar from '../assets/images/logos/logo-aquamar.png';
+import logoCustaPouco from '../assets/images/logos/logo-custapouco.png';
+import logoFashly from '../assets/images/logos/logo-fashly.png';
+import logoForeverLiss from '../assets/images/logos/logo-foreveliss.png';
+import logoHope from '../assets/images/logos/logo-hope.png';
+import logoIPB from '../assets/images/logos/logo-ipb.png';
+import logoMastercar from '../assets/images/logos/logo-mastercar.png';
 
 // Styles
 import styles from '../styles/pages/home.module.scss';
@@ -179,10 +187,11 @@ export default function Home() {
 					</h1>
 
 					<CasesSwiper slides={casesSlides} />
-
-					<Button rightIcon={FiArrowRightCircle}>
-						VER TODOS OS PROJETOS
-					</Button>
+					<div className='d-flex'>
+						<Button rightIcon={FiArrowRightCircle}>
+							VER TODOS OS PROJETOS
+						</Button>
+					</div>
 				</div>
 			</section>
 			<section className={styles.cards}>
@@ -224,16 +233,16 @@ export default function Home() {
 			<section className={styles.clients}>
 				<div className="container mx-auto row">
 					<div className="col-lg-6 order-lg-1 order-2 mx-auto">
-						<div className="clients-img row row-cols-lg-3 row-cols-sm-2">
-							<Image src={accAmaral} alt='Acc Amaral Logo'/>
-							<Image src={accAmaral} alt='Acc Amaral Logo'/>
-							<Image src={accAmaral} alt='Acc Amaral Logo'/>
-							<Image src={accAmaral} alt='Acc Amaral Logo'/>
-							<Image src={accAmaral} alt='Acc Amaral Logo'/>
-							<Image src={accAmaral} alt='Acc Amaral Logo'/>
-							<Image src={accAmaral} alt='Acc Amaral Logo'/>
-							<Image src={accAmaral} alt='Acc Amaral Logo'/>
-							<Image src={accAmaral} alt='Acc Amaral Logo'/>
+						<div className="row row-cols-lg-3 row-cols-2 justify-content-around">
+							<Image src={logoApae} alt='Apae Logo'/>
+							<Image src={logoApecom} alt='Apecom Logo'/>
+							<Image src={logoAquamar} alt='Aquamar Logo'/>
+							<Image src={logoCustaPouco} alt='Custa Pouco Logo'/>
+							<Image src={logoFashly} alt='Fashly Logo'/>
+							<Image src={logoForeverLiss} alt='Foreverliss Logo'/>
+							<Image src={logoHope} alt='Hope Logo'/>
+							<Image src={logoIPB} alt='IPB Logo'/>
+							<Image src={logoMastercar} alt='Acc Amaral Logo'/>
 						</div>
 					</div>
 

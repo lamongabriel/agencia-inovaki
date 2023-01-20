@@ -1,7 +1,9 @@
 .swiper-pagination-bullet {
-	background-color: var(--yellow-600) !important;
+	background-color: var(--white) !important;
+	opacity: 0.8 !important;
 
 	&.swiper-pagination-bullet-active {
 		background-color: var(--yellow-500) !important;
+		opacity: 1 !important;
 	}
 }
