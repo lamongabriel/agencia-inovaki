@@ -1,0 +1,38 @@
+.label {
+	display: block;
+
+	padding-bottom: 1rem;
+
+	font-size: 1.5rem;
+	font-weight: 800;
+	color: var(--black);
+
+	text-transform: uppercase;
+}
+
+.input {
+	background: none;
+	border-bottom: 1px solid var(--black);
+
+	width: 100%;
+	padding: 0.25rem;
+
+	&:focus {
+		outline: 1px solid var(--black);
+		border-radius: 0.25rem;
+	}
+
+	&::-webkit-outer-spin-button,
+	&::-webkit-inner-spin-button {
+		-webkit-appearance: none;
+		margin: 0;
+	}
+
+	&[type=number] {
+		-moz-appearance: textfield;
+	}
+}
+
+.error {
+	color: var(--red-500);
+}

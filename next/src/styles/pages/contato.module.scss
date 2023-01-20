@@ -22,44 +22,18 @@
 		form {
 			width: 90% !important;
 			margin: 2rem auto;
+			max-height: 100rem;
+
+			transition: max-height 1s ease-in;
 
 			>div > div {
 				padding-bottom: 2rem;
 			}
-		}
 
-		label {
-			display: block;
-
-			padding-bottom: 1rem;
-
-			font-size: 1.5rem;
-			font-weight: 800;
-			color: var(--black);
-		}
-
-		input {
-			background: none;
-			border-bottom: 1px solid var(--black);
-
-			width: 100%;
-			padding: 0.1rem;
-		}
-
-		textarea {
-			width: 100%;
-			color: var(--white);
-
-			background-color: var(--black);
-
-			resize: none;
-			padding: 1rem;
-		}
-
-		textarea:focus,
-		input:focus {
-			box-shadow: 0 0 0 0;
-			outline: 0;
+			&.sent{
+				max-height: 0;
+				overflow: hidden;
+			}
 		}
 
 		.botao {
@@ -76,6 +50,11 @@
 				font-size: 1.25rem;
 				font-weight: 800;
 				color: var(--white);
+				transition: filter 200ms;
+
+				&:hover {
+					filter: opacity(0.9);
+				}
 			}
 		}
 
