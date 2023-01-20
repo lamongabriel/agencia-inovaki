@@ -6,6 +6,8 @@ import Layout from '../components/UI/Layout';
 
 import styles from '../styles/pages/contato.module.scss';
 import Text from '../components/UI/Text';
+import Input from '../components/Form/Input';
+import TextArea from '../components/Form/Textarea';
 
 export default function Contato() {
   return (
@@ -29,35 +31,62 @@ export default function Contato() {
 					<form action="">
 							<div className="row">
 								<div className="col-lg-6">
-									<label htmlFor="fname">SEU NOME</label>
-									<input type="text" id="fname" name="fname" />
+									<Input
+										id='name'
+										name='name'
+										type='text'
+										label='Seu nome'
+										autoComplete='name'
+									/>
 								</div>
 								<div className="col-lg-6">
-									<label htmlFor="lname">NOME DA EMPRESA</label>
-									<input type="text" id="lname" name="lname" />
+									<Input
+										id='organization'
+										name='organization'
+										type='text'
+										label='nome da empresa'
+										autoComplete='organization'
+									/>
 								</div>
 							</div>
 							<div className="row">
 								<div className="col-lg-6">
-									<label htmlFor="fname">E-MAIL DE CONTATO</label>
-									<input type="text" id="fname" name="fname" />
+									<Input
+										id='email'
+										name='email'
+										type='email'
+										label='e-mail de contato'
+										autoComplete='email'
+									/>
 								</div>
 								<div className="col-lg-6">
-									<label htmlFor="lname">TELEFONE OU WHATSAPP</label>
-									<input type="text" id="lname" name="lname" />
+									<Input
+										id='tel'
+										name='tel'
+										type='tel'
+										label='Telefone ou Whatsapp'
+										autoComplete='tel'
+									/>
 								</div>
 							</div>
 							<div>
 								<div>
-									<label htmlFor="fname">ASSUNTO</label>
-									<input type="text" id="fname" name="fname" />
+									<Input
+										id='subject'
+										name='subject'
+										type='text'
+										label='Assunto'
+										autoComplete='off'
+									/>
 								</div>
 							</div>
 							<div>
-								<div>
-									<label htmlFor="lname">MENSAGEM</label>
-									<textarea name="message" rows={10} cols={30}></textarea>
-								</div>
+								<TextArea
+									id='message'
+									name='message'
+									label='MENSAGEM'
+									autoComplete='off'
+								/>
 							</div>
 						<div className={`${styles.botao} pb-5`}>
 							<input type="submit" value="ENVIAR" />
