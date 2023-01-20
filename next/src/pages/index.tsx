@@ -179,10 +179,11 @@ export default function Home() {
 					</h1>
 
 					<CasesSwiper slides={casesSlides} />
-
-					<Button rightIcon={FiArrowRightCircle}>
-						VER TODOS OS PROJETOS
-					</Button>
+					<div className='d-flex'>
+						<Button rightIcon={FiArrowRightCircle}>
+							VER TODOS OS PROJETOS
+						</Button>
+					</div>
 				</div>
 			</section>
 			<section className={styles.cards}>
