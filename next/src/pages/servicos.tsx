@@ -12,6 +12,7 @@ import BannerTop from '../components/UI/Banner/BannerTop';
 import Text from '../components/UI/Text';
 import ArrowLink from '../components/UI/ArrowLink';
 import Button from '../components/UI/Button';
+import SEO from '../components/SEO';
 
 // Images
 import bg from '../assets/images/Servicos/bg-sobre.png';
@@ -28,6 +29,12 @@ import styles from '../styles/pages/servicos.module.scss';
 export default function Servicos() {
   return (
 		<Layout>
+			<SEO
+				pageTitle='Inovaki | Atuação e Serviços'
+				pageDescription='Conheça as nossas soluções em inovação e desenvolvimento digital.'
+				pageUrl='https://inovaki.vercel.app/servicos'
+				pageImage='/images/inovaki-bg.png'
+			/>
 			<BannerTop auxiliaryText="O que podemos fazer pelo seu negócio" image={bg}>
 				<strong>ATUAÇÃO</strong> E SERVIÇOS
 			</BannerTop>

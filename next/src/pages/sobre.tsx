@@ -27,10 +27,17 @@ import logoMastercar from '../assets/images/logos/logo-mastercar.png';
 import logoPestalozzi from '../assets/images/logos/logo-pestalozzi.png';
 
 import Button from '../components/UI/Button';
+import SEO from '../components/SEO';
 
 export default function Sobre() {
   return (
 		<Layout>
+			<SEO
+				pageTitle='Inovaki | Quem Somos'
+				pageDescription='Local onde a sua identidade digital é criada e desenvolvida de forma única.'
+				pageUrl='https://inovaki.vercel.app/sobre'
+				pageImage='/images/inovaki-bg.png'
+			/>
 			<BannerTop image={bg} auxiliaryText="Conheça nossa Agência!">
 				<strong>QUEM</strong>SOMOS
 			</BannerTop>

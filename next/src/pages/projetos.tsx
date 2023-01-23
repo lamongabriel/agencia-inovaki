@@ -59,7 +59,7 @@ export default function Projetos() {
 				pageTitle='Inovaki | Cases e Projetos'
 				pageDescription='Conheça as nossas soluções em inovação e desenvolvimento digital.'
 				pageUrl='https://inovaki.vercel.app/projetos'
-				pageImage='/images/logo-inovaki-square.png'
+				pageImage='/images/inovaki-bg.png'
 			/>
 			<BannerTop image={bg} auxiliaryText='Conheça nossa Agência!'>
 				<strong>CASES</strong> E PROJETOS

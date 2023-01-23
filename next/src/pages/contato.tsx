@@ -20,6 +20,7 @@ import TextArea from '../components/Form/Textarea';
 import { ContactFormData } from '../@types/form';
 import sendContactForm from '../lib/contact';
 import LoadingSpinner from '../components/LoadingSpinner';
+import SEO from '../components/SEO';
 
 const ContactFormDataSchema = yup.object().shape({
   name: yup.string().required('Campo obrigatório.'),
@@ -66,6 +67,12 @@ export default function Contato() {
   };
   return (
 		<Layout>
+			<SEO
+				pageTitle='Inovaki | Contato'
+				pageDescription='Utilize nosso formulário ou as informações de contato para falar conosco.'
+				pageUrl='https://inovaki.vercel.app/contato'
+				pageImage='/images/inovaki-bg.png'
+			/>
 			<BannerTop image={bg} auxiliaryText="Conheça nossa Agência!">
 				<strong>FALE</strong>CONOSCO
 			</BannerTop>

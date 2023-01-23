@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import Head from 'next/head';
 import Button from '../components/UI/Button';
 import Heading from '../components/UI/Heading';
 import Layout from '../components/UI/Layout';
@@ -12,6 +13,12 @@ export default function P404() {
 
   return (
 		<Layout>
+			<Head>
+				<title>404 - Não encontrado</title>
+
+				<meta name="robots" content="noindex" />
+				<meta name="googlebot" content="noindex" />
+			</Head>
 			<div className={styles.box} style={{ backgroundImage: `url(${bg.src})` }}>
 				<div>
 					<Heading>
