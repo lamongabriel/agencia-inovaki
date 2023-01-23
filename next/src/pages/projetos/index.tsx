@@ -19,9 +19,10 @@ import custaPouco from '../../assets/images/Projetos/custa-pouco.png';
 import Fashly from '../../assets/images/Projetos/fashion-masks.png';
 
 // Styles
-import styles from '../../styles/pages/projetos/index.module.scss';
+import styles from '../../styles/pages/projetos.module.scss';
 import Heading from '../../components/UI/Heading';
 import Text from '../../components/UI/Text';
+import SEO from '../../components/SEO';
 
 interface CustomToggleProps {
 	children: ReactNode
@@ -54,6 +55,12 @@ function ContextAwareToggle({ children, eventKey, callback }: CustomToggleProps)
 export default function Projetos() {
   return (
 		<Layout>
+			<SEO
+				pageTitle='Inovaki | Cases e Projetos'
+				pageDescription='Conheça as nossas soluções em inovação e desenvolvimento digital.'
+				pageUrl='https://inovaki.vercel.app/projetos'
+				pageImage='/images/inovaki-bg.png'
+			/>
 			<BannerTop image={bg} auxiliaryText='Conheça nossa Agência!'>
 				<strong>CASES</strong> E PROJETOS
 			</BannerTop>
