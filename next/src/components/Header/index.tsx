@@ -2,12 +2,10 @@ import { useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
 
-import { FaBars, FaTimes } from 'react-icons/fa';
 import logoInovaki from '../../assets/images/logos/logo-inovaki.png';
 import logoInovakiWhite from '../../assets/images/logos/logo-inovaki-white.png';
 import styles from './styles.module.scss';
 
-import Button from '../UI/Button';
 import MenuItem from './MenuItem';
 
 // images
@@ -53,6 +51,8 @@ const headerLinks: HeaderLink[] = [
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const [headerBg, setHeaderBg] = useState(false);
+
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -62,6 +62,23 @@ export default function Header() {
     }
     document.body.style.overflowY = 'auto';
   }, [menuOpen]);
+
+  useEffect(() => {
+    const onScroll = (e: Event) => {
+      const window = e.currentTarget as Window;
+
+      if (window.scrollY === 0) {
+        return setHeaderBg(false);
+      }
+
+      return setHeaderBg(true);
+    };
+
+    window.addEventListener('scroll', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+    };
+  }, []);
 
   function handleToggleMenu() {
     if (!menuOpen) {
@@ -74,31 +91,47 @@ export default function Header() {
     setMenuOpen((prev) => !prev);
   }
 
+  function getCurrentLogo() {
+    if (headerBg || menuOpen) {
+      return logoInovakiWhite;
+    }
+
+    return logoInovaki;
+  }
+
   return (
 		<>
-			<header className={styles.header}>
+			<header className={`${styles.header} ${(headerBg && !menuOpen) && styles.headerBg}`}>
 				<Link href='/'>
 					<Image
-						src={menuOpen ? logoInovakiWhite : logoInovaki}
+						src={getCurrentLogo()}
 						alt='Logo Inovaki'
 					/>
 				</Link>
-				<Button
-					color={menuOpen ? '#fff' : '#000'}
-					bg={menuOpen ? '#000' : undefined}
-					leftIcon={menuOpen ? FaTimes : FaBars}
-					small
-					onClick={handleToggleMenu}
-				/>
+				<div className={styles.btnBox}>
+					<button
+						className={menuOpen ? styles.btnOpen : styles.btnClosed}
+						onClick={handleToggleMenu}
+						aria-haspopup="true"
+						aria-controls="mainmenu"
+						aria-expanded={menuOpen}
+					>
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+				</div>
 			</header>
 			<div
+				id='mainmenu'
 				className={styles.fsmenu}
 				ref={menuRef}
+				aria-hidden={!menuOpen}
 			>
 				<div className={styles['fsmenu--container']}>
 					<div className={styles['fsmenu--text-block']}>
 						<div className={styles['fsmenu--text-container']}>
-							<ul className={styles['fsmenu--list']}>
+							<ul className={styles['fsmenu--list']} role='menu'>
 								{headerLinks.map((opt, index) => (
 									<MenuItem
 										key={index}

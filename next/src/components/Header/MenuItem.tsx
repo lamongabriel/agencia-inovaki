@@ -29,7 +29,7 @@ export default function MenuItem({ name, image, href }: MenuItemProps) {
 			onMouseOut={() => handleHover(false)}
 			ref={ref}
 		>
-			<Link href={href}>
+			<Link href={href} role='menuitem'>
 				<span>{name}</span>
 			</Link>
 			<div className={styles['fsmenu--scrolling-text']}>

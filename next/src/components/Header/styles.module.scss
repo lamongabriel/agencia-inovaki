@@ -13,15 +13,76 @@
 
 	z-index: 1005;
 
+	background-color: transparent;
+	transition: 200ms background-color;
+
 	img {
 		width: 140px;
 		height: auto;
 	}
 
 	@media (min-width: 992px) {
-		padding: 2rem 3rem 3rem;
+		padding: 1.2rem 3rem;
 
 		img {width: 214px;}
+	}
+
+	&.headerBg {
+		background-color: var(--yellow-500);
+		box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+	}
+
+	.btnBox {
+		border-radius: 2px;
+		position: relative;
+
+		>button {
+			width: 2rem;
+			cursor: pointer;
+			background-color: transparent;
+
+			span {
+				display: block;
+				width: 100%;
+				border-radius: 3px;
+				height: 4px;
+				background: #000;
+				transition: all .3s;
+				position: relative;
+			}
+
+			span + span {
+				margin-top: 5px;
+			}
+
+			&.btnOpen {
+				span:nth-child(1) {
+					animation: ease .7s top forwards;
+				}
+
+				span:nth-child(2) {
+					animation: ease .7s scaled forwards;
+				}
+
+				span:nth-child(3) {
+					animation: ease .7s bottom forwards;
+				}
+			}
+
+			&.btnClosed {
+				span:nth-child(1) {
+					animation: ease .7s top-2 forwards;
+				}
+
+				span:nth-child(2) {
+					animation: ease .7s scaled-2 forwards;
+				}
+
+				span:nth-child(3) {
+					animation: ease .7s bottom-2 forwards;
+				}
+			}
+		}
 	}
 }
 
@@ -371,5 +432,88 @@
   }
   100% {
     transform: translate(-40%, -100%);
+  }
+}
+
+// button
+
+@keyframes top {
+  0% {
+    top: 0;
+    transform: rotate(0);
+  }
+  50% {
+    top: 9px;
+    transform: rotate(0);
+  }
+  100% {
+    top: 9px;
+    transform: rotate(45deg);
+  }
+}
+
+@keyframes top-2 {
+  0% {
+    top: 9px;
+    transform: rotate(45deg);
+  }
+  50% {
+    top: 9px;
+    transform: rotate(0deg);
+  }
+  100% {
+    top: 0;
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes bottom {
+  0% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+  50% {
+    bottom: 9px;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 9px;
+    transform: rotate(135deg);
+  }
+}
+
+@keyframes bottom-2 {
+  0% {
+    bottom: 9px;
+    transform: rotate(135deg);
+  }
+  50% {
+    bottom: 9px;
+    transform: rotate(0);
+  }
+  100% {
+    bottom: 0;
+    transform: rotate(0);
+  }
+}
+
+@keyframes scaled {
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+
+@keyframes scaled-2 {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
   }
 }
