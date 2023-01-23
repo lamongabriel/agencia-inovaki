@@ -104,6 +104,7 @@ export default function Header() {
 			<header className={`${styles.header} ${(headerBg && !menuOpen) && styles.headerBg}`}>
 				<Link href='/'>
 					<Image
+						priority
 						src={getCurrentLogo()}
 						alt='Logo Inovaki'
 					/>
