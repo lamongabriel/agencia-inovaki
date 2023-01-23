@@ -3,6 +3,7 @@
 	"rules": {
 		"no-tabs": "off",
 		"import/extensions": "off",
-		"no-mixed-spaces-and-tabs": "off"
+		"no-mixed-spaces-and-tabs": "off",
+		"linebreak-style": "off"
 	}
 }
