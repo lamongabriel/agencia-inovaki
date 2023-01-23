@@ -90,7 +90,7 @@ export default function Home() {
   return (
 		<Layout>
 			<SEO
-				pageTitle='Inovaki - Sua identidade Digital'
+				pageTitle='Inovaki | Sua identidade Digital'
 				pageDescription='Agência digital focada nos resultados da sua empresa, desenvolvemos projetos focados em evolução da comunicação digital e presença online. Forme aqui sua identidade digital!'
 				pageUrl='https://inovaki.vercel.app/'
 				pageImage='/images/inovaki-bg.png'
