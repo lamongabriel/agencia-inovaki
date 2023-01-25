@@ -4,6 +4,8 @@ import Image from 'next/image';
 import { FiArrowRightCircle } from 'react-icons/fi';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 import Button from '../components/UI/Button';
 import TopSwiper from '../components/UI/Swiper/TopSwiper';
 import CasesSwiper from '../components/UI/Swiper/CasesSwiper';
@@ -87,6 +89,8 @@ const cardsSwiperConfig = {
 };
 
 export default function Home() {
+  const router = useRouter();
+
   return (
 		<Layout>
 			<SEO
@@ -123,7 +127,7 @@ export default function Home() {
 							começar bem, nossa equipe é especializada no desenvolvimento
 							de identidade visual e comunicação digital.
 						</Text>
-						<a href="#">&#62; Conheça nossa Agência &#60;</a>
+						<Link href="/sobre">&#62; Conheça nossa Agência &#60;</Link>
 					</div>
 				</div>
 
@@ -140,7 +144,7 @@ export default function Home() {
 								<p>
 									Desenvolvimento e suporte de Websites utilizando a ferramenta Wordpress.
 								</p>
-								<a href="#">&#62; Saiba Mais</a>
+								<Link href="https://br.wordpress.org/">&#62; Saiba Mais</Link>
 							</div>
 						</div>
 
@@ -150,7 +154,7 @@ export default function Home() {
 								<p>
 									Desenvolvimento e suporte especializado da plataforma Vtex e Vtex IO.
 								</p>
-								<a href="#">&#62; Saiba Mais</a>
+								<Link href="https://vtex.com/br-pt/">&#62; Saiba Mais</Link>
 							</div>
 						</div>
 
@@ -161,7 +165,7 @@ export default function Home() {
 									Nossa agência trabalha com a integração e desenvolvimento de
 									soluções que integrem sua plataforma com as aplicações da Bling.
 								</p>
-								<a href="#">&#62; Saiba Mais</a>
+								<Link href="https://www.bling.com.br/">&#62; Saiba Mais</Link>
 							</div>
 						</div>
 
@@ -172,7 +176,7 @@ export default function Home() {
 									Gerenciamos e integramos a ferramenta SendGrid em sistema e
 									websites para disparos eficientes de e-mail e mail marketing.
 								</p>
-								<a href="#">&#62; Saiba Mais</a>
+								<Link href="https://sendgrid.com/">&#62; Saiba Mais</Link>
 							</div>
 						</div>
 
@@ -195,7 +199,7 @@ export default function Home() {
 
 					<CasesSwiper slides={casesSlides} />
 					<div className='d-flex'>
-						<Button rightIcon={FiArrowRightCircle}>
+						<Button onClick={() => router.push('/projetos')} rightIcon={FiArrowRightCircle}>
 							VER TODOS OS PROJETOS
 						</Button>
 					</div>
@@ -241,15 +245,51 @@ export default function Home() {
 				<div className="container mx-auto row">
 					<div className="col-lg-6 order-lg-1 order-2 mx-auto">
 						<div className="row row-cols-lg-3 row-cols-2 justify-content-around">
-							<Image src={logoApae} alt='Apae Logo'/>
-							<Image src={logoApecom} alt='Apecom Logo'/>
-							<Image src={logoAquamar} alt='Aquamar Logo'/>
-							<Image src={logoCustaPouco} alt='Custa Pouco Logo'/>
-							<Image src={logoFashly} alt='Fashly Logo'/>
-							<Image src={logoForeverLiss} alt='Foreverliss Logo'/>
-							<Image src={logoHope} alt='Hope Logo'/>
-							<Image src={logoIPB} alt='IPB Logo'/>
-							<Image src={logoMastercar} alt='Acc Amaral Logo'/>
+							<Link href="https://www.apaebrasil.org.br">
+								<div>
+									<Image src={logoApae} alt='Apae Logo'/>
+								</div>
+							</Link>
+							<Link href="https://cta.ipb.org.br">
+								<div>
+									<Image src={logoApecom} alt='Apecom Logo'/>
+								</div>
+							</Link>
+							<Link href="https://www.eaquamar.com.br">
+								<div>
+									<Image src={logoAquamar} alt='Aquamar Logo'/>
+								</div>
+							</Link>
+							<Link href="https://www.custapoucoseduzir.com.br">
+								<div>
+									<Image src={logoCustaPouco} alt='Custa Pouco Logo'/>
+								</div>
+							</Link>
+							<Link href="https://www.instagram.com/fashlybrasil/">
+								<div>
+									<Image src={logoFashly} alt='Fashly Logo'/>
+								</div>
+							</Link>
+							<Link href="https://www.foreverliss.com.br">
+								<div>
+									<Image src={logoForeverLiss} alt='Foreverliss Logo'/>
+								</div>
+							</Link>
+							<Link href="https://www.hopelingerie.com.br">
+								<div>
+									<Image src={logoHope} alt='Hope Logo'/>
+								</div>
+							</Link>
+							<Link href="https://ipb.org.br">
+								<div>
+									<Image src={logoIPB} alt='IPB Logo'/>
+								</div>
+							</Link>
+							<Link href="https://mastercarabm.com.br">
+								<div>
+									<Image src={logoMastercar} alt='Acc Amaral Logo'/>
+								</div>
+							</Link>
 						</div>
 					</div>
 
@@ -261,7 +301,7 @@ export default function Home() {
 							Temos a sorte de ter desenvolvido projeto para todos os setores de atividade
 							e portes de empresas, em diversas formas de programação e universos gráficos.
 						</Text>
-						<a href="#">&gt; Torne-se nosso parceiro! </a>
+						<Link href="/contato">&gt; Torne-se nosso parceiro!</Link>
 					</div>
 				</div>
 			</section>
