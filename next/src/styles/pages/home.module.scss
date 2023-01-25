@@ -46,6 +46,10 @@
 					font-weight: 700;
 					font-size: 1.5rem;
 					color: var(--preto);
+
+					&:hover {
+						text-decoration: underline;
+					}
 				}
 			}
 		}
@@ -88,6 +92,10 @@
 					font-size: 1rem;
 					line-height: 1.5rem;
 					color: var(--preto);
+
+					&:hover {
+						text-decoration: underline;
+					}
 				}
 			}
 
@@ -204,15 +212,35 @@
 		font-weight: 700;
 		color: var(--black);
 
+		display: flex;
+		align-items: center;
+
 		&:hover {
 			text-decoration: underline;
+		}
+
+		div {
+			width: 100%;
+
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 	}
 
 	img {
+		width: 100%;
 		max-width: 240px;
+
+		object-fit: contain;
 
 		margin: 0;
 		padding: 1rem;
+
+		transition: transform 250ms ease-in-out;
+
+		&:hover {
+			transform: scale(1.3);
+		}
 	}
 }
