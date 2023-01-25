@@ -50,9 +50,10 @@ export default function Servicos() {
 						</div>
 						<div className="col-lg-5 offset-lg-2 text-start">
 							<Text>
-								Lorem Ipsum is simply dummy text of the printing and typesetting
-								industry. Lorem Ipsum has been the industrys standard
-								dummy text ever since the 1500s.
+								Nossa agência conta com um time especialista em serviços VTEX,
+								a plataforma de comércio digital para grandes empresas.
+								Dê o próximo passo na sua jornada com uma plataforma
+								de comércio completa para os desafios de hoje.
 							</Text>
 							<ArrowLink href='/home'>
 								Saiba mais
@@ -68,8 +69,9 @@ export default function Servicos() {
 						</div>
 						<div className="col-lg-5 order-lg-1 order-2 text-end">
 							<Text>
-								Nossa agência trabalha com a integração e desenvolvimento de
-								soluções que integrem sua plataforma com as aplicações da Bling.
+								o Bling é o sistema de gestão online que descomplica o seu negócio!
+								Nossa agência trabalha com a integração e desenvolvimento
+								de soluções que integrem sua plataforma com as aplicações da Bling.
 							</Text>
 							<ArrowLink href='#'>
 								Saiba mais
@@ -102,7 +104,7 @@ export default function Servicos() {
 						</div>
 						<div className="col-lg-5 order-lg-1 order-2 text-end">
 							<Text>
-								Desenvolvimento, Suporte e Manuteção em Websites com a
+								Desenvolvimento, suporte e manuteção em websites com a
 								utilização da ferramenta Wordpress. A Inovaki conta com
 								profissionais capacitados e com experiência.
 							</Text>
@@ -154,14 +156,16 @@ export default function Servicos() {
 									<Tab.Pane eventKey="first">
 										<div className='d-flex flex-wrap gap-2'>
 											<Button small color='#fff' bg='#333333'>WEBSITE</Button>
-											<Button small color='#fff' bg='#333333'>Hotsite</Button>
-											<Button small color='#fff' bg='#333333'>Landing Page</Button>
-											<Button small color='#fff' bg='#333333'>E-commerce</Button>
-											<Button small color='#fff' bg='#333333'>leads page</Button>
+											<Button small color='#fff' bg='#333333'>HOTSITE</Button>
+											<Button small color='#fff' bg='#333333'>E-COMMERCE</Button>
+											<Button small color='#fff' bg='#333333'>MOBILE</Button>
+											<Button small color='#fff' bg='#333333'>LANDING PAGE</Button>
+											<Button small color='#fff' bg='#333333'>SISTEMAS</Button>
 										</div>
 										<Text className='my-5'>
-											Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-											Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.
+											Trabalhamos com a criação de Websites, Hotsites,
+											Portais, Blogs e outros ambientes digitais. Integramos seu serviço
+											com as melhores plataformas e-commerces do mercado.
 										</Text>
 										<ArrowLink href='#'>
 											Saiba mais
@@ -169,15 +173,15 @@ export default function Servicos() {
 									</Tab.Pane>
 									<Tab.Pane eventKey="second">
 										<div className='d-flex flex-wrap gap-2'>
-											<Button small color='#fff' bg='#333333'>WEBSITE</Button>
-											<Button small color='#fff' bg='#333333'>Hotsite</Button>
-											<Button small color='#fff' bg='#333333'>Landing Page</Button>
-											<Button small color='#fff' bg='#333333'>E-commerce</Button>
-											<Button small color='#fff' bg='#333333'>leads page</Button>
+											<Button small color='#fff' bg='#333333'>MIDIAS SOCIAIS</Button>
+											<Button small color='#fff' bg='#333333'>SEO</Button>
+											<Button small color='#fff' bg='#333333'>LINKS PATROCINADOS</Button>
+											<Button small color='#fff' bg='#333333'>E-MAIL MARKETING</Button>
+											<Button small color='#fff' bg='#333333'>MARKETING DIGITAL</Button>
 										</div>
 										<Text className='my-5'>
-											Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-											Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.
+											Amplie e comunique-se de forma objetiva pelas Mídias Sociais,
+											E-mail Marketing, Links patrocinados e demais soluções do marketing digital.
 										</Text>
 										<ArrowLink href='#'>
 											Saiba mais
@@ -185,15 +189,15 @@ export default function Servicos() {
 									</Tab.Pane>
 									<Tab.Pane eventKey="third">
 										<div className='d-flex flex-wrap gap-2'>
-											<Button small color='#fff' bg='#333333'>WEBSITE</Button>
-											<Button small color='#fff' bg='#333333'>Hotsite</Button>
-											<Button small color='#fff' bg='#333333'>Landing Page</Button>
-											<Button small color='#fff' bg='#333333'>E-commerce</Button>
-											<Button small color='#fff' bg='#333333'>leads page</Button>
+											<Button small color='#fff' bg='#333333'>CONSTRUÇÃO DE MARCA</Button>
+											<Button small color='#fff' bg='#333333'>IDENTIDADE VISUAL</Button>
+											<Button small color='#fff' bg='#333333'>BRANDING</Button>
+											<Button small color='#fff' bg='#333333'>PROJETOS IMPRESSOS</Button>
+											<Button small color='#fff' bg='#333333'>PROJETOS DE FACHADA</Button>
 										</div>
 										<Text className='my-5'>
-											Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-											Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.
+										Somos especializados na criação de identidades visuais
+										com técnicas de Branding e construção de materiais impressos.
 										</Text>
 										<ArrowLink href='#'>
 											Saiba mais
@@ -201,15 +205,15 @@ export default function Servicos() {
 									</Tab.Pane>
 									<Tab.Pane eventKey="four">
 										<div className='d-flex flex-wrap gap-2'>
-											<Button small color='#fff' bg='#333333'>WEBSITE</Button>
-											<Button small color='#fff' bg='#333333'>Hotsite</Button>
-											<Button small color='#fff' bg='#333333'>Landing Page</Button>
-											<Button small color='#fff' bg='#333333'>E-commerce</Button>
-											<Button small color='#fff' bg='#333333'>leads page</Button>
+											<Button small color='#fff' bg='#333333'>CONTROLE DE ESTOQUE</Button>
+											<Button small color='#fff' bg='#333333'>SISTEMA FINANCEIRO</Button>
+											<Button small color='#fff' bg='#333333'>GESTÃO DE PRODUTO</Button>
+											<Button small color='#fff' bg='#333333'>E-COMMERCE</Button>
+											<Button small color='#fff' bg='#333333'>INTEGRAÇÃO E MIGRAÇÃO</Button>
 										</div>
 										<Text className='my-5'>
-											Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-											Lorem Ipsum has been the industrys standard dummy text ever since the 1500s.
+											Nós produzimos sistemas de acordo com a necessidade da sua
+											empresa, analisamos o cenário e atuamos sobre as causas.
 										</Text>
 										<ArrowLink href='#'>
 											Saiba mais
