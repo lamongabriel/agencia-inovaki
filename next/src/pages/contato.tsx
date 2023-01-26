@@ -50,6 +50,7 @@ export default function Contato() {
       }
 
       setIsLoading(true);
+      window.scrollTo(0, 0);
       const response = await sendContactForm({ ...data, token });
 
       if (response.status === 200) {
@@ -80,7 +81,7 @@ export default function Contato() {
 				<div className={`${styles.formContainer} container`}>
 					<div className={`${styles.arrowUp} mx-auto`}></div>
 					<div className="text-center pt-4">
-						<BsFillChatDotsFill size={64} color='#000' className='mb-4' />
+						<BsFillChatDotsFill size={64} color='#000' />
 						{isLoading && <LoadingSpinner />}
 					</div>
 					<Text>
