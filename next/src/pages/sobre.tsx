@@ -3,6 +3,7 @@ import { Gi3DGlasses } from 'react-icons/gi';
 import { IoIosRocket } from 'react-icons/io';
 import { FiArrowRightCircle } from 'react-icons/fi';
 import Link from 'next/link';
+import { useRouter } from 'next/router';
 import BannerTop from '../components/UI/Banner/BannerTop';
 
 import bg from '../assets/images/Sobre/bg-sobre.png';
@@ -31,6 +32,8 @@ import Button from '../components/UI/Button';
 import SEO from '../components/SEO';
 
 export default function Sobre() {
+  const router = useRouter();
+
   return (
 		<Layout>
 			<SEO
@@ -45,7 +48,7 @@ export default function Sobre() {
 			<section className={styles.agency}>
 				<div className={`${styles.agencyContent} container`}>
 					<div className="row pb-5">
-						<div className="col-lg-6 py-5">
+						<div className="col-lg-6 pb-5">
 							<Heading small className='text-start'>
 								<strong>Somos uma agência focada em evoluir junto aos clientes.</strong>
 							</Heading>
@@ -54,7 +57,7 @@ export default function Sobre() {
 								estratégias de curto e longo prazo para que os resultados sejam
 								conquistados e os objetivos ultrapassados.
 							</Text>
-							<a href="#">&gt; Fale Conosco &lt;</a>
+							<Link href="/contato">&gt; Fale Conosco &lt;</Link>
 						</div>
 						<div className="col-lg-6">
 							<Image src={pc} alt='Pc em cima da mesa'/>
@@ -64,7 +67,7 @@ export default function Sobre() {
 					<hr />
 					<hr />
 
-					<div className="row py-5">
+					<div className="row pt-5">
 						<div className="col-lg-6 col-12 pb-5">
 							<Gi3DGlasses className='mb-3' size={90} color='#000'/>
 							<Heading small className='text-start'>
@@ -111,12 +114,12 @@ export default function Sobre() {
 						</Heading>
 					</div>
 					<div className="col-lg-6 col-12 mb-3">
-					<Button rightIcon={FiArrowRightCircle}>
+					<Button onClick={() => router.push('/servicos')} rightIcon={FiArrowRightCircle}>
 						CONHEÇA NOSSOS SERVIÇOS
 					</Button>
 					</div>
 					<div className="col-lg-6 col-12">
-					<Button rightIcon={FiArrowRightCircle}>
+					<Button onClick={() => router.push('/contato')} rightIcon={FiArrowRightCircle}>
 						ENVIE-NOS UMA MENSAGEM
 					</Button>
 					</div>
@@ -141,62 +144,62 @@ export default function Sobre() {
 				<div className={`${styles.clientsLogo} container mx-auto row justify-content-center`}>
 					<div className='row row-cols-lg-4 row-cols-sm-3 row-cols-2'>
 						<div>
-							<Link href="#">
+							<Link target="_blank" href="https://ipb.org.br">
 								<Image src={logoIPB} alt='Logo IPB'/>
 							</Link>
 						</div>
 						<div>
-							<Link href="#">
+							<Link target="_blank" href="https://cta.ipb.org.br">
 								<Image src={logoApecom} alt='Logo Apecom'/>
 							</Link>
 						</div>
 						<div>
-							<Link href="#">
+							<Link target="_blank" href="https://www.hopelingerie.com.br">
 								<Image src={logoHope} alt='Logo Hope'/>
 							</Link>
 						</div>
 						<div>
-							<Link href="#">
+							<Link target="_blank" href="https://www.foreverliss.com.br">
 								<Image src={logoForeverLiss} alt='Logo Forever Liss'/>
 							</Link>
 						</div>
 						<div>
-							<Link href="#">
+							<Link target="_blank" href="https://www.eaquamar.com.br">
 								<Image src={logoAquamar} alt='Logo Aquamar'/>
 							</Link>
 						</div>
 						<div>
-							<Link href="#">
+							<Link target="_blank" href="https://www.instagram.com/fashlybrasil/">
 								<Image src={logoFashly} alt='Logo Fashly'/>
 							</Link>
 						</div>
 						<div>
-							<Link href="#">
+							<Link target="_blank" href="https://www.custapoucoseduzir.com.br">
 								<Image src={logoCustaPouco} alt='Logo Custa Pouco'/>
 							</Link>
 						</div>
 						<div>
-							<Link href="#">
+							<Link target="_blank" href="http://www.walmirvitor.com.br/site">
 								<Image src={logoContabilidade} alt='Logo Contabilidade'/>
 							</Link>
 						</div>
 						<div>
-							<Link href="#">
+							<Link target="_blank" href="https://maktub.deliveryon.com.br/">
 								<Image src={logoMaktub} alt='Logo Maktub'/>
 							</Link>
 						</div>
 						<div>
-							<Link href="#">
+							<Link target="_blank" href="https://mastercarabm.com.br">
 								<Image src={logoMastercar} alt='Logo Mastercar'/>
 							</Link>
 						</div>
 						<div>
-							<Link href="#">
+							<Link target="_blank" href="https://www.apaebrasil.org.br">
 								<Image src={logoApae} alt='Logo Apae'/>
 							</Link>
 						</div>
 						<div>
-							<Link href="#">
+							<Link target="_blank" href="http://www.pestalozzibp.org.br/">
 								<Image src={logoPestalozzi} alt='Logo Pestalozzi'/>
 							</Link>
 						</div>
