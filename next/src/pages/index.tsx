@@ -153,6 +153,8 @@ export default function Home() {
 								<Image src={vtexLogo} alt="Vtex Logo" />
 								<p>
 									Desenvolvimento e suporte especializado da plataforma Vtex e Vtex IO.
+									Dê o próximo passo na sua jornada com uma plataforma
+									de comércio completa para os desafios de hoje.
 								</p>
 								<Link href="https://vtex.com/br-pt/">&#62; Saiba Mais</Link>
 							</div>
@@ -245,47 +247,47 @@ export default function Home() {
 				<div className="container mx-auto row">
 					<div className="col-lg-6 order-lg-1 order-2 mx-auto">
 						<div className="row row-cols-lg-3 row-cols-2 justify-content-around">
-							<Link href="https://www.apaebrasil.org.br">
+							<Link target="_blank" href="https://www.apaebrasil.org.br">
 								<div>
 									<Image src={logoApae} alt='Apae Logo'/>
 								</div>
 							</Link>
-							<Link href="https://cta.ipb.org.br">
+							<Link target="_blank" href="https://cta.ipb.org.br">
 								<div>
 									<Image src={logoApecom} alt='Apecom Logo'/>
 								</div>
 							</Link>
-							<Link href="https://www.eaquamar.com.br">
+							<Link target="_blank" href="https://www.eaquamar.com.br">
 								<div>
 									<Image src={logoAquamar} alt='Aquamar Logo'/>
 								</div>
 							</Link>
-							<Link href="https://www.custapoucoseduzir.com.br">
+							<Link target="_blank" href="https://www.custapoucoseduzir.com.br">
 								<div>
 									<Image src={logoCustaPouco} alt='Custa Pouco Logo'/>
 								</div>
 							</Link>
-							<Link href="https://www.instagram.com/fashlybrasil/">
+							<Link target="_blank" href="https://www.instagram.com/fashlybrasil/">
 								<div>
 									<Image src={logoFashly} alt='Fashly Logo'/>
 								</div>
 							</Link>
-							<Link href="https://www.foreverliss.com.br">
+							<Link target="_blank" href="https://www.foreverliss.com.br">
 								<div>
 									<Image src={logoForeverLiss} alt='Foreverliss Logo'/>
 								</div>
 							</Link>
-							<Link href="https://www.hopelingerie.com.br">
+							<Link target="_blank" href="https://www.hopelingerie.com.br">
 								<div>
 									<Image src={logoHope} alt='Hope Logo'/>
 								</div>
 							</Link>
-							<Link href="https://ipb.org.br">
+							<Link target="_blank" href="https://ipb.org.br">
 								<div>
 									<Image src={logoIPB} alt='IPB Logo'/>
 								</div>
 							</Link>
-							<Link href="https://mastercarabm.com.br">
+							<Link target="_blank" href="https://mastercarabm.com.br">
 								<div>
 									<Image src={logoMastercar} alt='Acc Amaral Logo'/>
 								</div>
