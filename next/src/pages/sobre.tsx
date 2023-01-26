@@ -48,7 +48,7 @@ export default function Sobre() {
 			<section className={styles.agency}>
 				<div className={`${styles.agencyContent} container`}>
 					<div className="row pb-5">
-						<div className="col-lg-6 py-5">
+						<div className="col-lg-6 pb-5">
 							<Heading small className='text-start'>
 								<strong>Somos uma agência focada em evoluir junto aos clientes.</strong>
 							</Heading>
@@ -67,7 +67,7 @@ export default function Sobre() {
 					<hr />
 					<hr />
 
-					<div className="row py-5">
+					<div className="row pt-5">
 						<div className="col-lg-6 col-12 pb-5">
 							<Gi3DGlasses className='mb-3' size={90} color='#000'/>
 							<Heading small className='text-start'>
