@@ -1,0 +1,12 @@
+.row {
+	margin-top: auto;
+	margin-left: auto;
+	margin-right: auto;
+
+
+	>* {
+		padding-right: auto;
+		padding-left: auto;
+		margin-top: auto;
+	}
+}
