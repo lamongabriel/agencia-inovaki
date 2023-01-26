@@ -32,6 +32,7 @@ export default function CasesSwiper({ slides }: CasesSwiperProps) {
 		loop
 		className={styles.swiper}
 		slidesPerView={1}
+		spaceBetween={100}
 	>
 		{slides.map((slide, index) => (
 			<SwiperSlide key={index} className={styles.slideWrapper}>

@@ -68,8 +68,40 @@
 			margin-bottom: 3rem;
 		}
 
+		>div > div:nth-child(2) > div{
+			margin-left: 1.5rem;
+		}
+		>div > div:nth-child(3) > div{
+			margin-right: 1.5rem;
+		}
+
+		@media ( max-width: 991px ) {
+				>div > div:nth-child(2) > div{
+					margin-left: 0;
+				}
+				>div > div:nth-child(3) > div{
+					margin-right: 0;
+				}
+
+				>div > div:nth-child(1) > div{
+					margin-right: 0.75rem;
+				}
+				>div > div:nth-child(4) > div{
+					margin-left: 0.75rem;
+				}
+			}
+
+		@media ( max-width: 767px ) {
+			>div > div:nth-child(1) > div{
+				margin-right: 0;
+			}
+			>div > div:nth-child(4) > div{
+				margin-left: 0;
+			}
+		}
+
 		.areasBg {
-			margin-bottom: 25px;
+			margin-bottom: 1.5rem;
 			min-height: 298px;
 
 			>div {
@@ -104,7 +136,7 @@
 			}
 
 			.areasOfExpertiseBg{
-				background-position: right bottom;
+				background-position: center right;
 				background-repeat: no-repeat;
 				background-size: cover;
 
