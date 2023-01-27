@@ -1,5 +1,6 @@
 .agency {
 	background-color: var(--yellow-500);
+	padding-bottom: 5rem;
 
 	hr {
 		margin: 0;
@@ -14,39 +15,45 @@
 		}
 
 		p {
-			margin: 0;
+			margin: 1rem 0;
 			padding: 0;
 		}
 
 		>div:first-child > div:nth-child(1) {
-			display: flex;
-			flex-direction: column;
-			justify-content: center;
-			gap: 1rem;
+			margin: 5rem 0;
 		}
 
 		>div:first-child > div:nth-child(2) {
-			transform: translateY(-50px);
+			transform: translateY(-4rem);
 		}
 
 		>div:first-child > div > img {
 			width: 100%;
+			height: 100%;
+
+			object-fit: cover;
 		}
 
-		>div > a,
-		>div > div > a {
-			font-size: 24px;
-			font-weight: 700;
-			color: var(--black);
+		>div:last-child {
+			margin-top: 5rem;
 
-			&:hover {
-				text-decoration: underline;
+			h2 {
+				display: block;
+				margin: 1rem 0;
 			}
 		}
 	}
 
 	@media ( max-width: 992px ) {
 		.agencyContent{
+			>div:first-child > div:nth-child(1) {
+				margin: 1rem 0 5rem 0;
+			}
+
+			>div:last-child > div:first-child {
+				margin-bottom: 5rem;
+			}
+
 			div,
 			h2 {
 				text-align: center !important;
@@ -54,11 +61,6 @@
 
 			p {
 				text-align: justify;
-			}
-
-			>div:first-child > div:nth-child(2) {
-				transform: none;
-				padding: 0;
 			}
 		}
 	}
@@ -106,11 +108,6 @@
 		padding-bottom: 4rem;
 	}
 
-	h2 {
-		font-size: clamp(3rem, 10vw, 4.37rem);
-		line-height: 4rem;
-	}
-
 	span {
 		font-weight: 800;
 	}
@@ -138,7 +135,7 @@
 
 			img{
 				width: 100%;
-				padding: 1rem;
+				padding: 2.5rem;
 
 				transition: transform 250ms ease-in-out;
 
