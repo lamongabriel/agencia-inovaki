@@ -55,7 +55,7 @@ export default function Servicos() {
 								Dê o próximo passo na sua jornada com uma plataforma
 								de comércio completa para os desafios de hoje.
 							</Text>
-							<ArrowLink href='/home'>
+							<ArrowLink target="_blank" href='https://vtex.com/br-pt/'>
 								Saiba mais
 							</ArrowLink>
 						</div>
@@ -73,7 +73,7 @@ export default function Servicos() {
 								Nossa agência trabalha com a integração e desenvolvimento
 								de soluções que integrem sua plataforma com as aplicações da Bling.
 							</Text>
-							<ArrowLink href='#'>
+							<ArrowLink target="_blank" href='https://www.bling.com.br/'>
 								Saiba mais
 							</ArrowLink>
 						</div>
@@ -90,7 +90,7 @@ export default function Servicos() {
 								Gerenciamos e integramos a ferramenta SendGrid em sistema e
 								websites para disparos eficientes de e-mail e mail marketing.
 							</Text>
-							<ArrowLink href='#'>
+							<ArrowLink target="_blank" href='https://sendgrid.com/'>
 								Saiba mais
 							</ArrowLink>
 						</div>
@@ -108,7 +108,7 @@ export default function Servicos() {
 								utilização da ferramenta Wordpress. A Inovaki conta com
 								profissionais capacitados e com experiência.
 							</Text>
-							<ArrowLink href='#'>
+							<ArrowLink target="_blank" href='https://br.wordpress.org/'>
 								Saiba mais
 							</ArrowLink>
 						</div>
@@ -167,7 +167,7 @@ export default function Servicos() {
 											Portais, Blogs e outros ambientes digitais. Integramos seu serviço
 											com as melhores plataformas e-commerces do mercado.
 										</Text>
-										<ArrowLink href='#'>
+										<ArrowLink href='/contato'>
 											Saiba mais
 										</ArrowLink>
 									</Tab.Pane>
@@ -183,7 +183,7 @@ export default function Servicos() {
 											Amplie e comunique-se de forma objetiva pelas Mídias Sociais,
 											E-mail Marketing, Links patrocinados e demais soluções do marketing digital.
 										</Text>
-										<ArrowLink href='#'>
+										<ArrowLink href='/contato'>
 											Saiba mais
 										</ArrowLink>
 									</Tab.Pane>
@@ -199,7 +199,7 @@ export default function Servicos() {
 										Somos especializados na criação de identidades visuais
 										com técnicas de Branding e construção de materiais impressos.
 										</Text>
-										<ArrowLink href='#'>
+										<ArrowLink href='/contato'>
 											Saiba mais
 										</ArrowLink>
 									</Tab.Pane>
@@ -215,7 +215,7 @@ export default function Servicos() {
 											Nós produzimos sistemas de acordo com a necessidade da sua
 											empresa, analisamos o cenário e atuamos sobre as causas.
 										</Text>
-										<ArrowLink href='#'>
+										<ArrowLink href='/contato'>
 											Saiba mais
 										</ArrowLink>
 									</Tab.Pane>

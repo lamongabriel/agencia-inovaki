@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import { LinkHTMLAttributes } from 'react';
+import { AnchorHTMLAttributes } from 'react';
 
 import styles from './styles.module.scss';
 
-interface ArrowLinkProps extends LinkHTMLAttributes<HTMLAnchorElement>{
+interface ArrowLinkProps extends AnchorHTMLAttributes<HTMLAnchorElement>{
 	children: string
 	href: string
 }
