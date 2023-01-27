@@ -12,6 +12,7 @@ import Layout from '../components/UI/Layout';
 import styles from '../styles/pages/sobre.module.scss';
 import Text from '../components/UI/Text';
 import Heading from '../components/UI/Heading';
+import ArrowLink from '../components/UI/ArrowLink';
 
 import pc from '../assets/images/Sobre/agency-pc.png';
 import bgPartner from '../assets/images/Sobre/bg-partner.png';
@@ -47,8 +48,8 @@ export default function Sobre() {
 			</BannerTop>
 			<section className={styles.agency}>
 				<div className={`${styles.agencyContent} container`}>
-					<div className="row pb-5">
-						<div className="col-lg-6 pb-5">
+					<div className="row">
+						<div className="col-lg-5 order-lg-1 order-2">
 							<Heading small className='text-start'>
 								<strong>Somos uma agência focada em evoluir junto aos clientes.</strong>
 							</Heading>
@@ -57,9 +58,9 @@ export default function Sobre() {
 								estratégias de curto e longo prazo para que os resultados sejam
 								conquistados e os objetivos ultrapassados.
 							</Text>
-							<Link href="/contato">&gt; Fale Conosco &lt;</Link>
+							<ArrowLink href="/contato"> Fale Conosco </ArrowLink>
 						</div>
-						<div className="col-lg-6">
+						<div className="col-lg-5 offset-lg-1 flex-grow-1 order-lg-2 order-1">
 							<Image src={pc} alt='Pc em cima da mesa'/>
 						</div>
 					</div>
@@ -67,9 +68,9 @@ export default function Sobre() {
 					<hr />
 					<hr />
 
-					<div className="row pt-5">
-						<div className="col-lg-6 col-12 pb-5">
-							<Gi3DGlasses className='mb-3' size={90} color='#000'/>
+					<div className="row">
+						<div className="col-lg-5 col-12">
+							<Gi3DGlasses size={90} color='#000'/>
 							<Heading small className='text-start'>
 								<strong>Nossa Visão</strong>
 							</Heading>
@@ -79,8 +80,8 @@ export default function Sobre() {
 							</Text>
 						</div>
 
-						<div className="col-lg-6 col-12">
-							<IoIosRocket className='mb-3' size={90} color='#000'/>
+						<div className="col-lg-5 offset-lg-1 flex-grow-1 col-12">
+							<IoIosRocket size={90} color='#000'/>
 							<Heading small className='text-start'>
 								<strong>Nossa Missão</strong>
 							</Heading>
