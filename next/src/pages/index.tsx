@@ -144,7 +144,7 @@ export default function Home() {
 								<p>
 									Desenvolvimento e suporte de Websites utilizando a ferramenta Wordpress.
 								</p>
-								<Link href="https://br.wordpress.org/">&#62; Saiba Mais</Link>
+								<Link target="_blank" href="https://br.wordpress.org/">&#62; Saiba Mais</Link>
 							</div>
 						</div>
 
@@ -156,7 +156,7 @@ export default function Home() {
 									Dê o próximo passo na sua jornada com uma plataforma
 									de comércio completa para os desafios de hoje.
 								</p>
-								<Link href="https://vtex.com/br-pt/">&#62; Saiba Mais</Link>
+								<Link target="_blank" href="https://vtex.com/br-pt/">&#62; Saiba Mais</Link>
 							</div>
 						</div>
 
@@ -167,7 +167,7 @@ export default function Home() {
 									Nossa agência trabalha com a integração e desenvolvimento de
 									soluções que integrem sua plataforma com as aplicações da Bling.
 								</p>
-								<Link href="https://www.bling.com.br/">&#62; Saiba Mais</Link>
+								<Link target="_blank" href="https://www.bling.com.br/">&#62; Saiba Mais</Link>
 							</div>
 						</div>
 
@@ -178,7 +178,7 @@ export default function Home() {
 									Gerenciamos e integramos a ferramenta SendGrid em sistema e
 									websites para disparos eficientes de e-mail e mail marketing.
 								</p>
-								<Link href="https://sendgrid.com/">&#62; Saiba Mais</Link>
+								<Link target="_blank" href="https://sendgrid.com/">&#62; Saiba Mais</Link>
 							</div>
 						</div>
 
