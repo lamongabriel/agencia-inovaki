@@ -5,14 +5,10 @@
 		background-color: var(--yellow-500);
 
 		position: relative;
-		transform: translateY(-50px);
+		transform: translateY(-4rem);
 
 		strong {
 			font-size: clamp(1.5rem, 1.9vw, 4.37rem);
-		}
-
-		img {
-			width: clamp(150px, 25vw, 200px);
 		}
 	}
 
@@ -21,11 +17,13 @@
 	 }
 
 	 .content {
-		padding: 1rem 4.5rem;
+		padding: 1rem 4.5rem 3rem 4.5rem;
 	}
 
-	p{
+	p,
+	img{
 		text-align: center;
+		margin-bottom: 2rem;
 	}
 
 	.arrowUp {
@@ -45,34 +43,102 @@
 .projectSheet {
 	background-color: var(--white);
 
-	>div {
-		max-width: 700px;
-	}
+	>div:first-child {
+		button {
+			display: flex;
+			margin: 0 auto;
 
-	>div > div:first-child > button {
-		transform: translateY(-50%);
-	}
-
-	.projectContent {
-		>div:first-child {
-			border-bottom: 1px solid #000;
+			transform: translateY(-1.25rem);
 		}
 	}
 
-	a {
-		transition: color 200ms;
+	.projectSheetContent {
+
+		>div:first-child {
+			margin: 1.25rem 0 2.5rem 0;
+		}
+
+		>div:first-child > div {
+			display: flex;
+			gap: 1.5rem;
+
+			strong,
+			span {
+				flex: 1;
+			}
+
+			strong {
+				text-align: right;
+			}
+		}
+
+		>div:last-child {
+			margin: 2.5rem 0;
+
+				>div:nth-child(1) {
+				display: flex;
+				justify-content: center;
+
+				img {
+					width: 194px;
+				}
+			}
+
+			>div:nth-child(2) {
+				display: flex;
+				justify-content: center;
+
+				gap: 3rem;
+
+				margin: 2.5rem 0;
+
+				a {
+					transition: color 200ms;
+					color: var(--black);
+
+					&:hover {
+						color: var(--yellow-600);
+					}
+				}
+			}
+
+			>div:nth-child(3) {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+
+				gap: 1rem;
+
+				margin-bottom: 2.5rem;
+
+				max-width: 768px;
+				margin: 0 auto;
+
+				button {
+					flex: 1;
+					justify-content: center;
+				}
+			}
+		}
 	}
 
-	a:hover {
-		color: var(--yellow-600);
+	hr {
+		margin: 0;
+		padding: 0;
+
+		opacity: 1;
 	}
 }
 
 @media (max-width: 576px){
 
-	.yellowBox,
-	.content {
-		padding: 0.75rem 1.25rem !important;
+	.yellowBox {
+		transform: none !important;
+		padding: 2rem 1.25rem !important;
+	 }
+
+	 .content {
+		padding: 3rem 1.25rem 1rem 1.25rem !important;
 	}
 
 	.content {
