@@ -26,6 +26,24 @@
 
 			transition: max-height 1s ease-in;
 
+			>div:nth-child(1) > div:first-child > div {
+				margin-right: 2rem;
+			}
+
+			>div:nth-child(2) > div:first-child > div {
+				margin-right: 2rem;
+			}
+
+			@media ( max-width: 991px ) {
+				>div:nth-child(1) > div:first-child > div {
+					margin-right: 0;
+				}
+
+				>div:nth-child(2) > div:first-child > div {
+					margin-right: 0;
+				}
+			}
+
 			>div > div {
 				padding-bottom: 2rem;
 			}
