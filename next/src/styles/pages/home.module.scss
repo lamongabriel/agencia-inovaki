@@ -135,6 +135,15 @@
 				color: var(--white);
 			}
 
+			&.vtex {
+
+				.areasOfExpertiseBg {
+					background-color: var(--white);
+					background-size: auto;
+					background-position: right center;
+				}
+			}
+
 			.areasOfExpertiseBg{
 				background-position: center right;
 				background-repeat: no-repeat;
