@@ -148,7 +148,7 @@ export default function Home() {
 							</div>
 						</div>
 
-						<div className={`${styles.areasBg} col-lg-8 order-lg-2 order-1`}>
+						<div className={`${styles.areasBg} ${styles.vtex} col-lg-8 order-lg-2 order-1`}>
 							<div className={styles.areasOfExpertiseBg} style={{ backgroundImage: `url(${bgVtex.src})` }}>
 								<Image src={vtexLogo} alt="Vtex Logo" />
 								<p>

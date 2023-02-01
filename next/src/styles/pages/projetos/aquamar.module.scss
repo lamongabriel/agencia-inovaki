@@ -72,6 +72,19 @@
 			}
 		}
 
+		.projectSheetCards {
+			justify-content: center;
+			flex-wrap: wrap;
+			max-width: 800px;
+
+			margin: 2rem auto 0 auto;
+
+			button {
+				flex: 1;
+				justify-content: center;
+			}
+		}
+
 		>div:last-child {
 			margin: 2.5rem 0;
 
@@ -99,24 +112,6 @@
 					&:hover {
 						color: var(--yellow-600);
 					}
-				}
-			}
-
-			>div:nth-child(3) {
-				display: flex;
-				justify-content: center;
-				flex-wrap: wrap;
-
-				gap: 1rem;
-
-				margin-bottom: 2.5rem;
-
-				max-width: 768px;
-				margin: 0 auto;
-
-				button {
-					flex: 1;
-					justify-content: center;
 				}
 			}
 		}

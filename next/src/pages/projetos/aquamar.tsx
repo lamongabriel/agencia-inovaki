@@ -80,6 +80,12 @@ export default function Aquamar() {
 						<div>
 							<strong>Framework: </strong> <span>HTML - Javascript - React</span>
 						</div>
+						<div className={styles.projectSheetCards}>
+							<Button small color='#000' bg='#ffe604'>APP</Button>
+							<Button small color='#000' bg='#ffe604'>WEBSITE</Button>
+							<Button small color='#000' bg='#ffe604'>API</Button>
+							<Button small color='#000' bg='#ffe604'>LANDING PAGE</Button>
+						</div>
 					</div>
 					<hr />
 
@@ -99,12 +105,6 @@ export default function Aquamar() {
 							<Link href="https://www.instagram.com/agenciainovaki/">
 								<FaWhatsapp size="40"/>
 							</Link>
-						</div>
-						<div>
-							<Button small color='#000' bg='#ffe604'>APP</Button>
-							<Button small color='#000' bg='#ffe604'>WEBSITE</Button>
-							<Button small color='#000' bg='#ffe604'>API</Button>
-							<Button small color='#000' bg='#ffe604'>LANDING PAGE</Button>
 						</div>
 					</div>
 				</div>
