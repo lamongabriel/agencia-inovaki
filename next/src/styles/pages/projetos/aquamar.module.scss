@@ -141,4 +141,11 @@
 			text-align: justify;
 		 }
 	}
+
+	.projectSheetContent {
+
+		>div:first-child > div {
+			margin-bottom: 1rem;
+		}
+	}
 }
