@@ -64,7 +64,7 @@ export default function Footer() {
 										<a href="https://wa.me/5524999814022?text=Ol%C3%A1%2C+acessei+o+site+da+Inovaki+e+gostaria+de+fazer+um+or%C3%A7amento.">(24) 99981-4022</a><br/>
 										<a href="https://wa.me/5524999110148?text=Ol%C3%A1%2C+acessei+o+site+da+Inovaki+e+gostaria+de+fazer+um+or%C3%A7amento.">(24) 99911-0148</a>
 									</div>
-									<a>contato@inovaki.com.br</a>
+									<a href='mailto:contato@inovaki.com.br'>contato@inovaki.com.br</a>
 									<p>
 										Rua Mariana do Carmo N. Reis, 308 <br />
 										Vila Mury - Volta Redonda / RJ
