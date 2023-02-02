@@ -55,6 +55,13 @@ footer {
 							font-weight: 300;
 							font-size: 0.87rem;
 							line-height: 1.375rem;
+
+							a {
+								&:hover {
+									color: var(--white);
+									text-decoration: underline;
+								}
+							}
 						}
 
 						>h2 {
