@@ -14,7 +14,7 @@ import Text from '../../components/UI/Text';
 
 import Button from '../../components/UI/Button';
 
-import styles from '../../styles/pages/projetos/ipb.module.scss';
+import styles from '../../styles/pages/projetos/internal.module.scss';
 
 import logoIpb from '../../assets/images/logos/logo-ipb.png';
 import imageIpb from '../../assets/images/Projetos/IPB/image-ipb.png';

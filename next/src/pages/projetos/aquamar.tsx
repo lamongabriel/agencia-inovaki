@@ -14,7 +14,7 @@ import Text from '../../components/UI/Text';
 
 import Button from '../../components/UI/Button';
 
-import styles from '../../styles/pages/projetos/aquamar.module.scss';
+import styles from '../../styles/pages/projetos/internal.module.scss';
 
 import logoAquamar from '../../assets/images/logos/logo-aquamar.png';
 import imageAquamar from '../../assets/images/Projetos/Aquamar/img-aquamar.png';
