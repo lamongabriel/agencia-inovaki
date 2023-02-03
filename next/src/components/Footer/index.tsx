@@ -101,7 +101,7 @@ export default function Footer() {
 
 						<div className={`${styles.footerCopyright} row`}>
 							<small>
-								Copyright © 2022 INOVAKI. Todos os direitos reservados.
+								Copyright © {new Date().getFullYear()} INOVAKI. Todos os direitos reservados.
 							</small>
 						</div>
 					</div>
