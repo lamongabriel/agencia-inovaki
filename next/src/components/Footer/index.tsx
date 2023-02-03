@@ -61,13 +61,15 @@ export default function Footer() {
 									<h2>AGÊNCIA <strong> INOVAKI </strong>
 									</h2>
 									<div className={styles.contacts}>
-										<a href="https://wa.me/5524999814022?text=Ol%C3%A1%2C+acessei+o+site+da+Inovaki+e+gostaria+de+fazer+um+or%C3%A7amento.">(24) 99981-4022</a><br/>
-										<a href="https://wa.me/5524999110148?text=Ol%C3%A1%2C+acessei+o+site+da+Inovaki+e+gostaria+de+fazer+um+or%C3%A7amento.">(24) 99911-0148</a>
+										<Link target="_blank" href="https://wa.me/5524999814022?text=Ol%C3%A1%2C+acessei+o+site+da+Inovaki+e+gostaria+de+fazer+um+or%C3%A7amento.">(24) 99981-4022</Link><br/>
+										<Link target="_blank" href="https://wa.me/5524999110148?text=Ol%C3%A1%2C+acessei+o+site+da+Inovaki+e+gostaria+de+fazer+um+or%C3%A7amento.">(24) 99911-0148</Link>
 									</div>
-									<a>contato@inovaki.com.br</a>
+									<Link target="_blank" href='mailto:contato@inovaki.com.br'>contato@inovaki.com.br</Link>
 									<p>
-										Rua Mariana do Carmo N. Reis, 308 <br />
-										Vila Mury - Volta Redonda / RJ
+										<Link target="_blank" href="https://www.google.com/maps/dir/-22.5246462,-44.1055362/Av.+Mariana+do+Carmo+Nogueira+Reis,+308+-+Vila+Mury,+Volta+Redonda+-+RJ,+27281-520/@-22.5113303,-44.1106322,15z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x9e981b77d93bed:0xed98f836196b9588!2m2!1d-44.1079096!2d-22.5009416">
+											Rua Mariana do Carmo N. Reis, 308 <br />
+											Vila Mury - Volta Redonda / RJ
+										</Link>
 									</p>
 								</div>
 							</div>
@@ -83,15 +85,15 @@ export default function Footer() {
 										<li><Link href='/orcamento'>Orçamento</Link></li>
 									</ul>
 									<div className='justify-content-center justify-content-lg-start'>
-										<a href="https://www.instagram.com/agenciainovaki/">
+										<Link target="_blank" href="https://www.instagram.com/agenciainovaki/">
 											<FaInstagram size={20} color='#FFE604' />
-										</a>
-										<a href="https://www.facebook.com/agenciainovaki/">
+										</Link>
+										<Link target="_blank" href="https://www.facebook.com/agenciainovaki/">
 											<FaFacebookF size={20} color='#FFE604' />
-										</a>
-										<a href="https://wa.me/5524999110148?text=Ol%C3%A1%2C+acessei+o+site+da+Inovaki+e+gostaria+de+fazer+um+or%C3%A7amento.">
+										</Link>
+										<Link target="_blank" href="https://wa.me/5524999110148?text=Ol%C3%A1%2C+acessei+o+site+da+Inovaki+e+gostaria+de+fazer+um+or%C3%A7amento.">
 											<FaWhatsapp size={20} color='#FFE604' />
-										</a>
+										</Link>
 									</div>
 								</nav>
 							</div>

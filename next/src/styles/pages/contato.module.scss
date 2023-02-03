@@ -20,7 +20,7 @@
 		}
 
 		form {
-			width: 90% !important;
+			width: 90%;
 			margin: 2rem auto;
 			max-height: 100rem;
 
@@ -100,8 +100,13 @@
 	.contact {
 		padding-bottom: 0px;
 
+		p {
+			width: 100% !important;
+		}
+
 		form {
 			margin: 0 auto !important;
+			width: 100% !important;
 		}
 	}
 }
