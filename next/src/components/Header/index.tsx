@@ -1,7 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
-import Router from 'next/router';
+import { useRouter } from 'next/router';
 
 import logoInovaki from '../../assets/images/logos/logo-inovaki.png';
 import logoInovakiWhite from '../../assets/images/logos/logo-inovaki-white.png';
@@ -51,6 +51,8 @@ const headerLinks: HeaderLink[] = [
 ];
 
 export default function Header() {
+  const Router = useRouter();
+
   const [menuOpen, setMenuOpen] = useState(false);
   const [headerBg, setHeaderBg] = useState(Router.asPath !== '/');
 
@@ -82,7 +84,7 @@ export default function Header() {
     return () => {
       window.removeEventListener('scroll', onScroll);
     };
-  }, []);
+  }, [Router]);
 
   function handleToggleMenu() {
     if (!menuOpen) {
