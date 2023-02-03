@@ -1,6 +1,7 @@
 import { useEffect, useState, useRef } from 'react';
 import Link from 'next/link';
 import Image, { StaticImageData } from 'next/image';
+import Router from 'next/router';
 
 import logoInovaki from '../../assets/images/logos/logo-inovaki.png';
 import logoInovakiWhite from '../../assets/images/logos/logo-inovaki-white.png';
@@ -51,7 +52,7 @@ const headerLinks: HeaderLink[] = [
 
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [headerBg, setHeaderBg] = useState(false);
+  const [headerBg, setHeaderBg] = useState(Router.asPath !== '/');
 
   const menuRef = useRef<HTMLDivElement>(null);
 
@@ -64,15 +65,18 @@ export default function Header() {
   }, [menuOpen]);
 
   useEffect(() => {
-    const onScroll = (e: Event) => {
+    function onScroll(e: Event) {
       const window = e.currentTarget as Window;
 
+      if (Router.asPath !== '/') return;
+
       if (window.scrollY === 0) {
-        return setHeaderBg(false);
+        setHeaderBg(false);
+        return;
       }
 
-      return setHeaderBg(true);
-    };
+      setHeaderBg(true);
+    }
 
     window.addEventListener('scroll', onScroll);
     return () => {
