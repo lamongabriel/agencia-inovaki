@@ -58,6 +58,14 @@ export default function Header() {
 
   const menuRef = useRef<HTMLDivElement>(null);
 
+  function checkActiveLink(path: string, href: string) {
+    if (path === '/') {
+      return href === '/';
+    }
+
+    return path.startsWith(href);
+  }
+
   useEffect(() => {
     if (menuOpen) {
       document.body.style.overflowY = 'hidden';
@@ -145,6 +153,7 @@ export default function Header() {
 										name={opt.name}
 										image={opt.image}
 										href={opt.href}
+										active={checkActiveLink(Router.asPath, opt.href)}
 									/>
 								))}
 							</ul>

@@ -7,9 +7,12 @@ interface MenuItemProps {
 	name: string
 	href: string
 	image: StaticImageData
+	active?: boolean
 }
 
-export default function MenuItem({ name, image, href }: MenuItemProps) {
+export default function MenuItem({
+  name, image, href, active = false,
+}: MenuItemProps) {
   const ref = useRef<HTMLLIElement>(null);
 
   function handleHover(entered: boolean) {
@@ -24,7 +27,7 @@ export default function MenuItem({ name, image, href }: MenuItemProps) {
 
   return (
 		<li
-			className={styles['fsmenu--list-element']}
+			className={`${styles['fsmenu--list-element']} ${active ? styles.menuActive : ''}`}
 			onMouseOver={() => handleHover(true)}
 			onMouseOut={() => handleHover(false)}
 			ref={ref}
