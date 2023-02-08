@@ -20,6 +20,7 @@ import InfiniteText from '../components/UI/InfiniteText';
 import swiperTop1 from '../assets/images/Home/swiper-1.png';
 import swiperTop2 from '../assets/images/Home/swiper-2.png';
 import casesSwiper1 from '../assets/images/Home/swiper-cases-1.png';
+import casesSwiper2 from '../assets/images/Home/swiper-cases-2.png';
 
 // Other images
 import dottedPattern from '../assets/images/dotted-pattern.png';
@@ -71,10 +72,10 @@ const casesSlides = [
     image: casesSwiper1,
   },
   {
-    title: 'igreja presbiteriana do brasil - site oficial',
-    tag: 'Desenvolvimento Web',
-    text: 'Nossa agência foi responsável pelo desenvolvimento do novo site oficial da instituição religiosa no Brasil. O atual website conta com áreas para notícias, eventos, compartilhamento de documenntos e outras funcionalidades importantes para divulgação de conteúdos institucionais e evangelísticos.',
-    image: casesSwiper1,
+    title: 'Aquamar',
+    tag: 'E-commerce',
+    text: 'Durante os anos de 2020 e 2021 nossa agência foi responsável por todo suporte e manutenção do site da Aquamar na plataforma Vtex. Neste período desenvolvemos melhorias na loja com implementações de APIs, criação de Landing Pages e soluções administrativas.',
+    image: casesSwiper2,
   },
 ];
 
