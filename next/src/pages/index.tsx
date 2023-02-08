@@ -26,7 +26,7 @@ import casesSwiper2 from '../assets/images/Home/swiper-cases-2.png';
 import dottedPattern from '../assets/images/dotted-pattern.png';
 import clouds from '../assets/images/Home/clouds.png';
 import avatarSlogan from '../assets/images/Home/avatar-slogan.png';
-import video from '../assets/images/Home/video.png';
+// import video from '../assets/images/Home/video.png';
 
 import card1 from '../assets/images/Home/card-1.png';
 import card2 from '../assets/images/Home/card-2.png';
@@ -187,9 +187,9 @@ export default function Home() {
 					</div>
 				</div>
 
-				<div className={styles.video}>
+				{/* <div className={styles.video}>
 					<Image src={video} alt="Video background" />
-				</div>
+				</div> */}
 
 				<div className={styles.dottedPattern}>
 					<Image src={dottedPattern} className="w-100" alt='Textura de bolinhas' />
