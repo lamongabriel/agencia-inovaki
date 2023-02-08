@@ -1,17 +1,20 @@
+import Link from 'next/link';
 import Image from 'next/image';
 
 // Components
 import { FiArrowRightCircle } from 'react-icons/fi';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination } from 'swiper';
-import Link from 'next/link';
 import { useRouter } from 'next/router';
+import { Reveal } from 'react-awesome-reveal';
 import Button from '../components/UI/Button';
 import TopSwiper from '../components/UI/Swiper/TopSwiper';
 import CasesSwiper from '../components/UI/Swiper/CasesSwiper';
 import Text from '../components/UI/Text';
 import Heading from '../components/UI/Heading';
 import Layout from '../components/UI/Layout';
+import SEO from '../components/SEO';
+import InfiniteText from '../components/UI/InfiniteText';
 
 // Swiper Images
 import swiperTop1 from '../assets/images/Home/swiper-1.png';
@@ -53,9 +56,7 @@ import logoMastercar from '../assets/images/logos/logo-mastercar.png';
 
 // Styles
 import styles from '../styles/pages/home.module.scss';
-import InfiniteText from '../components/UI/InfiniteText';
 import 'swiper/css/pagination';
-import SEO from '../components/SEO';
 
 const slides = [
   { image: swiperTop1, alt: 'Conheça nossas soluções.', href: 'https://google.com.br' },
@@ -138,7 +139,7 @@ export default function Home() {
 
 					<div className="row mx-auto">
 
-						<div className={`${styles.areasBg} col-lg-4 col-12 col-md-6 order-lg-1 order-2`}>
+						<Reveal triggerOnce className={`${styles.areasBg} col-lg-4 col-12 col-md-6 order-lg-1 order-2`}>
 							<div className={styles.areasOfExpertiseBg} style={{ backgroundImage: `url(${bgWordpress.src})` }}>
 								<Image src={wordpressLogo} alt="Wordpress Logo" />
 								<p>
@@ -146,9 +147,9 @@ export default function Home() {
 								</p>
 								<Link target="_blank" href="https://br.wordpress.org/">&#62; Saiba Mais</Link>
 							</div>
-						</div>
+						</Reveal>
 
-						<div className={`${styles.areasBg} ${styles.vtex} col-lg-8 order-lg-2 order-1`}>
+						<Reveal triggerOnce delay={200} className={`${styles.areasBg} ${styles.vtex} col-lg-8 order-lg-2 order-1`}>
 							<div className={styles.areasOfExpertiseBg} style={{ backgroundImage: `url(${bgVtex.src})` }}>
 								<Image src={vtexLogo} alt="Vtex Logo" />
 								<p>
@@ -158,9 +159,9 @@ export default function Home() {
 								</p>
 								<Link target="_blank" href="https://vtex.com/br-pt/">&#62; Saiba Mais</Link>
 							</div>
-						</div>
+						</Reveal>
 
-						<div className={`${styles.areasBg} ${styles.bling} col-lg-8 order-lg-2 order-3`}>
+						<Reveal triggerOnce delay={400} className={`${styles.areasBg} ${styles.bling} col-lg-8 order-lg-2 order-3`}>
 							<div className={styles.areasOfExpertiseBg} style={{ backgroundImage: `url(${bgBling.src})` }}>
 								<Image src={blingLogo} alt="Bling Logo" />
 								<p>
@@ -169,9 +170,9 @@ export default function Home() {
 								</p>
 								<Link target="_blank" href="https://www.bling.com.br/">&#62; Saiba Mais</Link>
 							</div>
-						</div>
+						</Reveal>
 
-						<div className={`${styles.areasBg} col-lg-4 col-12 col-md-6 order-lg-2 order-2`}>
+						<Reveal triggerOnce delay={600} className={`${styles.areasBg} col-lg-4 col-12 col-md-6 order-lg-2 order-2`}>
 							<div className={styles.areasOfExpertiseBg} style={{ backgroundImage: `url(${bgSendgrid.src})` }}>
 								<Image src={sendgridLogo} alt="Sendgrid Logo" />
 								<p>
@@ -180,7 +181,7 @@ export default function Home() {
 								</p>
 								<Link target="_blank" href="https://sendgrid.com/">&#62; Saiba Mais</Link>
 							</div>
-						</div>
+						</Reveal>
 
 					</div>
 				</div>
