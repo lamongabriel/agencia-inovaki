@@ -7,24 +7,24 @@ import Row from 'react-bootstrap/Row';
 import Tab from 'react-bootstrap/Tab';
 
 // Components
-import Layout from '../components/UI/Layout';
-import BannerTop from '../components/UI/Banner/BannerTop';
-import Text from '../components/UI/Text';
-import ArrowLink from '../components/UI/ArrowLink';
-import Button from '../components/UI/Button';
-import SEO from '../components/SEO';
+import Layout from '../../components/UI/Layout';
+import BannerTop from '../../components/UI/Banner/BannerTop';
+import Text from '../../components/UI/Text';
+import ArrowLink from '../../components/UI/ArrowLink';
+import Button from '../../components/UI/Button';
+import SEO from '../../components/SEO';
 
 // Images
-import bg from '../assets/images/Servicos/bg-sobre.png';
-import arrowDown from '../assets/images/Servicos/arrow-down.png';
+import bg from '../../assets/images/Servicos/bg-sobre.png';
+import arrowDown from '../../assets/images/Servicos/arrow-down.png';
 
-import logoVtex from '../assets/images/logos/logo-vtex.svg';
-import logoBling from '../assets/images/logos/logo-bling.svg';
-import logoSendgrid from '../assets/images/logos/logo-sendgrid.svg';
-import logoWordpress from '../assets/images/logos/logo-wordpress.svg';
+import logoVtex from '../../assets/images/logos/logo-vtex.svg';
+import logoBling from '../../assets/images/logos/logo-bling.svg';
+import logoSendgrid from '../../assets/images/logos/logo-sendgrid.svg';
+import logoWordpress from '../../assets/images/logos/logo-wordpress.svg';
 
 // Styles
-import styles from '../styles/pages/servicos.module.scss';
+import styles from '../../styles/pages/servicos/index.module.scss';
 
 export default function Servicos() {
   return (
@@ -50,12 +50,11 @@ export default function Servicos() {
 						</div>
 						<div className="col-lg-5 offset-lg-2 text-start">
 							<Text>
-								Nossa agência conta com um time especialista em serviços VTEX,
-								a plataforma de comércio digital para grandes empresas.
-								Dê o próximo passo na sua jornada com uma plataforma
-								de comércio completa para os desafios de hoje.
+								A plataforma de comércio eletrônico altamente avançada,
+								projetada para oferecer a empresas uma solução eficiente e
+								escalável para venderem seus produtos online.
 							</Text>
-							<ArrowLink target="_blank" href='https://vtex.com/br-pt/'>
+							<ArrowLink href='/servicos/vtex'>
 								Saiba mais
 							</ArrowLink>
 						</div>
