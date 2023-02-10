@@ -16,23 +16,49 @@
 
 .contentArea {
 	background-color: var(--white-100);
-	padding-bottom: clamp(1.5rem, 1.5vw, 4.37rem);
+
+	.content {
+		padding: 3rem 0;
+	}
 
 	.experienceContent {
-		text-align: center;
 
-		h2{
-			strong {
-				font-size: clamp(1.5rem, 1.5vw, 4.37rem);
-				line-height: clamp(1.5rem, 1.6vw, 4.37rem);
-
-				font-weight: 700;
-				text-align: left;
-			}
+		h2 {
+			margin: 2rem 0;
 		}
 
-		img {
-			max-width: 20rem;
+		p:last-child {
+			border: 1px solid var(--main-color);
+			padding: 1.25rem;
+			line-height: 1.2em;
+			text-align: center;
+			border-radius: 20px;
+
+			margin: 2rem 0;
+		}
+	}
+
+	.whatWeDoContent {
+		margin-top: 2rem;
+
+		>div > div {
+			line-height: 3em;
+			margin-bottom: 2rem;
+
+			>div {
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				gap: 1rem;
+
+				svg {
+					color: var(--main-color);
+				}
+
+				p {
+					margin: 0;
+				}
+			}
 		}
 	}
 
@@ -53,7 +79,7 @@
 
 .projectSheet {
 	background-color: var(--white);
-	border-top: 1px solid var(--main-color);
+	border-top: 5px solid var(--main-color);
 	text-align: center;
 
 	.buttonPlatform {
@@ -64,13 +90,25 @@
 
 		padding: 14px 30px 12px;
 		border-radius: 50px;
-		border: 1px solid var(--main-color);
+		border: 2px solid var(--main-color);
 
 		transform: translateY(-50%);
 		display: inline-block;
 
 		transition: color 300ms, background-color 300ms;
 	}
+
+	.projectBox {
+		background: #e31c58;
+		color: #fff;
+		padding: 30px;
+		border-radius: 20px;
+
+		p {
+			margin: 0;
+		}
+	}
+
 
 	.projectSheetContent {
 		display: flex;
@@ -144,29 +182,51 @@
 
 }
 
-@media (min-width: 992px){
-	.contentArea {
-		.content {
-			padding: 1rem 4.5rem 3rem 4.5rem;
+.contactUs {
+	text-align: center;
+
+	position: relative;
+	z-index: -1;
+
+	div:last-child > div {
+		font-size: 2.5rem;
+		line-height: 1em;
+		font-weight: 300;
+		margin-bottom: 2rem;
+
+		width: 80%;
+
+		strong {
+			font-weight: 800;
 		}
 	}
-}
 
-@media (max-width: 576px) {
-	.contentArea {
+	.teste {
+		min-height: 500px;
 
-		.yellowBox {
-			transform: none;
-			padding: 2rem 1.25rem;
-		}
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
 
-		.content {
-			padding-top: 3rem;
-			padding-bottom: 3rem;
+		filter: blur(6px);
+	}
 
-			p {
-				text-align: justify;
-			}
-		}
+	.contactText {
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0, 0.6); /* Black w/opacity/see-through */
+		color: white;
+		font-weight: bold;
+		position: absolute;
+		inset: 0;
+		z-index: 2;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center	;
 	}
 }
