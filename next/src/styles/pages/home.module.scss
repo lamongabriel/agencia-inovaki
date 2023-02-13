@@ -4,16 +4,47 @@
 	.dottedPattern {
 		max-width: 25rem;
 		margin: 0 auto;
-	}
 
-	.video {
-		margin-bottom: 3rem;
-		img {
-			aspect-ratio: 16/9;
-			width: 100%;
-			object-fit: cover;
+		&:last-of-type {
+			margin-top: 4rem;
 		}
 	}
+
+	/* PARALLAX EFFECT
+	.video {
+		background-attachment: fixed;
+		background-repeat: no-repeat;
+		background-size: cover;
+
+		position: relative;
+
+		.parallaxText {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			padding: 4rem 0;
+
+			width: 100%;
+			height: 100%;
+		}
+
+		.gradient1 {
+			position: absolute;
+			inset: 0;
+
+			background: rgb(0,0,0);
+			background: linear-gradient(180deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0) 10%);
+		}
+
+		.gradient2 {
+			position: absolute;
+			inset: 0;
+
+			background: rgb(0,0,0);
+			background: linear-gradient(0deg, rgba(0,0,0,0.7) 0%, rgba(255,255,255,0) 10%);
+		}
+	}
+	*/
 
 	.whoWeAreTitle {
 		padding-left: 20%;
@@ -194,7 +225,7 @@
 		background-size: cover !important;
 
 		padding: 25px;
-		min-height: 368px;
+		min-height: 450px;
 		width: 100%;
 
 		transition: transform 200ms;
