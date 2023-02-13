@@ -18,10 +18,17 @@
 	background-color: var(--white-100);
 
 	.content {
-		padding: 3rem 0;
+		padding: 3em 0 7rem 0;
 	}
 
 	.experienceContent {
+
+		>div {
+
+			img {
+				width: 100%;
+			}
+		}
 
 		h2 {
 			margin: 2rem 0;
