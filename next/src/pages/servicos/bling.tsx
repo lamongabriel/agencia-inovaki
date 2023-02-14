@@ -67,7 +67,7 @@ export default function Bling() {
 								</Text>
 								<Text>
 									Já desenvolvemos soluções incríveis para empresas como
-									<strong> FashionMasks</strong>,
+									<strong> Fashion Masks</strong>,
 									<strong> Fashly</strong>.
 								</Text>
 							</div>
