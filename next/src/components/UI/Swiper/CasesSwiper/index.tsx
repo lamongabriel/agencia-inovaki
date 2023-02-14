@@ -7,16 +7,19 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 
 import { FaAngleLeft, FaAngleRight, FaTag } from 'react-icons/fa';
+import Link from 'next/link';
 import Text from '../../Text';
 
 import styles from './styles.module.scss';
 import Heading from '../../Heading';
+import ArrowLink from '../../ArrowLink';
 
 interface Slide {
 	title: string
 	text: string
 	image: StaticImageData
 	tag: string
+	link: string
 }
 
 interface CasesSwiperProps {
@@ -36,16 +39,17 @@ export default function CasesSwiper({ slides }: CasesSwiperProps) {
 	>
 		{slides.map((slide, index) => (
 			<SwiperSlide key={index} className={styles.slideWrapper}>
-				<div className={styles.slide}>
+				<Link href={slide.link} className={styles.slide}>
 					<span className={styles.tag}><FaTag /> {slide.tag}</span>
 					<div>
 						<div>
 							<Heading><strong>{slide.title}</strong></Heading>
 							<Text>{slide.text}</Text>
+							<ArrowLink href={slide.link}>Conheça mais do Projeto!</ArrowLink>
 						</div>
 						<Image src={slide.image} alt={slide.title} />
 					</div>
-				</div>
+				</Link>
 			</SwiperSlide>
 		))}
 		<div className={styles.navigation}>

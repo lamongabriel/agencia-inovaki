@@ -70,12 +70,14 @@ const casesSlides = [
     tag: 'Desenvolvimento Web',
     text: 'Nossa agência foi responsável pelo desenvolvimento do novo site oficial da instituição religiosa no Brasil. O atual website conta com áreas para notícias, eventos, compartilhamento de documenntos e outras funcionalidades importantes para divulgação de conteúdos institucionais e evangelísticos.',
     image: casesSwiper1,
+    link: '/projetos/ipb',
   },
   {
     title: 'Aquamar',
     tag: 'E-commerce',
     text: 'Durante os anos de 2020 e 2021 nossa agência foi responsável por todo suporte e manutenção do site da Aquamar na plataforma Vtex. Neste período desenvolvemos melhorias na loja com implementações de APIs, criação de Landing Pages e soluções administrativas.',
     image: casesSwiper2,
+    link: '/projetos/aquamar',
   },
 ];
 
