@@ -19,13 +19,13 @@ import Text from '../../components/UI/Text';
 import SEO from '../../components/SEO';
 
 import logoVtex from '../../assets/images/logos/logo-vtex.svg';
-import bgPC from '../../assets/images/Servicos/bg-vtex-pc.png';
 import bg from '../../assets/images/Projetos/Aquamar/bg-aquamar.png';
 import arrowDown from '../../assets/images/Servicos/arrow-down.png';
 import dottedPattern from '../../assets/images/dotted-pattern.png';
 
 import vtex1 from '../../assets/images/Servicos/Vtex/vtex-1.png';
 import vtex3 from '../../assets/images/Servicos/Vtex/vtex-3.png';
+import vtex4 from '../../assets/images/Servicos/Vtex/vtex-4.png';
 
 import styles from '../../styles/pages/servicos/internal.module.scss';
 import Button from '../../components/UI/Button';
@@ -50,10 +50,8 @@ export default function VTEX() {
 					</div>
 
 					<div className={`${styles.content} container mx-auto`}>
-						<div className={styles.experienceContent}>
-						</div>
 
-						<div className='row align-items-center'>
+						<div className={`${styles.experienceContent} row container align-items-center`}>
 							<div className='col-lg-5 text-end'>
 								<Image src={logoVtex} alt='Logo VTEX' />
 								<Heading small className='text-end'>
@@ -65,107 +63,102 @@ export default function VTEX() {
 									e temos uma vasta experiência no desenvolvimento
 									de lojas virtuais para empresas de todos os setores,
 									incluindo gigantes do comércio brasileiro.
-									<br/>
-									<br/>
-									<div style={{
-									  border: '1px solid #e31c58',
-									  padding: '20px',
-									  lineHeight: '1.2em',
-									  textAlign: 'center',
-									}}>
-										Já desenvolvemos soluções incríveis para empresas como
-										<strong> Aquamar</strong>,
-										<strong> Hope Lingerie</strong>,
-										<strong> Fashly</strong> e
-										<strong> Custa Pouco Seduzir</strong>.
-									</div>
+								</Text>
+								<Text>
+									Já desenvolvemos soluções incríveis para empresas como
+									<strong> Aquamar</strong>,
+									<strong> Hope Lingerie</strong>,
+									<strong> Fashly</strong> e
+									<strong> Custa Pouco Seduzir</strong>.
 								</Text>
 							</div>
 							<Image className='col-lg-5 offset-lg-2' src={vtex1} alt='VTEX'/>
 						</div>
 
-						<div className='row align-items-center my-4'>
-							<Image className='col-lg-5' src={vtex3} alt='VTEX'/>
-							<div className='col-lg-5 offset-lg-2'>
+						<div className={`${styles.whatWeDoContent} container row align-items-center`}>
+							<Image className='col-lg-5 order-lg-1 order-2' src={vtex3} alt='VTEX'/>
+							<div className='col-lg-5 offset-lg-2 order-lg-2 order-1 mb-lg-0'>
 								<Heading small className='text-start'>
 									O que fazemos?
 								</Heading>
-								<div style={{
-								  lineHeight: '3rem',
-								}}>
-									<div style={{
-									  display: 'flex',
-									  alignItems: 'center',
-									  justifyContent: 'start',
-									  gap: '1rem',
-									}}>
-										<FaCheck size={24} color='#e31c58' />
-										<p style={{ margin: 0 }}>Somos especiadivstas em VTEX IO</p>
+								<div>
+									<div>
+										<FaCheck size={24} />
+										<p>Somos especiadivstas em VTEX IO</p>
 									</div>
 
-									<div>Desenvolvemos soluções de pagamento;</div>
+									<div>
+										<FaCheck size={24} />
+										Desenvolvemos soluções de pagamento;
+										</div>
 
-									<div>Customizamos layouts com sua marca;</div>
+									<div>
+										<FaCheck size={24} />
+										Customizamos layouts com sua marca;
+										</div>
 
-									<div>Criamos Landing Pages que convertem;</div>
+									<div>
+										<FaCheck size={24} />
+										Criamos Landing Pages que convertem;
+										</div>
 
-									<div>Integramos outras plataformas na VTEX;</div>
+									<div>
+										<FaCheck size={24} />
+										Integramos outras plataformas na VTEX;
+										</div>
 
-									<div>Prestamos suporte e manutenção de lojas;</div>
+									<div>
+										<FaCheck size={24} />
+										Prestamos suporte e manutenção de lojas;
+										</div>
 
-									<div>Possuímos equipe multifuncional;</div>
+									<div>
+										<FaCheck size={24} />
+										Possuímos equipe multifuncional;
+										</div>
 								</div>
 							</div>
 						</div>
 
-						<hr />
-							<div style={{
-							  margin: '60px auto',
-							  textAlign: 'center',
-							  width: '80%',
-							}}>
-								<p style={{
-								  fontSize: '40px',
-								  lineHeight: '1em',
-								}}>
-									Não perca mais tempo. Escolha a Inovaki e tenha a
-									<strong> certeza de que seu negócio estará nas
-									mãos de especialistas VTEX</strong>.
-								</p>
-								<Button bg='#e31c58' color='#fff' rightIcon={FaComments}>
-									Fale com nosso comercial
-								</Button>
-							</div>
-						<hr />
-						<br />
-
-						<div className='w-100 text-center'>
-							<Image className='w-50' src={bgPC} alt='PC Dashboard VTEX'/>
-						</div>
 					</div>
 				</section>
+
+							<div className={styles.contactUs}>
+								<div className={styles.teste} style={{
+								  backgroundImage: `url(${vtex4.src})`,
+								}}>
+								</div>
+								<div className={styles.contactText}>
+									<div>
+											Não perca mais tempo. Escolha a Inovaki e tenha a
+											<strong> certeza de que seu negócio estará nas
+											mãos de especialistas VTEX</strong>.
+									</div>
+										<Button bg='#e31c58' color='#fff' rightIcon={FaComments}>
+											Fale com nosso comercial
+										</Button>
+								</div>
+							</div>
+
 				<section className={styles.projectSheet}>
 					<div className={styles.buttonPlatform}>
 						O QUE É A VTEX?
 					</div>
-					<div className='container' style={{
-					  background: '#e31c58',
-					  color: '#fff',
-					  padding: '30px',
-					  borderRadius: '20px',
-					}}>
-						<p style={{ color: '#fff' }}>
-							Se você está procurando por uma solução completa para o
-							sucesso do seu negócio digital, então você precisa conhecer a plataforma
-							<strong> VTEX</strong>.
-							Ela é diferenciada por oferecer recursos incríveis, como
-							<strong> facilidade de uso, gestão centralizada,
-								customização e estabilidade</strong>,
-							tornando-a a escolha perfeita para
-							empresas que buscam <strong>excelência na gestão do e-commerce</strong>.
-						</p>
-					</div>
-					<div className={`${styles.projectSheetContent} container row row-cols-lg-3 row-cols-1`}>
+						<div className='container'>
+							<div className={styles.projectBox}>
+								<p>
+									Se você está procurando por uma solução completa para o
+									sucesso do seu negócio digital, então você precisa conhecer a plataforma
+									<strong> VTEX</strong>.
+									Ela é diferenciada por oferecer recursos incríveis, como
+									<strong> facilidade de uso, gestão centralizada,
+										customização e estabilidade</strong>,
+									tornando-a a escolha perfeita para
+									empresas que buscam <strong>excelência na gestão do e-commerce</strong>.
+								</p>
+							</div>
+						</div>
+					<div className={`${styles.projectSheetContent} container row row-cols-lg-3 row-cols-md-2`}>
 
 						<div className={styles.benefits}>
 							<div>

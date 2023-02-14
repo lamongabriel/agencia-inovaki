@@ -187,28 +187,18 @@ export default function Home() {
 					</div>
 				</div>
 
-				{/* <div className={styles.video}>
-					<Image src={video} alt="Video background" />
-				</div> */}
-
-				<div className={styles.dottedPattern}>
-					<Image src={dottedPattern} className="w-100" alt='Textura de bolinhas' />
-				</div>
-			</section>
-			<section className={styles.casesAndProjects} style={{ backgroundImage: ` url(${clouds.src})` }}>
-				<div className='container'>
-					<h1>
-						<strong>CASES</strong> E PROJETOS
-					</h1>
-
-					<CasesSwiper slides={casesSlides} />
-					<div className='d-flex'>
-						<Button onClick={() => router.push('/projetos')} rightIcon={FiArrowRightCircle}>
-							VER TODOS OS PROJETOS
-						</Button>
+			{/*
+				<div className={styles.video} style={{
+				  backgroundImage: `url(${bgTeste.src})`,
+				}}>
+					<div className={styles.gradient1}></div>
+					<div className={styles.parallaxText}>
+						<Image src={bgText} alt='teste'/>
 					</div>
+					<div className={styles.gradient2}></div>
 				</div>
-			</section>
+  			*/}
+
 			<section className={styles.cards}>
 				<Swiper
 					breakpoints={cardsSwiperConfig.breakpoints}
@@ -244,6 +234,25 @@ export default function Home() {
 						</div>
 					</SwiperSlide>
 				</Swiper>
+			</section>
+
+				<div className={styles.dottedPattern}>
+					<Image src={dottedPattern} className="w-100" alt='Textura de bolinhas' />
+				</div>
+			</section>
+			<section className={styles.casesAndProjects} style={{ backgroundImage: ` url(${clouds.src})` }}>
+				<div className='container'>
+					<h1>
+						<strong>CASES</strong> E PROJETOS
+					</h1>
+
+					<CasesSwiper slides={casesSlides} />
+					<div className='d-flex'>
+						<Button onClick={() => router.push('/projetos')} rightIcon={FiArrowRightCircle}>
+							VER TODOS OS PROJETOS
+						</Button>
+					</div>
+				</div>
 			</section>
 			<section className={styles.clients}>
 				<div className="container mx-auto row">
