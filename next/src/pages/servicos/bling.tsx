@@ -34,12 +34,12 @@ export default function Bling() {
   return (
 		<Layout>
 			<SEO
-				pageTitle='Inovaki | VTEX'
-				pageDescription='A VTEX é uma das melhores plataformas de e-commerce disponíveis no mercado. Não perca mais tempo, entre em contato conosco e veja como podemos ajudá-lo a ter sucesso no mundo digital.'
-				pageUrl='https://inovaki.vercel.app/servicos/vtex'
-				pageImage='/images/vtex.png'
+				pageTitle='Inovaki | Bling'
+				pageDescription='Bling é o sistema de gestão online que descomplica o seu negócio! Nossa agência trabalha com a integração e desenvolvimento de soluções que integrem sua plataforma com as aplicações da Bling.'
+				pageUrl='https://inovaki.vercel.app/servicos/bling'
+				pageImage='/images/bling.jpg'
 			/>
-			<BannerTop image={bg} auxiliaryText="A maior plataforma E-Commerce">
+			<BannerTop image={bg} auxiliaryText="O melhor Sistema de Gestão Empresarial Integrado">
 				<strong>BLING</strong> BLING
 			</BannerTop>
 			<div className={styles.bling}>
@@ -55,18 +55,19 @@ export default function Bling() {
 							<div className='col-lg-5 text-end'>
 								<Image src={logoBling} alt='Logo Bling' />
 								<Heading small className='text-end'>
-									A plataforma de comércio digital para empresas!
+									O sistema de gestão online que descomplica o seu negócio!
 								</Heading>
 								<Text className='text-end'>
 									Você quer levar seu negócio digital ao próximo nível?
-									<strong> Nós somos especialistas na plataforma VTEX </strong>
-									e temos uma vasta experiência no desenvolvimento
-									de lojas virtuais para empresas de todos os setores,
-									incluindo gigantes do comércio brasileiro.
+									<strong> Nós somos especialistas no sistema Bling</strong>,
+									a solução completa e intuitiva que pode revolucionar a maneira
+									como você administra sua empresa. Podemos integrar sua loja virtual
+									aos principais marketplaces e plataformas, de forma simples e prática,
+									com uma equipe capacitada e experiente no assunto!
 								</Text>
 								<Text>
 									Já desenvolvemos soluções incríveis para empresas como
-									<strong> FashionMasks</strong>,
+									<strong> Fashion Masks</strong>,
 									<strong> Fashly</strong>.
 								</Text>
 							</div>
@@ -82,37 +83,37 @@ export default function Bling() {
 								<div>
 									<div>
 										<FaCheck size={24} />
-										<p>Somos especiadivstas em VTEX IO</p>
+										<p>Integração com Plataformas e Marketplaces;</p>
 									</div>
 
 									<div>
 										<FaCheck size={24} />
-										Desenvolvemos soluções de pagamento;
+										Controle Financeiro;
 										</div>
 
 									<div>
 										<FaCheck size={24} />
-										Customizamos layouts com sua marca;
+										Recebimento de Pagamentos;
 										</div>
 
 									<div>
 										<FaCheck size={24} />
-										Criamos Landing Pages que convertem;
+										Rastreamento de Entregas;
 										</div>
 
 									<div>
 										<FaCheck size={24} />
-										Integramos outras plataformas na VTEX;
+										Gerenciamento de Estoque;
 										</div>
 
 									<div>
 										<FaCheck size={24} />
-										Prestamos suporte e manutenção de lojas;
+										Emissão de Notas Fiscais;
 										</div>
 
 									<div>
 										<FaCheck size={24} />
-										Possuímos equipe multifuncional;
+										Integrações Logísticas;
 										</div>
 								</div>
 							</div>
@@ -130,7 +131,7 @@ export default function Bling() {
 									<div>
 											Não perca mais tempo. Escolha a Inovaki e tenha a
 											<strong> certeza de que seu negócio estará nas
-											mãos de especialistas VTEX</strong>.
+											mãos de especialistas no Sistema Bling</strong>.
 									</div>
 										<Button bg='#0ad692' color='#fff' rightIcon={FaComments}>
 											Fale com nosso comercial
@@ -140,19 +141,19 @@ export default function Bling() {
 
 				<section className={styles.projectSheet}>
 					<div className={styles.buttonPlatform}>
-						O QUE É A VTEX?
+						O QUE É O BLING?
 					</div>
 						<div className='container'>
 							<div className={styles.projectBox}>
 								<p>
-									Se você está procurando por uma solução completa para o
-									sucesso do seu negócio digital, então você precisa conhecer a plataforma
-									<strong> VTEX</strong>.
-									Ela é diferenciada por oferecer recursos incríveis, como
-									<strong> facilidade de uso, gestão centralizada,
-										customização e estabilidade</strong>,
-									tornando-a a escolha perfeita para
-									empresas que buscam <strong>excelência na gestão do e-commerce</strong>.
+									É a solução de gestão empresarial que você precisa para otimizar
+									seus processos e alcançar o sucesso!
+									O <strong> BLING</strong> oferece uma ampla gama de serviços indispensáveis
+									para o sucesso de sua empresa, tornando a
+									<strong> gestão de seu negócio mais eficiente e simplificada.	</strong>
+									Não perca mais tempo com soluções complicadas e ineficientes, experimente o
+									<strong> BLING</strong> agora e comece a <strong>alavancar o sucesso de sua
+									empresa!</strong>
 								</p>
 							</div>
 						</div>
@@ -236,8 +237,8 @@ export default function Bling() {
 						<Link href='#' className={`${styles.buttonPlatform} col-12 col-md-4`}>
 							CONHEÇA NOSSOS PROJETOS
 						</Link>
-						<Link href='https://vtex.com/br-pt/' className={`${styles.buttonPlatform} col-12 col-md-4 offset-md-1`}>
-							ACESSE A VTEX
+						<Link href='https://www.bling.com.br/' target={'_blank'} className={`${styles.buttonPlatform} col-12 col-md-4 offset-md-1`}>
+							ACESSE O BLING
 						</Link>
 					</div>
 

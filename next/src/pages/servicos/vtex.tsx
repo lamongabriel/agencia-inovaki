@@ -242,7 +242,7 @@ export default function VTEX() {
 						<Link href='#' className={`${styles.buttonPlatform} col-12 col-md-4`}>
 							CONHEÇA NOSSOS PROJETOS
 						</Link>
-						<Link href='https://vtex.com/br-pt/' className={`${styles.buttonPlatform} col-12 col-md-4 offset-md-1`}>
+						<Link href='https://vtex.com/br-pt/' target={'_blank'} className={`${styles.buttonPlatform} col-12 col-md-4 offset-md-1`}>
 							ACESSE A VTEX
 						</Link>
 					</div>
