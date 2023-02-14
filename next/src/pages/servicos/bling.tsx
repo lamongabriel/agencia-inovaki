@@ -39,7 +39,7 @@ export default function Bling() {
 				pageUrl='https://inovaki.vercel.app/servicos/bling'
 				pageImage='/images/bling.jpg'
 			/>
-			<BannerTop image={bg} auxiliaryText="O melhor Sistema de Gestão Empresarial Integrado">
+			<BannerTop image={bg} auxiliaryText="ERP de Notas Ficais e Gestões">
 				<strong>BLING</strong> BLING
 			</BannerTop>
 			<div className={styles.bling}>
