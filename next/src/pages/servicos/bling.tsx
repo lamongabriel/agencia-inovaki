@@ -37,7 +37,7 @@ export default function Bling() {
 				pageTitle='Inovaki | Bling'
 				pageDescription='Bling é o sistema de gestão online que descomplica o seu negócio! Nossa agência trabalha com a integração e desenvolvimento de soluções que integrem sua plataforma com as aplicações da Bling.'
 				pageUrl='https://inovaki.vercel.app/servicos/bling'
-				pageImage='/images/bling.png'
+				pageImage='/images/bling.jpg'
 			/>
 			<BannerTop image={bg} auxiliaryText="O melhor Sistema de Gestão Empresarial Integrado">
 				<strong>BLING</strong> BLING
