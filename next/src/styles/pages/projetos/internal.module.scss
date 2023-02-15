@@ -33,6 +33,13 @@
 		top: -2rem;
 		left: calc(50% - 2rem);
 	}
+
+	.content {
+
+		img {
+			max-width: 100%;
+		}
+	}
 }
 
 .projectSheet {
