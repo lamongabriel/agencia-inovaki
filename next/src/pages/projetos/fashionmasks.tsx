@@ -19,6 +19,7 @@ import styles from '../../styles/pages/projetos/internal.module.scss';
 import logoFashionMasks from '../../assets/images/logos/logo-fashionmasks.png';
 import imageFashionMasks1 from '../../assets/images/Projetos/FashionMasks/img-fashion1.png';
 import imageFashionMasks2 from '../../assets/images/Projetos/FashionMasks/img-fashion2.png';
+import imageFashionMasks3 from '../../assets/images/Projetos/FashionMasks/img-fashion3.png';
 
 export default function FashionMasks() {
   return (
@@ -59,7 +60,7 @@ export default function FashionMasks() {
 					<div className='text-center'>
 						<Image src={imageFashionMasks1} alt='Imagem Fashion Masks'/>
 					</div>
-					<Text>
+					<Text className='my-5'>
 						Em menos de 1 mês após o lançamento da primeira landing page, a primeira loja virtual da
 						Fashion Masks já estava liberada para acesso e recebendo pedidos de todo Brasil.
 						Chegamos também em um resultado incrível onde em menos de 6 meses alcançamos o
@@ -69,7 +70,7 @@ export default function FashionMasks() {
 						<Image src={imageFashionMasks2} alt='Imagem Fashion Masks'/>
 					</div>
 					<div className='text-center'>
-						<Image src={logoFashionMasks} alt='Logo Fashion Masks'/>
+						<Image src={imageFashionMasks3} alt='Imagem Fashion Masks'/>
 					</div>
 					<Heading className={styles.titleFashionMasks}>
 						MAIS DE R$1 MILHÃO <br />
