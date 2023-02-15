@@ -37,6 +37,15 @@
 .projectSheet {
 	background-color: var(--white);
 
+	button{
+		cursor: auto;
+
+		&:hover {
+			filter: none;
+		}
+	}
+
+
 	> div:first-child {
 		button {
 			display: flex;
