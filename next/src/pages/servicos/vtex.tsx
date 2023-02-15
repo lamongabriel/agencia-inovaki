@@ -84,38 +84,38 @@ export default function VTEX() {
 								<div>
 									<div>
 										<FaCheck size={24} />
-										<p>Somos especiadivstas em VTEX IO</p>
+										Somos especiadivstas em VTEX IO
 									</div>
 
 									<div>
 										<FaCheck size={24} />
 										Desenvolvemos soluções de pagamento;
-										</div>
+									</div>
 
 									<div>
 										<FaCheck size={24} />
 										Customizamos layouts com sua marca;
-										</div>
+									</div>
 
 									<div>
 										<FaCheck size={24} />
 										Criamos Landing Pages que convertem;
-										</div>
+									</div>
 
 									<div>
 										<FaCheck size={24} />
 										Integramos outras plataformas na VTEX;
-										</div>
+									</div>
 
 									<div>
 										<FaCheck size={24} />
 										Prestamos suporte e manutenção de lojas;
-										</div>
+									</div>
 
 									<div>
 										<FaCheck size={24} />
 										Possuímos equipe multifuncional;
-										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -123,41 +123,41 @@ export default function VTEX() {
 					</div>
 				</section>
 
-							<div className={styles.contactUs}>
-								<div className={styles.teste} style={{
-								  backgroundImage: `url(${vtex4.src})`,
-								}}>
-								</div>
-								<div className={styles.contactText}>
-									<div>
-											Não perca mais tempo. Escolha a Inovaki e tenha a
-											<strong> certeza de que seu negócio estará nas
-											mãos de especialistas VTEX</strong>.
-									</div>
-										<Button bg='#e31c58' color='#fff' rightIcon={FaComments}>
-											Fale com nosso comercial
-										</Button>
-								</div>
-							</div>
+				<div className={styles.contactUs}>
+					<div className={styles.teste} style={{
+					  backgroundImage: `url(${vtex4.src})`,
+					}}>
+					</div>
+					<div className={styles.contactText}>
+						<div>
+								Não perca mais tempo. Escolha a Inovaki e tenha a
+								<strong> certeza de que seu negócio estará nas
+								mãos de especialistas VTEX</strong>.
+						</div>
+							<Button bg='#e31c58' color='#fff' rightIcon={FaComments}>
+								Fale com nosso comercial
+							</Button>
+					</div>
+				</div>
 
 				<section className={styles.projectSheet}>
 					<div className={styles.buttonPlatform}>
 						O QUE É A VTEX?
 					</div>
-						<div className='container'>
-							<div className={styles.projectBox}>
-								<p>
-									Se você está procurando por uma solução completa para o
-									sucesso do seu negócio digital, então você precisa conhecer a plataforma
-									<strong> VTEX</strong>.
-									Ela é diferenciada por oferecer recursos incríveis, como
-									<strong> facilidade de uso, gestão centralizada,
-										customização e estabilidade</strong>,
-									tornando-a a escolha perfeita para
-									empresas que buscam <strong>excelência na gestão do e-commerce</strong>.
-								</p>
-							</div>
+					<div className='container'>
+						<div className={styles.projectBox}>
+							<p>
+								Se você está procurando por uma solução completa para o
+								sucesso do seu negócio digital, então você precisa conhecer a plataforma
+								<strong> VTEX</strong>.
+								Ela é diferenciada por oferecer recursos incríveis, como
+								<strong> facilidade de uso, gestão centralizada,
+									customização e estabilidade</strong>,
+								tornando-a a escolha perfeita para
+								empresas que buscam <strong>excelência na gestão do e-commerce</strong>.
+							</p>
 						</div>
+					</div>
 					<div className={`${styles.projectSheetContent} container row row-cols-lg-3 row-cols-md-2`}>
 
 						<div className={styles.benefits}>
