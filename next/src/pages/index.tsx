@@ -19,6 +19,7 @@ import InfiniteText from '../components/UI/InfiniteText';
 // Swiper Images
 import swiperTop1 from '../assets/images/Home/swiper-1.png';
 import swiperTop2 from '../assets/images/Home/swiper-2.png';
+import swiperTop3 from '../assets/images/Home/swiper-3.png';
 import casesSwiper1 from '../assets/images/Home/swiper-cases-1.png';
 import casesSwiper2 from '../assets/images/Home/swiper-cases-2.png';
 
@@ -62,6 +63,7 @@ import 'swiper/css/pagination';
 const slides = [
   { image: swiperTop1, alt: 'Conheça nossas soluções.', href: 'https://google.com.br' },
   { image: swiperTop2, alt: 'Nós desenvolvemos sua solução com e-commerce.', href: 'https://google.com.br' },
+  { image: swiperTop3, alt: 'Nós desenvolvemos sua solução com e-commerce.', href: 'https://google.com.br' },
 ];
 
 const casesSlides = [
