@@ -1,6 +1,10 @@
 .swiper {
 	position: relative;
 
+	a:hover {
+		color: inherit
+	}
+
 	.slideWrapper {
 		margin: 4rem 0;
 
