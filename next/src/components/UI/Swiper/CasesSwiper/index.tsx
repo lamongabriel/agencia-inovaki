@@ -12,7 +12,6 @@ import Text from '../../Text';
 
 import styles from './styles.module.scss';
 import Heading from '../../Heading';
-import ArrowLink from '../../ArrowLink';
 
 interface Slide {
 	title: string
@@ -45,7 +44,7 @@ export default function CasesSwiper({ slides }: CasesSwiperProps) {
 						<div>
 							<Heading><strong>{slide.title}</strong></Heading>
 							<Text>{slide.text}</Text>
-							<ArrowLink href={slide.link}>Conheça mais do Projeto!</ArrowLink>
+							<Text><strong>&gt; Conheça mais do Projeto! &lt;</strong></Text>
 						</div>
 						<Image src={slide.image} alt={slide.title} />
 					</div>
