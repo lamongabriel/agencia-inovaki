@@ -34,32 +34,41 @@ export default function Ipb() {
 						<strong>
 						Desde o ano de 2019 estamos atuando juntamente com a APECOM
 						(Agência Presbiteriana de Comunicação) no desenvolvimento e
-						ampliação do Site Oficial da 10ª maior denominação evangêlica do Brasil.
+						ampliação do Site Oficial da 10ª maior denominação evanglica do Brasil.
 						</strong>
 					</Heading>
 				</div>
 				<div className={`${styles.content} container mx-auto`}>
 					<Text>
-					O site oficial da Igreja Presbiteriana do Brasil foi desenvolvido por
-					nossa equipe após uma análise inicial juntamente com a APECOM onde encontramos
-					melhorias necessárias para que os membros da denominação e outros usuários do portal
-					tivessem acesso mais acertivo a informações institucionais e conteúdos.
+						O site oficial da Igreja Presbiteriana do Brasil foi desenvolvido por
+						nossa equipe após uma análise inicial juntamente com a APECOM onde encontramos
+						melhorias necessárias para que os membros da denominação e outros usuários do portal
+						tivessem acesso mais acertivo a informações institucionais e conteúdos.
 					</Text>
-					<div>
-						<Image src={imageIpb} alt='Imagem mostrando o desktop e o mobile da ipb' className='w-100'/>
+					<div className='text-center'>
+						<Image src={imageIpb} alt='Imagem mostrando o desktop e o mobile da ipb'/>
 					</div>
 					<Text>
-					Durante o estudo do projeto vimos que seria importante a ampliação da área de Conteúdos
-					do site e possibilidade de aplicação de filtros/buscas o que diminuiria o tempo de procura
-					das informações no portal. Agora pelo novo site os usuários conseguem ir direto a filtros
-					com	tags, realizar pesquisas pelo campo de busca ou acessar diretamente uma categoria de
-					assunto.
+						Durante o estudo do projeto vimos que seria importante a ampliação da área de
+						Conteúdos do site e possibilidade de aplicação de filtros/buscas o que diminuiria
+						o tempo de procura das informações no portal. Agora pelo novo site os usuários
+						conseguem ir direto a filtros com tags, realizar pesquisas pelo campo de busca
+						ou acessar diretamente uma categoria de assunto.
 					</Text>
 					<Text>
-					Hoje contamos com um portal formado por mais de 80 páginas com conteúdos atualizados,
-					informações acertivas sobre cada área da instituição e controle total dos conteúdos via
-					CRM próprio, desenvolvido especialmente para o projeto, o que facilita para a APECOM a
-					administração destas informações.
+						Hoje contamos com um portal formado por mais de 80 páginas com conteúdos atualizados,
+						informações acertivas sobre cada área da instituição e controle total dos conteúdos
+						via CRM próprio, desenvolvido especialmente para o projeto, o que facilita para a
+						APECOM a administração destas informações.
+					</Text>
+					<Text>
+						O projeto conta bom responsividade para Desktop, Tablet e Mobile. Ao ser acessado pelo
+						device do usuário, automaticamente ele é adaptado para que haja uma boa experiência do
+						usuário com o portal.
+					</Text>
+					<Text>
+						Veja abaixo a ficha técnica do projeto e tenha acesso ao portal para navegar e
+						conhecer um pouco mais.
 					</Text>
 				</div>
 			</section>
