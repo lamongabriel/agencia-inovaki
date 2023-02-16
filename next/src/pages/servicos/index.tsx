@@ -72,7 +72,7 @@ export default function Servicos() {
 								Nossa agência trabalha com a integração e desenvolvimento
 								de soluções que integrem sua plataforma com as aplicações da Bling.
 							</Text>
-							<ArrowLink target="_blank" href='https://www.bling.com.br/'>
+							<ArrowLink href='/servicos/bling'>
 								Saiba mais
 							</ArrowLink>
 						</div>
@@ -89,7 +89,7 @@ export default function Servicos() {
 								Gerenciamos e integramos a ferramenta SendGrid em sistema e
 								websites para disparos eficientes de e-mail e mail marketing.
 							</Text>
-							<ArrowLink target="_blank" href='https://sendgrid.com/'>
+							<ArrowLink href='/servicos/sendgrid'>
 								Saiba mais
 							</ArrowLink>
 						</div>
@@ -107,7 +107,7 @@ export default function Servicos() {
 								utilização da ferramenta Wordpress. A Inovaki conta com
 								profissionais capacitados e com experiência.
 							</Text>
-							<ArrowLink target="_blank" href='https://br.wordpress.org/'>
+							<ArrowLink href='/servicos/wordpress'>
 								Saiba mais
 							</ArrowLink>
 						</div>
@@ -167,7 +167,7 @@ export default function Servicos() {
 											com as melhores plataformas e-commerces do mercado.
 										</Text>
 										<ArrowLink href='/contato'>
-											Saiba mais
+											Fale Conosco
 										</ArrowLink>
 									</Tab.Pane>
 									<Tab.Pane eventKey="second">
@@ -183,7 +183,7 @@ export default function Servicos() {
 											E-mail Marketing, Links patrocinados e demais soluções do marketing digital.
 										</Text>
 										<ArrowLink href='/contato'>
-											Saiba mais
+											Fale Conosco
 										</ArrowLink>
 									</Tab.Pane>
 									<Tab.Pane eventKey="third">
@@ -199,7 +199,7 @@ export default function Servicos() {
 										com técnicas de Branding e construção de materiais impressos.
 										</Text>
 										<ArrowLink href='/contato'>
-											Saiba mais
+											Fale Conosco
 										</ArrowLink>
 									</Tab.Pane>
 									<Tab.Pane eventKey="four">
@@ -215,7 +215,7 @@ export default function Servicos() {
 											empresa, analisamos o cenário e atuamos sobre as causas.
 										</Text>
 										<ArrowLink href='/contato'>
-											Saiba mais
+											Fale Conosco
 										</ArrowLink>
 									</Tab.Pane>
 								</Tab.Content>

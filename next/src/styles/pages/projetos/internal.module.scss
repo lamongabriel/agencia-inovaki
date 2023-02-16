@@ -10,10 +10,11 @@
 		padding: 2.5rem 4.5rem;
 
 		strong {
-			font-size: clamp(1.5rem, 1.9vw, 4.37rem);
+			font-size: 1.875rem;
+			font-weight: 600;
+			line-height: 1.3em;
 		}
 	}
-
 	p,
 	img {
 		text-align: center;
@@ -32,10 +33,41 @@
 		top: -2rem;
 		left: calc(50% - 2rem);
 	}
+
+	.content {
+
+		img {
+			max-width: 100%;
+		}
+	}
+
+	.titleFashionMasks {
+		font-weight: 800;
+		line-height: 1em;
+
+		margin-bottom: 2rem;
+
+		strong {
+			color: var(--white);
+			text-shadow: 1px 1px 1px #000, -1px 1px 1px #000, 1px -1px 1px #000, -1px -1px 1px #000;
+
+			font-size: clamp(1.5rem, 8vw, 3.125rem);
+			line-height: 1em;
+		}
+	}
 }
 
 .projectSheet {
 	background-color: var(--white);
+
+	button{
+		cursor: auto;
+
+		&:hover {
+			filter: none;
+		}
+	}
+
 
 	> div:first-child {
 		button {

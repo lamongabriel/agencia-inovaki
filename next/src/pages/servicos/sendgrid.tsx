@@ -1,14 +1,14 @@
 import Image from 'next/image';
 
 import {
-  FaClipboardList,
-  FaPencilAlt,
-  FaGlobeAmericas,
-  FaChartLine,
-  FaLock,
-  FaCity,
   FaComments,
   FaCheck,
+  FaEnvelope,
+  FaAdversal,
+  FaEnvelopeOpenText,
+  FaDesktop,
+  FaToolbox,
+  FaListAlt,
 } from 'react-icons/fa';
 
 import Link from 'next/link';
@@ -34,12 +34,12 @@ export default function Sendgrid() {
   return (
 		<Layout>
 			<SEO
-				pageTitle='Inovaki | VTEX'
-				pageDescription='A VTEX é uma das melhores plataformas de e-commerce disponíveis no mercado. Não perca mais tempo, entre em contato conosco e veja como podemos ajudá-lo a ter sucesso no mundo digital.'
-				pageUrl='https://inovaki.vercel.app/servicos/vtex'
-				pageImage='/images/vtex.png'
+				pageTitle='Inovaki | Sendgrid'
+				pageDescription='Gerenciamos e integramos a ferramenta SendGrid em sistema e websites para disparos eficientes de e-mail e mail marketing.'
+				pageUrl='https://inovaki.vercel.app/servicos/sendgrid'
+				pageImage='/images/sendgrid.png'
 			/>
-			<BannerTop image={bg} auxiliaryText="A maior plataforma E-Commerce">
+			<BannerTop image={bg} auxiliaryText="Plataforma de Envio de E-mails">
 				<strong>SENDGRID</strong> SENDGRID
 			</BannerTop>
 			<div className={styles.sendGrid}>
@@ -55,21 +55,19 @@ export default function Sendgrid() {
 							<div className='col-lg-5 text-end'>
 								<Image src={logoSendgrid} alt='Logo Sendgrid' />
 								<Heading small className='text-end'>
-									A plataforma de comércio digital para empresas!
+									A plataforma de envio de emails em larga escala e de alta qualidade!
 								</Heading>
 								<Text className='text-end'>
 									Você quer levar seu negócio digital ao próximo nível?
-									<strong> Nós somos especialistas na plataforma VTEX </strong>
-									e temos uma vasta experiência no desenvolvimento
-									de lojas virtuais para empresas de todos os setores,
-									incluindo gigantes do comércio brasileiro.
+									<strong> Nós somos especialistas na plataforma Sendgrid</strong>.
+									Com uma infraestrutura escalável e recursos avançados, junto com uma equipe
+									qualificada para o trabalho, sua empresa poderá enviar milhões de emails por
+									dia com alta taxa de entrega e eficácia
 								</Text>
 								<Text>
 									Já desenvolvemos soluções incríveis para empresas como
-									<strong> Aquamar</strong>,
-									<strong> Hope Lingerie</strong>,
-									<strong> Fashly</strong> e
-									<strong> Custa Pouco Seduzir</strong>.
+									<strong> Fashion Masks</strong> e
+									<strong> Fashly</strong>
 								</Text>
 							</div>
 							<Image className='col-lg-5 offset-lg-2' src={sendgrid4} alt='VTEX'/>
@@ -84,38 +82,38 @@ export default function Sendgrid() {
 								<div>
 									<div>
 										<FaCheck size={24} />
-										<p>Somos especiadivstas em VTEX IO</p>
+										Configuramos e Implementamos a plataforma
 									</div>
 
 									<div>
 										<FaCheck size={24} />
-										Desenvolvemos soluções de pagamento;
-										</div>
+										Design de Templates Exclusivos;
+									</div>
 
 									<div>
 										<FaCheck size={24} />
-										Customizamos layouts com sua marca;
-										</div>
+										Criamos Estratégias de E-mails personalizadas;
+									</div>
 
 									<div>
 										<FaCheck size={24} />
-										Criamos Landing Pages que convertem;
-										</div>
+										Segmentação de Lista de Contatos;
+									</div>
 
 									<div>
 										<FaCheck size={24} />
-										Integramos outras plataformas na VTEX;
-										</div>
+										Fluxos de Automação de E-mai;
+									</div>
 
 									<div>
 										<FaCheck size={24} />
-										Prestamos suporte e manutenção de lojas;
-										</div>
+										Monitoramento e Análise de Desempenho;
+									</div>
 
 									<div>
 										<FaCheck size={24} />
-										Possuímos equipe multifuncional;
-										</div>
+										Integrações Personalizadas de Marketing;
+									</div>
 								</div>
 							</div>
 						</div>
@@ -132,7 +130,7 @@ export default function Sendgrid() {
 						<div>
 								Não perca mais tempo. Escolha a Inovaki e tenha a
 								<strong> certeza de que seu negócio estará nas
-								mãos de especialistas VTEX</strong>.
+								mãos de especialistas Sendgrid</strong>.
 						</div>
 							<Button bg='#1a82e2' color='#fff' rightIcon={FaComments}>
 								Fale com nosso comercial
@@ -142,98 +140,94 @@ export default function Sendgrid() {
 
 				<section className={styles.projectSheet}>
 					<div className={styles.buttonPlatform}>
-						O QUE É A VTEX?
+						O QUE É O SENDGRID?
 					</div>
-						<div className='container'>
-							<div className={styles.projectBox}>
-								<p>
-									Se você está procurando por uma solução completa para o
-									sucesso do seu negócio digital, então você precisa conhecer a plataforma
-									<strong> VTEX</strong>.
-									Ela é diferenciada por oferecer recursos incríveis, como
-									<strong> facilidade de uso, gestão centralizada,
-										customização e estabilidade</strong>,
-									tornando-a a escolha perfeita para
-									empresas que buscam <strong>excelência na gestão do e-commerce</strong>.
-								</p>
-							</div>
+					<div className='container'>
+						<div className={styles.projectBox}>
+							<p>
+								Se você está procurando por uma plataforma líder em envio de emails
+								em larga escala, oferecendo uma solução completa e confiável para empresas,
+								você precisa conhecer o <strong> Sendgrid</strong>.
+								Possui diversas soluções para ajudar as empresas a
+								<strong> otimizar suas campanhas de e-mail</strong>, incluindo ferramentas
+								de <strong> personalização</strong>, <strong> automação de e-mails</strong>,
+								<strong> testes A/B</strong> e muito mais.
+							</p>
 						</div>
+					</div>
 					<div className={`${styles.projectSheetContent} container row row-cols-lg-3 row-cols-md-2`}>
 
 						<div className={styles.benefits}>
 							<div>
-								<FaClipboardList color='white'/>
+								<FaEnvelope color='white'/>
 							</div>
 							<Heading small>
-								Gestão centralizada do seu negócio
+								Automação de E-mails
 							</Heading>
 							<Text>
-								Com a plataforma, o lojista tem uma completa gestão do seu
-								negócio, incluindo a administração de produtos, ofertas,
-								gestão de estoque e controle de vendas.
+							Envie de forma confiável em grande escala com o serviço SMTP —
+							sem a necessidade de servidores e aumente as taxas de entrega
+							com a API de validação de e-mail.
 							</Text>
 						</div>
 						<div className={styles.benefits}>
 							<div>
-								<FaPencilAlt color='white'/>
+								<FaAdversal color='white'/>
 							</div>
 							<Heading small>
-								Personalize sua loja com a sua marca
+								Recursos de campanhas de marketing
 							</Heading>
 							<Text>
-								A VTEX é altamente flexível em relação a personalização,
-								permitindo que o lojista escolha como será sua loja virtual,
-								de acordo com suas necessidades e metas.
+							Do design à capacidade de entrega, eleve o nível em todos os e-mails
+							enviados com campanhas de marketing.
 							</Text>
 						</div>
 						<div className={styles.benefits}>
 							<div>
-								<FaGlobeAmericas color='white'/>
+								<FaEnvelopeOpenText color='white'/>
 							</div>
 							<Heading small>
-								Múltiplas línguas e moedas
+								Monitore o envio de E-mails
 							</Heading>
 							<Text>
-								Expanda seus negócios para o mundo inteiro com lojas multilíngues
-								e gerencie moedas e formas de pagamento locais com tranquilidade.
+							Ferramentas de monitoramento e análise de desempenho de envio de emails,
+							permitindo que as empresas acompanhem as métricas de abertura, cliques e conversões
 							</Text>
 						</div>
 						<div className={styles.benefits}>
 							<div>
-								<FaChartLine color='white'/>
+								<FaDesktop color='white'/>
 							</div>
 							<Heading small>
-								Estabilidade e escalabilidade
+								Compatibilidade e Integração
 							</Heading>
 							<Text>
-							Com a VTEX, você pode ter a tranquilidade de uma loja virtual
-							sempre funcional. Além disso, a escalabilidade da
-							plataforma garante seu negócio sempre no topo.
+							Compatibilidade com várias linguagens de programação e integrações com
+							várias plataformas populares.
 							</Text>
 						</div>
 						<div className={styles.benefits}>
 							<div>
-								<FaLock color='white'/>
+								<FaToolbox color='white'/>
 							</div>
 							<Heading small>
-								Segurança nas operações
+								Testes de E-mails
 							</Heading>
 							<Text>
-								Escolha a plataforma e tenha uma experiência de
-								compra e venda sempre segura e tranquila,
-								tanto para o lojista quanto para o comprador.
+							Testes A/B, permitindo que as empresas testem diferentes versões de suas mensagens
+							para melhorar a eficácia do envio de email
 							</Text>
 						</div>
 						<div className={styles.benefits}>
 							<div>
-								<FaCity color='white'/>
+								<FaListAlt color='white'/>
 							</div>
 							<Heading small>
-								Plataforma omnichannel
+								Gerencie sua Lista de Contatos
 							</Heading>
 							<Text>
-								Com a VTEX, você pode integrar diversos canais de venda,
-								desde marketplaces até redes sociais, tornando a venda mais fácil e eficiente.
+							Gerenciamento de listas de email, permitindo que as empresas gerenciem e segmentem
+							suas listas de contatos para envio de mensagens mais relevantes e direcionadas
 							</Text>
 						</div>
 					</div>
@@ -242,8 +236,8 @@ export default function Sendgrid() {
 						<Link href='#' className={`${styles.buttonPlatform} col-12 col-md-4`}>
 							CONHEÇA NOSSOS PROJETOS
 						</Link>
-						<Link href='https://vtex.com/br-pt/' className={`${styles.buttonPlatform} col-12 col-md-4 offset-md-1`}>
-							ACESSE A VTEX
+						<Link href='https://sendgrid.com/' className={`${styles.buttonPlatform} col-12 col-md-4 offset-md-1`}>
+							ACESSE O SENDGRID
 						</Link>
 					</div>
 

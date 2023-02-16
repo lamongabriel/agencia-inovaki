@@ -19,6 +19,7 @@ import InfiniteText from '../components/UI/InfiniteText';
 // Swiper Images
 import swiperTop1 from '../assets/images/Home/swiper-1.png';
 import swiperTop2 from '../assets/images/Home/swiper-2.png';
+import swiperTop3 from '../assets/images/Home/swiper-3.png';
 import casesSwiper1 from '../assets/images/Home/swiper-cases-1.png';
 import casesSwiper2 from '../assets/images/Home/swiper-cases-2.png';
 
@@ -62,20 +63,23 @@ import 'swiper/css/pagination';
 const slides = [
   { image: swiperTop1, alt: 'Conheça nossas soluções.', href: 'https://google.com.br' },
   { image: swiperTop2, alt: 'Nós desenvolvemos sua solução com e-commerce.', href: 'https://google.com.br' },
+  { image: swiperTop3, alt: 'Nós desenvolvemos sua solução com e-commerce.', href: 'https://google.com.br' },
 ];
 
 const casesSlides = [
   {
-    title: 'igreja presbiteriana do brasil - site oficial',
+    title: 'Igreja Presbiteriana do Brasil - Site Oficial',
     tag: 'Desenvolvimento Web',
     text: 'Nossa agência foi responsável pelo desenvolvimento do novo site oficial da instituição religiosa no Brasil. O atual website conta com áreas para notícias, eventos, compartilhamento de documenntos e outras funcionalidades importantes para divulgação de conteúdos institucionais e evangelísticos.',
     image: casesSwiper1,
+    link: '/projetos/ipb',
   },
   {
     title: 'Aquamar',
     tag: 'E-commerce',
-    text: 'Durante os anos de 2020 e 2021 nossa agência foi responsável por todo suporte e manutenção do site da Aquamar na plataforma Vtex. Neste período desenvolvemos melhorias na loja com implementações de APIs, criação de Landing Pages e soluções administrativas.',
+    text: 'Atuamos diretamente no E-commerce da marca prestando Suporte e Manutenção na plataforma Vtex e desenvolvendo soluções inovadoras para o  público do varejo.',
     image: casesSwiper2,
+    link: '/projetos/aquamar',
   },
 ];
 

@@ -17,7 +17,8 @@ import Button from '../../components/UI/Button';
 import styles from '../../styles/pages/projetos/internal.module.scss';
 
 import logoAquamar from '../../assets/images/logos/logo-aquamar.png';
-import imageAquamar from '../../assets/images/Projetos/Aquamar/img-aquamar.png';
+import imageAquamar1 from '../../assets/images/Projetos/Aquamar/img-aquamar1.png';
+import imageAquamar2 from '../../assets/images/Projetos/Aquamar/img-aquamar2.png';
 
 export default function Aquamar() {
   return (
@@ -32,37 +33,32 @@ export default function Aquamar() {
 					</div>
 					<Heading small className='d-flex align-items-center'>
 						<strong>
-						Atuação direta no E-commerce da marca prestando Suporte e Manutenção
-						em Vtex e desenvolvimento de soluções inovadoras para o varejo.
+							Atuação direta no E-commerce da marca prestando Suporte e Manutenção
+							em Vtex e desenvolvimento de soluções inovadoras para o varejo.
 						</strong>
 					</Heading>
 				</div>
 				<div className={`${styles.content} container mx-auto`}>
 					<Text>
-						Durante os anos de 2020 e 2021 nossa agência foi responsável por todo
-					 	suporte e manutenção do site da Aquamar na plataforma Vtex. Neste período
-					  desenvolvemos melhorias na loja com implementações de APIs, criação de Landing
-						Pages e soluções administrativas.
+						Durante os anos de 2020 e 2021 nossa agência foi responsável por prestar todo
+						suporte e manutenção do site da marca Aquamar. Seu site é produzido utilizando a
+						tecnologia da plataforma Vtex e neste período desenvolvemos melhorias na loja virtual
+						com implementações de APIs, criação de Landing Pages e soluções administrativas.
 					</Text>
-					<Text>
-						Iniciamos nosso trabalho junto a marca no ano de 2020, antes da pandemia, onde
-						começamos prestando o suporte e manutenção em seu e-commerce utilizando a ferramenta
-						VTEX. Foi um grande desafio para nossa empresa e equipe, pois o projeto vinha de
-						outra empresa sem informações e tivemos que desbravar os códigos e os problemas
-						encontrados	durante nossas análises técnicas.
-					</Text>
-					<div>
-						<Image src={imageAquamar} alt='Logo Aquamar' className='w-100'/>
+					<div className='text-center'>
+						<Image src={imageAquamar1} alt='Logo Aquamar'/>
 					</div>
 					<Text>
-					Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
-					Ipsum has been the industrys standard dummy text ever since the 1500s, when an
-					unknown printer took a galley of type and scrambled it to make a type specimen book.
-					It has survived not only five centuries. Lorem Ipsum is simply dummy text of the
-					printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy
-					text ever since the 1500s, when an unknown printer took a galley of type and scrambled
-					it to make a type specimen book. It has survived not only five centuries.
+						Iniciamos nosso trabalho junto a empresa no ano de 2020, antes da pandemia, onde
+						começamos prestando o suporte e manutenção em uma parte de seu e-commerce e com o
+						reflexo positivo da nossa equipe junto a equipe da empresa fomos contratados para
+						trabalhar em tempo integral com a VTEX. Foi um grande desafio para nossa empresa e
+						equipe, pois o projeto vinha de outra empresa sem informações e tivemos que desbravar
+						os códigos e os problemas encontrados durante nossas análises técnicas.
 					</Text>
+					<div className='text-center'>
+						<Image src={imageAquamar2} alt='Logo Aquamar'/>
+					</div>
 				</div>
 			</section>
 			<section className={styles.projectSheet}>

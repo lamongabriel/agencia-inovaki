@@ -39,7 +39,7 @@ export default function Bling() {
 				pageUrl='https://inovaki.vercel.app/servicos/bling'
 				pageImage='/images/bling.jpg'
 			/>
-			<BannerTop image={bg} auxiliaryText="O melhor Sistema de Gestão Empresarial Integrado">
+			<BannerTop image={bg} auxiliaryText="ERP de Notas Ficais e Gestões">
 				<strong>BLING</strong> BLING
 			</BannerTop>
 			<div className={styles.bling}>
@@ -83,38 +83,38 @@ export default function Bling() {
 								<div>
 									<div>
 										<FaCheck size={24} />
-										<p>Integração com Plataformas e Marketplaces;</p>
+										Integração com Plataformas e Marketplaces;
 									</div>
 
 									<div>
 										<FaCheck size={24} />
 										Controle Financeiro;
-										</div>
+									</div>
 
 									<div>
 										<FaCheck size={24} />
 										Recebimento de Pagamentos;
-										</div>
+									</div>
 
 									<div>
 										<FaCheck size={24} />
 										Rastreamento de Entregas;
-										</div>
+									</div>
 
 									<div>
 										<FaCheck size={24} />
 										Gerenciamento de Estoque;
-										</div>
+									</div>
 
 									<div>
 										<FaCheck size={24} />
 										Emissão de Notas Fiscais;
-										</div>
+									</div>
 
 									<div>
 										<FaCheck size={24} />
 										Integrações Logísticas;
-										</div>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -122,41 +122,41 @@ export default function Bling() {
 					</div>
 				</section>
 
-							<div className={styles.contactUs}>
-								<div className={styles.teste} style={{
-								  backgroundImage: `url(${bling2.src})`,
-								}}>
-								</div>
-								<div className={styles.contactText}>
-									<div>
-											Não perca mais tempo. Escolha a Inovaki e tenha a
-											<strong> certeza de que seu negócio estará nas
-											mãos de especialistas no Sistema Bling</strong>.
-									</div>
-										<Button bg='#0ad692' color='#fff' rightIcon={FaComments}>
-											Fale com nosso comercial
-										</Button>
-								</div>
-							</div>
+				<div className={styles.contactUs}>
+					<div className={styles.teste} style={{
+					  backgroundImage: `url(${bling2.src})`,
+					}}>
+					</div>
+					<div className={styles.contactText}>
+						<div>
+								Não perca mais tempo. Escolha a Inovaki e tenha a
+								<strong> certeza de que seu negócio estará nas
+								mãos de especialistas no Sistema Bling</strong>.
+						</div>
+							<Button bg='#0ad692' color='#fff' rightIcon={FaComments}>
+								Fale com nosso comercial
+							</Button>
+					</div>
+				</div>
 
 				<section className={styles.projectSheet}>
 					<div className={styles.buttonPlatform}>
 						O QUE É O BLING?
 					</div>
-						<div className='container'>
-							<div className={styles.projectBox}>
-								<p>
-									É a solução de gestão empresarial que você precisa para otimizar
-									seus processos e alcançar o sucesso!
-									O <strong> BLING</strong> oferece uma ampla gama de serviços indispensáveis
-									para o sucesso de sua empresa, tornando a
-									<strong> gestão de seu negócio mais eficiente e simplificada.	</strong>
-									Não perca mais tempo com soluções complicadas e ineficientes, experimente o
-									<strong> BLING</strong> agora e comece a <strong>alavancar o sucesso de sua
-									empresa!</strong>
-								</p>
-							</div>
+					<div className='container'>
+						<div className={styles.projectBox}>
+							<p>
+								É a solução de gestão empresarial que você precisa para otimizar
+								seus processos e alcançar o sucesso!
+								O <strong> BLING</strong> oferece uma ampla gama de serviços indispensáveis
+								para o sucesso de sua empresa, tornando a
+								<strong> gestão de seu negócio mais eficiente e simplificada.	</strong>
+								Não perca mais tempo com soluções complicadas e ineficientes, experimente o
+								<strong> BLING</strong> agora e comece a <strong>alavancar o sucesso de sua
+								empresa!</strong>
+							</p>
 						</div>
+					</div>
 					<div className={`${styles.projectSheetContent} container row row-cols-lg-3 row-cols-md-2`}>
 
 					<div className={styles.benefits}>
