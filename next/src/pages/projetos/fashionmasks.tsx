@@ -6,7 +6,7 @@ import {
 } from 'react-icons/fa';
 import Link from 'next/link';
 import BannerTop from '../../components/UI/Banner/BannerTop';
-import bg from '../../assets/images/Projetos/Aquamar/bg-aquamar.png';
+import bg from '../../assets/images/Projetos/FashionMasks/bg-fashionmasks.png';
 
 import Layout from '../../components/UI/Layout';
 import Heading from '../../components/UI/Heading';

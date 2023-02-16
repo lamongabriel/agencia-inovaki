@@ -19,7 +19,7 @@ import Text from '../../components/UI/Text';
 import SEO from '../../components/SEO';
 
 import logoSendgrid from '../../assets/images/logos/logo-sendgrid.svg';
-import bg from '../../assets/images/Projetos/Aquamar/bg-aquamar.png';
+import bg from '../../assets/images/Servicos/Sendgrid/bg-sendgrid.png';
 import arrowDown from '../../assets/images/Servicos/arrow-down.png';
 import dottedPattern from '../../assets/images/dotted-pattern.png';
 
