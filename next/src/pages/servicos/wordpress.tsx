@@ -179,6 +179,9 @@ export default function WordPress() {
 							</div>
 							<Heading small>Designs personalizáveis</Heading>
 							<Text>
+								Oferecendo uma grande variedade de temas e plugins para
+								personalizar o design e a funcionalidade do seu site,
+								com o Wordpress é possível criar um site único e com a sua marca.
 							</Text>
 						</div>
 						<div className={styles.benefits}>
@@ -187,6 +190,8 @@ export default function WordPress() {
 							</div>
 							<Heading small>Pronto para SEO</Heading>
 							<Text>
+								O WordPress possui recursos de SEO incorporados, como a capacidade de editar meta
+								tags e títulos de páginas, e pode ser estendido com plugins dedicados para SEO.
 							</Text>
 						</div>
 						<div className={styles.benefits}>
@@ -195,6 +200,8 @@ export default function WordPress() {
 							</div>
 							<Heading small>Sites responsivos</Heading>
 							<Text>
+								Tanto para mobile quanto para desktop, o WordPress é capaz de entregar
+								um site responsível a adaptável para todos os tamanhos de tela.
 							</Text>
 						</div>
 						<div className={styles.benefits}>
@@ -203,6 +210,10 @@ export default function WordPress() {
 							</div>
 							<Heading small>Alto desempenho</Heading>
 							<Text>
+								Rápido e responsivo, é importante escolher um bom
+								provedor de hospedagem, otimizar imagens, utilizar plugins de
+								cache e escolher temas leves e otimizados podem ajudar a
+								melhorar a velocidade do seu site.
 							</Text>
 						</div>
 						<div className={styles.benefits}>
@@ -211,6 +222,9 @@ export default function WordPress() {
 							</div>
 							<Heading small>Alta segurança</Heading>
 							<Text>
+								O Wordpress é uma das plataformas mais seguras da atualidade,
+								é frequentemente atualizado para corrigir falhas de segurança
+								e melhorar a proteção do sistema.
 							</Text>
 						</div>
 						<div className={styles.benefits}>
@@ -219,6 +233,9 @@ export default function WordPress() {
 							</div>
 							<Heading small>Loja virtual</Heading>
 							<Text>
+								Usando plugins específicos para comércio eletrônico, como o WooCommerce, é possível
+								desenvolver facilmente sua loja virtual. Ele oferece recursos robustos
+								para gerenciar produtos, pedidos e pagamentos.
 							</Text>
 						</div>
 					</div>
@@ -231,10 +248,10 @@ export default function WordPress() {
 							CONHEÇA NOSSOS PROJETOS
 						</Link>
 						<Link
-							href="https://vtex.com/br-pt/"
+							href="https://wordpress.com/"
 							className={`${styles.buttonPlatform} col-12 col-md-4 offset-md-1`}
 						>
-							ACESSE A VTEX
+							ACESSE O WORDPRESS
 						</Link>
 					</div>
 
