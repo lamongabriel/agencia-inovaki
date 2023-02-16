@@ -9,6 +9,7 @@ import Card from 'react-bootstrap/Card';
 // Components
 import { AiOutlineMinus, AiOutlinePlus } from 'react-icons/ai';
 import Image from 'next/image';
+import Link from 'next/link';
 import BannerTop from '../../components/UI/Banner/BannerTop';
 import Layout from '../../components/UI/Layout';
 
@@ -17,6 +18,13 @@ import bg from '../../assets/images/Sobre/bg-sobre.png';
 import aquamar from '../../assets/images/Projetos/aquamar.png';
 import custaPouco from '../../assets/images/Projetos/custa-pouco.png';
 import Fashly from '../../assets/images/Projetos/fashion-masks.png';
+import acaiMax from '../../assets/images/Projetos/acai-do-max.png';
+import granilha from '../../assets/images/Projetos/granilha.png';
+import ipb from '../../assets/images/Projetos/ipb.png';
+import ipbSites from '../../assets/images/Projetos/ipb-sites.png';
+import masterCar from '../../assets/images/Projetos/mastercar.png';
+import parKids from '../../assets/images/Projetos/parkids.png';
+import vitorContabilidade from '../../assets/images/Projetos/vitor-contabilidade.png';
 
 // Styles
 import styles from '../../styles/pages/projetos.module.scss';
@@ -25,12 +33,16 @@ import Text from '../../components/UI/Text';
 import SEO from '../../components/SEO';
 
 interface CustomToggleProps {
-	children: ReactNode
-	eventKey: string
-	callback?: any
+	children: ReactNode;
+	eventKey: string;
+	callback?: any;
 }
 
-function ContextAwareToggle({ children, eventKey, callback }: CustomToggleProps) {
+function ContextAwareToggle({
+  children,
+  eventKey,
+  callback,
+}: CustomToggleProps) {
   const { activeEventKey } = useContext(AccordionContext);
 
   const decoratedOnClick = useAccordionButton(
@@ -41,14 +53,14 @@ function ContextAwareToggle({ children, eventKey, callback }: CustomToggleProps)
   const isCurrentEventKey = activeEventKey === eventKey;
 
   return (
-    <button
-      type="button"
-			className=''
-      onClick={decoratedOnClick}
-    >
-      {children}
-			{isCurrentEventKey ? <AiOutlineMinus size={36} /> : <AiOutlinePlus size={36} />}
-    </button>
+		<button type="button" className="" onClick={decoratedOnClick}>
+			{children}
+			{isCurrentEventKey ? (
+				<AiOutlineMinus size={36} />
+			) : (
+				<AiOutlinePlus size={36} />
+			)}
+		</button>
   );
 }
 
@@ -56,17 +68,21 @@ export default function Projetos() {
   return (
 		<Layout>
 			<SEO
-				pageTitle='Inovaki | Cases e Projetos'
-				pageDescription='Conheça as nossas soluções em inovação e desenvolvimento digital.'
-				pageUrl='https://inovaki.vercel.app/projetos'
-				pageImage='/images/inovaki-bg.png'
+				pageTitle="Inovaki | Cases e Projetos"
+				pageDescription="Conheça as nossas soluções em inovação e desenvolvimento digital."
+				pageUrl="https://inovaki.vercel.app/projetos"
+				pageImage="/images/inovaki-bg.png"
 			/>
-			<BannerTop image={bg} auxiliaryText='Conheça nossa Agência!'>
+			<BannerTop image={bg} auxiliaryText="Conheça nossa Agência!">
 				<strong>CASES</strong> E PROJETOS
 			</BannerTop>
-			<section className='container'>
+			<section className="container">
 				<div className={styles.accordionDiv}>
-					<Accordion defaultActiveKey="0" className={styles.accordion} >
+					<Accordion
+						defaultActiveKey="0"
+						alwaysOpen
+						className={styles.accordion}
+					>
 						<Card className={styles.accordionItem}>
 							<Card.Header className={styles.accordionButton}>
 								<ContextAwareToggle eventKey="0">E-COMMERCE</ContextAwareToggle>
@@ -74,95 +90,98 @@ export default function Projetos() {
 							<Accordion.Collapse eventKey="0" className={styles.accordionBody}>
 								<Card.Body className={`${styles.accordionBody} row pb-5`}>
 									<div className="col-lg-5">
-										<Image src={aquamar} alt='Loja aquamar' />
+										<Link href='/projetos/aquamar'>
+											<Image src={aquamar} alt="Loja aquamar" />
 
-										<Heading small>
-											<strong>AQUAMAR</strong>
-										</Heading>
-										<Text>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-											Sed voluptas quisquam ipsa minima dolorem nesciunt ex architecto.
-											Quibusdam esse sapiente, placeat libero,
-											 in illo necessitatibus non nihil ipsa, dolorem consequatur!
-										</Text>
+											<Heading small>
+												<strong>AQUAMAR</strong>
+											</Heading>
+											<Text>
+												Atuamos diretamente no E-commerce da marca prestando
+												Suporte e Manutenção na plataforma Vtex e desenvolvendo
+												soluções inovadoras para o público do varejo.
+											</Text>
+										</Link>
 									</div>
 
 									<div className="col-lg-5 offset-lg-2">
-										<Image src={Fashly} alt='Costureiras Fashion Masks' />
+										<Link href='/projetos/fashionmasks'>
+											<Image src={Fashly} alt="Costureiras Fashion Masks" />
 
-										<Heading small>
-											<strong>FASHION MASKS</strong>
-										</Heading>
-										<Text>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-											Sed voluptas quisquam ipsa minima dolorem nesciunt ex architecto.
-											Quibusdam esse sapiente, placeat libero,
-											in illo necessitatibus non nihil ipsa, dolorem consequatur!
-										</Text>
+											<Heading small>
+												<strong>FASHION MASKS</strong>
+											</Heading>
+											<Text>
+												Em 2020 fomos desafiados por uma pandemia e abraçamos um
+												projeto com foco em ajudar pessoas e famílias, e em menos
+												de 6 meses alcançamos o resultado de arrecadação de mais
+												de R$1 milhão.
+											</Text>
+										</Link>
 									</div>
 
 									<div className="col-lg-5">
-										<Image src={custaPouco} alt='Loja Custa Pouco Seduzir' />
+										<Link href='#'>
+											<Image src={custaPouco} alt="Loja Custa Pouco Seduzir" />
 
-										<Heading small>
-											<strong>CUSTA POUCO SEDUZIR</strong>
-										</Heading>
-										<Text>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-											Sed voluptas quisquam ipsa minima dolorem nesciunt ex architecto.
-											Quibusdam esse sapiente, placeat libero,
-											in illo necessitatibus non nihil ipsa, dolorem consequatur!
-										</Text>
+											<Heading small>
+												<strong>CUSTA POUCO SEDUZIR</strong>
+											</Heading>
+											<Text>
+												Oferecemos o serviço de análise e otimização do site,
+												incluindo a melhoria do layout e a identificação de falhas
+												no processo de cadastro e envio de produtos. Desenvolvemos
+												novas funcionalidades e recursos de mídia para a marca,
+												com o objetivo de aprimorar a experiência do usuário e
+												maximizar a eficiência operacional.
+											</Text>
+										</Link>
 									</div>
 								</Card.Body>
 							</Accordion.Collapse>
 						</Card>
 						<Card className={styles.accordionItem}>
 							<Card.Header className={styles.accordionButton}>
-								<ContextAwareToggle eventKey="1">SOLUÇÕES E INTEGRAÇÕES</ContextAwareToggle>
+								<ContextAwareToggle eventKey="1">
+									SOLUÇÕES E INTEGRAÇÕES
+								</ContextAwareToggle>
 							</Card.Header>
 							<Accordion.Collapse eventKey="1" className={styles.accordionBody}>
 								<Card.Body className={`${styles.accordionBody} row pb-5`}>
 									<div className="col-lg-5">
-										<Image src={aquamar} alt='Loja aquamar' />
+										<Link href='/projetos/ipb'>
+											<Image src={ipbSites} alt="Imagem IPB Sites" />
 
-										<Heading small>
-											<strong>AQUAMAR</strong>
-										</Heading>
-										<Text>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-											Sed voluptas quisquam ipsa minima dolorem nesciunt ex architecto.
-											Quibusdam esse sapiente, placeat libero,
-											 in illo necessitatibus non nihil ipsa, dolorem consequatur!
-										</Text>
+											<Heading small>
+												<strong>IPB - PLATAFORMA DE CRIAÇÃO DE SITES</strong>
+											</Heading>
+											<Text>
+												Desenvolvemos uma plataforma em que é possível gerar um
+												site personalizado para sua igreja. Ao acessar o IPB
+												Sites, é possível registrar suas informações e nós criamos
+												um novo site do zero exclusivamente para a sua igreja
+												local. Mais de 100 sites, por todo o Brasil, já foram
+												criados por esta plataforma!
+											</Text>
+										</Link>
 									</div>
 
 									<div className="col-lg-5 offset-lg-2">
-										<Image src={Fashly} alt='Costureiras Fashion Masks' />
+										<Link href='/projetos/fashionmasks'>
+											<Image src={Fashly} alt="Costureiras Fashion Masks" />
 
-										<Heading small>
-											<strong>FASHION MASKS</strong>
-										</Heading>
-										<Text>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-											Sed voluptas quisquam ipsa minima dolorem nesciunt ex architecto.
-											Quibusdam esse sapiente, placeat libero,
-											in illo necessitatibus non nihil ipsa, dolorem consequatur!
-										</Text>
-									</div>
-
-									<div className="col-lg-5">
-										<Image src={custaPouco} alt='Loja Custa Pouco Seduzir' />
-
-										<Heading small>
-											<strong>CUSTA POUCO SEDUZIR</strong>
-										</Heading>
-										<Text>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-											Sed voluptas quisquam ipsa minima dolorem nesciunt ex architecto.
-											Quibusdam esse sapiente, placeat libero,
-											in illo necessitatibus non nihil ipsa, dolorem consequatur!
-										</Text>
+											<Heading small>
+												<strong>FASHION MASKS - BLING</strong>
+											</Heading>
+											<Text>
+												Integramos a plataforma VTEX e o sistema ERP Bling para o
+												projeto Fashion Masks, garantindo uma conexão completa e
+												confiável. Através dessa integração, foi possível
+												gerenciar o sistema de emissão de notas fiscais, controle
+												de estoque e envio de produtos de maneira ágil e
+												eficiente.
+											</Text>
+										</Link>
 									</div>
 								</Card.Body>
 							</Accordion.Collapse>
@@ -174,45 +193,56 @@ export default function Projetos() {
 							<Accordion.Collapse eventKey="2" className={styles.accordionBody}>
 								<Card.Body className={`${styles.accordionBody} row pb-5`}>
 									<div className="col-lg-5">
-										<Image src={aquamar} alt='Loja aquamar' />
+										<Link href='#'>
+											<Image src={vitorContabilidade} alt="Imagem Vitor Contabilidades" />
 
-										<Heading small>
-											<strong>AQUAMAR</strong>
-										</Heading>
-										<Text>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-											Sed voluptas quisquam ipsa minima dolorem nesciunt ex architecto.
-											Quibusdam esse sapiente, placeat libero,
-											 in illo necessitatibus non nihil ipsa, dolorem consequatur!
-										</Text>
+											<Heading small>
+												<strong>
+													VITOR CONTABILIDADE - SISTEMAS DE COBRANÇA
+												</strong>
+											</Heading>
+											<Text>
+												Gerenciamos todos os clientes da área contábil,
+												enfatizando as emissões de cobranças por meio de e-mail,
+												SMS e boletos impressos, onde o foco do projeto foi:
+												Reduzir o tempo de processo, custos bancários e
+												inadimplência. São realizados mais de 900 disparos mensais
+												de cobrança.
+											</Text>
+										</Link>
 									</div>
 
 									<div className="col-lg-5 offset-lg-2">
-										<Image src={Fashly} alt='Costureiras Fashion Masks' />
+										<Link href='#'>
+											<Image src={granilha} alt="Imagem Granilha" />
 
-										<Heading small>
-											<strong>FASHION MASKS</strong>
-										</Heading>
-										<Text>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-											Sed voluptas quisquam ipsa minima dolorem nesciunt ex architecto.
-											Quibusdam esse sapiente, placeat libero,
-											in illo necessitatibus non nihil ipsa, dolorem consequatur!
-										</Text>
+											<Heading small>
+												<strong>GRANILHA - SISTEMA DE ORÇAMENTO</strong>
+											</Heading>
+											<Text>
+												O nosso serviço B2B (Business-to-Business) consiste em
+												disponibilizar um vendedor externo para atender outras
+												empresas da região, oferecendo o gerenciamento completo
+												dos pedidos de vendas. Através do nosso sistema, é
+												possível cadastrar os pedidos de forma ágil e eficiente,
+												otimizando o processo de compra e venda entre empresas.
+											</Text>
+										</Link>
 									</div>
 
 									<div className="col-lg-5">
-										<Image src={custaPouco} alt='Loja Custa Pouco Seduzir' />
+										<Link href='#'>
+											<Image src={granilha} alt="imagem Granilha" />
 
-										<Heading small>
-											<strong>CUSTA POUCO SEDUZIR</strong>
-										</Heading>
-										<Text>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-											Sed voluptas quisquam ipsa minima dolorem nesciunt ex architecto.
-											Quibusdam esse sapiente, placeat libero,
-											in illo necessitatibus non nihil ipsa, dolorem consequatur!
-										</Text>
+											<Heading small>
+												<strong>GRANILHA - GESTÃO FINANCEIRA</strong>
+											</Heading>
+											<Text>
+												Fomos responsáveis pela criação de um sistema de controle
+												de contas, entradas e saídas do caixa, controle de
+												clientes, emissão de boletos e controle de pagamentos.
+											</Text>
+										</Link>
 									</div>
 								</Card.Body>
 							</Accordion.Collapse>
@@ -224,45 +254,67 @@ export default function Projetos() {
 							<Accordion.Collapse eventKey="3" className={styles.accordionBody}>
 								<Card.Body className={`${styles.accordionBody} row pb-5`}>
 									<div className="col-lg-5">
-										<Image src={aquamar} alt='Loja aquamar' />
+										<Link href='/projetos/ipb'>
+											<Image src={ipb} alt="Imagem IPB" />
 
-										<Heading small>
-											<strong>AQUAMAR</strong>
-										</Heading>
-										<Text>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-											Sed voluptas quisquam ipsa minima dolorem nesciunt ex architecto.
-											Quibusdam esse sapiente, placeat libero,
-											 in illo necessitatibus non nihil ipsa, dolorem consequatur!
-										</Text>
+											<Heading small>
+												<strong>IPB - SITE OFICIAL</strong>
+											</Heading>
+											<Text>
+												Nossa agência foi responsável pelo desenvolvimento do novo
+												site oficial da instituição religiosa no Igreja
+												Presbiteriana do Brasil. Contendo áreas para notícias,
+												eventos, compartilhamento de documentos e muito mais!
+											</Text>
+										</Link>
 									</div>
 
 									<div className="col-lg-5 offset-lg-2">
-										<Image src={Fashly} alt='Costureiras Fashion Masks' />
+										<Link href='#'>
+											<Image src={acaiMax} alt="Imagem Acaí do Max" />
 
-										<Heading small>
-											<strong>FASHION MASKS</strong>
-										</Heading>
-										<Text>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-											Sed voluptas quisquam ipsa minima dolorem nesciunt ex architecto.
-											Quibusdam esse sapiente, placeat libero,
-											in illo necessitatibus non nihil ipsa, dolorem consequatur!
-										</Text>
+											<Heading small>
+												<strong>AÇAÍ DO MAX</strong>
+											</Heading>
+											<Text>
+												Fomos responsáveis pelo desenvolvimento do site, design e
+												criação de conteúdo. Oferecendo novas oportunidades e um
+												alcance muito maior, que apenas a loja física não seria
+												capaz de disponibilizar.
+											</Text>
+										</Link>
 									</div>
 
 									<div className="col-lg-5">
-										<Image src={custaPouco} alt='Loja Custa Pouco Seduzir' />
+										<Link href='#'>
+											<Image src={masterCar} alt="Imagem Mastercar" />
 
-										<Heading small>
-											<strong>CUSTA POUCO SEDUZIR</strong>
-										</Heading>
-										<Text>
-											Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-											Sed voluptas quisquam ipsa minima dolorem nesciunt ex architecto.
-											Quibusdam esse sapiente, placeat libero,
-											in illo necessitatibus non nihil ipsa, dolorem consequatur!
-										</Text>
+											<Heading small>
+												<strong>MASTERCAR - ABM</strong>
+											</Heading>
+											<Text>
+												Veja como é fácil contratar a proteção do seu carro! Em um
+												site bonito e moderno, conteúdos atualizados e de fácil
+												entendimento, desenvolvemos tudo com atenção e cuidado, o
+												mesmo tratamento que seu carro irá receber!
+											</Text>
+										</Link>
+									</div>
+
+									<div className="col-lg-5 offset-lg-2">
+										<Link href='#'>
+											<Image src={parKids} alt="Imagem Parkids" />
+
+											<Heading small>
+												<strong>PARKIDS RECREAÇÃO</strong>
+											</Heading>
+											<Text>
+												Um site seguro e bonito, projetado para facilitar o seu
+												acesso, conhecer mais a sua estrutura e fazer orçamentos.
+												Tendo a missão de trazer segurança e diversão as crianças,
+												assim como conforto e tranquilidade para os pais.
+											</Text>
+										</Link>
 									</div>
 								</Card.Body>
 							</Accordion.Collapse>
