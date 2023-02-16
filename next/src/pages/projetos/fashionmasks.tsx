@@ -20,10 +20,18 @@ import logoFashionMasks from '../../assets/images/logos/logo-fashionmasks.png';
 import imageFashionMasks1 from '../../assets/images/Projetos/FashionMasks/img-fashion1.png';
 import imageFashionMasks2 from '../../assets/images/Projetos/FashionMasks/img-fashion2.png';
 import imageFashionMasks3 from '../../assets/images/Projetos/FashionMasks/img-fashion3.png';
+import SEO from '../../components/SEO';
 
 export default function FashionMasks() {
   return (
 		<Layout>
+			<SEO
+				pageTitle='Inovaki | Projeto - Fashion Masks'
+				pageDescription='No ano de 2020 fomos desafiados por uma pandemia, abraçamos um projeto inovador e com foco em ajudar
+				pessoas e famílias. Em menos de 6 meses alcançamos o resultado de arrecadação de mais de R$1 milhão.'
+				pageUrl='https://inovaki.vercel.app/projetos/fashionmasks'
+				pageImage='/images/inovaki-bg.png'
+			/>
 			<BannerTop image={bg} auxiliaryText="FASHION MASKS">
 				<strong>CASES</strong> E PROJETOS
 			</BannerTop>

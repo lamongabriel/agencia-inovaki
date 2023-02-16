@@ -19,10 +19,18 @@ import styles from '../../styles/pages/projetos/internal.module.scss';
 import logoAquamar from '../../assets/images/logos/logo-aquamar.png';
 import imageAquamar1 from '../../assets/images/Projetos/Aquamar/img-aquamar1.png';
 import imageAquamar2 from '../../assets/images/Projetos/Aquamar/img-aquamar2.png';
+import SEO from '../../components/SEO';
 
 export default function Aquamar() {
   return (
 		<Layout>
+			<SEO
+				pageTitle='Inovaki | Projeto - Aquamar'
+				pageDescription='Durante os anos de 2020 e 2021 nossa agência foi responsável por prestar todo
+				suporte e manutenção do site da marca Aquamar.'
+				pageUrl='https://inovaki.vercel.app/projetos/aquamar'
+				pageImage='/images/inovaki-bg.png'
+			/>
 			<BannerTop image={bg} auxiliaryText="AQUAMAR - Loja Virtual">
 				<strong>CASES</strong> E PROJETOS
 			</BannerTop>

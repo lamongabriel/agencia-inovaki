@@ -18,10 +18,17 @@ import styles from '../../styles/pages/projetos/internal.module.scss';
 
 import logoIpb from '../../assets/images/logos/logo-ipb.png';
 import imageIpb from '../../assets/images/Projetos/IPB/image-ipb.png';
+import SEO from '../../components/SEO';
 
 export default function Ipb() {
   return (
 		<Layout>
+			<SEO
+				pageTitle='Inovaki | Projeto - IPB'
+				pageDescription='Desenvolvemos o site oficial da Igreja Presbiteriana do Brasil, com o objetivo de melhorar o acesso a informações institucionais e conteúdo para membros da denominação e outros usuários. Atualmente, o portal conta com mais de 80 páginas com conteúdo atualizado, e controle total dos conteúdos via CRM próprio.'
+				pageUrl='https://inovaki.vercel.app/projetos/ipb'
+				pageImage='/images/inovaki-bg.png'
+			/>
 			<BannerTop image={bg} auxiliaryText="IPB - Site Oficial">
 				<strong>CASES</strong> E PROJETOS
 			</BannerTop>
