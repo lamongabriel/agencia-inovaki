@@ -30,6 +30,11 @@
 					text-align: left;
 					text-transform: uppercase;
 					margin-bottom: 2rem;
+					line-height: 1rem;
+
+					strong {
+						line-height: 1;
+					}
 				}
 
 				@media (max-width: 991px) {
