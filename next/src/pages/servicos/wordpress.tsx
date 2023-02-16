@@ -1,14 +1,14 @@
 import Image from 'next/image';
 
 import {
-  FaClipboardList,
-  FaPencilAlt,
-  FaGlobeAmericas,
   FaChartLine,
   FaLock,
-  FaCity,
   FaComments,
   FaCheck,
+  FaPaintBrush,
+  FaSearch,
+  FaMobileAlt,
+  FaDollarSign,
 } from 'react-icons/fa';
 
 import Link from 'next/link';
@@ -34,221 +34,216 @@ export default function WordPress() {
   return (
 		<Layout>
 			<SEO
-				pageTitle='Inovaki | VTEX'
-				pageDescription='A VTEX é uma das melhores plataformas de e-commerce disponíveis no mercado. Não perca mais tempo, entre em contato conosco e veja como podemos ajudá-lo a ter sucesso no mundo digital.'
-				pageUrl='https://inovaki.vercel.app/servicos/vtex'
-				pageImage='/images/vtex.png'
+				pageTitle="Inovaki | WordPress"
+				pageDescription="O WordPress é uma plataforma que permite aos usuários criar e gerenciar sites, blogs e lojas virtuais. Não perca mais tempo, entre em contato conosco e veja como podemos ajudá-lo a ter sucesso no mundo digital."
+				pageUrl="https://inovaki.vercel.app/servicos/wordpress"
+				pageImage="/images/wordpress.png"
 			/>
-			<BannerTop image={bg} auxiliaryText="A maior plataforma E-Commerce">
+			<BannerTop
+				image={bg}
+				auxiliaryText="Plataforma para criação e gerenciamento de sites"
+			>
 				<strong>WORDPRESS</strong> WORDPRESS
 			</BannerTop>
 			<div className={styles.wordPress}>
 				<section className={styles.contentArea}>
-
-					<div className={`${styles.arrowDown} container d-flex justify-content-center align-items-center`}>
-						<Image src={arrowDown} alt='Seta apontando para baixo' />
+					<div
+						className={`${styles.arrowDown} container d-flex justify-content-center align-items-center`}
+					>
+						<Image src={arrowDown} alt="Seta apontando para baixo" />
 					</div>
 
 					<div className={`${styles.content} container mx-auto`}>
-
-						<div className={`${styles.experienceContent} row container align-items-center`}>
-							<div className='col-lg-5 text-end'>
-								<Image src={logoWordPress} alt='Logo WordPress' />
-								<Heading small className='text-end'>
-									A plataforma de comércio digital para empresas!
+						<div
+							className={`${styles.experienceContent} row container align-items-center`}
+						>
+							<div className="col-lg-5 text-end">
+								<Image src={logoWordPress} alt="Logo WordPress" />
+								<Heading small className="text-end">
+									Crie sites e blogs com facilidade e velocidade!
 								</Heading>
-								<Text className='text-end'>
+								<Text className="text-end">
 									Você quer levar seu negócio digital ao próximo nível?
-									<strong> Nós somos especialistas na plataforma VTEX </strong>
-									e temos uma vasta experiência no desenvolvimento
-									de lojas virtuais para empresas de todos os setores,
-									incluindo gigantes do comércio brasileiro.
+									<strong> Nós somos especialistas na plataforma WordPress </strong>, podemos
+									oferecer a você um site personalizado, escalável e
+									profissional que atende às necessidades do seu negócio.
 								</Text>
 								<Text>
 									Já desenvolvemos soluções incríveis para empresas como
-									<strong> Aquamar</strong>,
-									<strong> Hope Lingerie</strong>,
-									<strong> Fashly</strong> e
-									<strong> Custa Pouco Seduzir</strong>.
+									<strong> IPB - Igreja Presbiteriana do Brasil</strong> e<strong> APECOM</strong>.
 								</Text>
 							</div>
-							<Image className='col-lg-5 offset-lg-2' src={wordPress4} alt='WordPress'/>
+							<Image
+								className="col-lg-5 offset-lg-2"
+								src={wordPress4}
+								alt="WordPress"
+							/>
 						</div>
 
-						<div className={`${styles.whatWeDoContent} container row align-items-center`}>
-							<Image className='col-lg-5 order-lg-1 order-2' src={wordPress2} alt='WordPress'/>
-							<div className='col-lg-5 offset-lg-2 order-lg-2 order-1 mb-lg-0'>
-								<Heading small className='text-start'>
+						<div
+							className={`${styles.whatWeDoContent} container row align-items-center`}
+						>
+							<Image
+								className="col-lg-5 order-lg-1 order-2"
+								src={wordPress2}
+								alt="WordPress"
+							/>
+							<div className="col-lg-5 offset-lg-2 order-lg-2 order-1 mb-lg-0">
+								<Heading small className="text-start">
 									O que fazemos?
 								</Heading>
 								<div>
 									<div>
 										<FaCheck size={24} />
-										<p>Somos especiadivstas em VTEX IO</p>
+										Criamos sites personalizados;
 									</div>
 
 									<div>
 										<FaCheck size={24} />
-										Desenvolvemos soluções de pagamento;
-										</div>
+										Desenvolvemos blogs;
+									</div>
 
 									<div>
 										<FaCheck size={24} />
-										Customizamos layouts com sua marca;
-										</div>
+										Otimização para motores de busca (SEO);
+									</div>
 
 									<div>
 										<FaCheck size={24} />
-										Criamos Landing Pages que convertem;
-										</div>
+										Instalação e configuração de plugins;
+									</div>
 
 									<div>
 										<FaCheck size={24} />
-										Integramos outras plataformas na VTEX;
-										</div>
+										Desenvolvimento de soluções de segurança;
+									</div>
 
 									<div>
 										<FaCheck size={24} />
-										Prestamos suporte e manutenção de lojas;
-										</div>
+										Prestamos suporte e manutenção;
+									</div>
 
 									<div>
 										<FaCheck size={24} />
-										Possuímos equipe multifuncional;
-										</div>
+										Possúimos múltiplos profissionais capacitados;
+									</div>
 								</div>
 							</div>
 						</div>
-
 					</div>
 				</section>
 
-							<div className={styles.contactUs}>
-								<div className={styles.teste} style={{
-								  backgroundImage: `url(${wordPress3.src})`,
-								}}>
-								</div>
-								<div className={styles.contactText}>
-									<div>
-											Não perca mais tempo. Escolha a Inovaki e tenha a
-											<strong> certeza de que seu negócio estará nas
-											mãos de especialistas VTEX</strong>.
-									</div>
-										<Button bg='#464342' color='#fff' rightIcon={FaComments}>
-											Fale com nosso comercial
-										</Button>
-								</div>
-							</div>
+				<div className={styles.contactUs}>
+					<div
+						className={styles.teste}
+						style={{
+						  backgroundImage: `url(${wordPress3.src})`,
+						}}
+					></div>
+					<div className={styles.contactText}>
+						<div>
+							Não perca mais tempo. Escolha a Inovaki e tenha a
+							<strong>
+								{' '}
+								certeza de que seu negócio estará nas mãos de especialistas WordPress
+							</strong>
+							.
+						</div>
+						<Button bg="#464342" color="#fff" rightIcon={FaComments}>
+							Fale com nosso comercial
+						</Button>
+					</div>
+				</div>
 
 				<section className={styles.projectSheet}>
-					<div className={styles.buttonPlatform}>
-						O QUE É A VTEX?
+					<div className={styles.buttonPlatform}>O QUE É O WORDPRESS?</div>
+					<div className="container">
+						<div className={styles.projectBox}>
+							<p>
+								O WordPress é uma plataforma de gerenciamento de conteúdo (CMS)
+								que permite aos usuários criar e gerenciar sites, blogs e lojas
+								virtuais de maneira fácil e intuitiva.
+								Se você busca ter um site personalizado, profissional, eficaz e que
+								ajuda a sua empresa a se destacar online, entre em contato com a
+								Inovaki <strong>e faremos o seu projeto se tornar realidade</strong>. Não perca mais
+								tempo e invista em um site de qualidade com o WordPress.
+							</p>
+						</div>
 					</div>
-						<div className='container'>
-							<div className={styles.projectBox}>
-								<p>
-									Se você está procurando por uma solução completa para o
-									sucesso do seu negócio digital, então você precisa conhecer a plataforma
-									<strong> VTEX</strong>.
-									Ela é diferenciada por oferecer recursos incríveis, como
-									<strong> facilidade de uso, gestão centralizada,
-										customização e estabilidade</strong>,
-									tornando-a a escolha perfeita para
-									empresas que buscam <strong>excelência na gestão do e-commerce</strong>.
-								</p>
-							</div>
-						</div>
-					<div className={`${styles.projectSheetContent} container row row-cols-lg-3 row-cols-md-2`}>
-
+					<div
+						className={`${styles.projectSheetContent} container row row-cols-lg-3 row-cols-md-2`}
+					>
 						<div className={styles.benefits}>
 							<div>
-								<FaClipboardList color='white'/>
+								<FaPaintBrush color="white" />
 							</div>
-							<Heading small>
-								Gestão centralizada do seu negócio
-							</Heading>
+							<Heading small>Designs personalizáveis</Heading>
 							<Text>
-								Com a plataforma, o lojista tem uma completa gestão do seu
-								negócio, incluindo a administração de produtos, ofertas,
-								gestão de estoque e controle de vendas.
 							</Text>
 						</div>
 						<div className={styles.benefits}>
 							<div>
-								<FaPencilAlt color='white'/>
+								<FaSearch color="white" />
 							</div>
-							<Heading small>
-								Personalize sua loja com a sua marca
-							</Heading>
+							<Heading small>Pronto para SEO</Heading>
 							<Text>
-								A VTEX é altamente flexível em relação a personalização,
-								permitindo que o lojista escolha como será sua loja virtual,
-								de acordo com suas necessidades e metas.
 							</Text>
 						</div>
 						<div className={styles.benefits}>
 							<div>
-								<FaGlobeAmericas color='white'/>
+								<FaMobileAlt color="white" />
 							</div>
-							<Heading small>
-								Múltiplas línguas e moedas
-							</Heading>
+							<Heading small>Sites responsivos</Heading>
 							<Text>
-								Expanda seus negócios para o mundo inteiro com lojas multilíngues
-								e gerencie moedas e formas de pagamento locais com tranquilidade.
 							</Text>
 						</div>
 						<div className={styles.benefits}>
 							<div>
-								<FaChartLine color='white'/>
+								<FaChartLine color="white" />
 							</div>
-							<Heading small>
-								Estabilidade e escalabilidade
-							</Heading>
+							<Heading small>Alto desempenho</Heading>
 							<Text>
-							Com a VTEX, você pode ter a tranquilidade de uma loja virtual
-							sempre funcional. Além disso, a escalabilidade da
-							plataforma garante seu negócio sempre no topo.
 							</Text>
 						</div>
 						<div className={styles.benefits}>
 							<div>
-								<FaLock color='white'/>
+								<FaLock color="white" />
 							</div>
-							<Heading small>
-								Segurança nas operações
-							</Heading>
+							<Heading small>Alta segurança</Heading>
 							<Text>
-								Escolha a plataforma e tenha uma experiência de
-								compra e venda sempre segura e tranquila,
-								tanto para o lojista quanto para o comprador.
 							</Text>
 						</div>
 						<div className={styles.benefits}>
 							<div>
-								<FaCity color='white'/>
+								<FaDollarSign color="white" />
 							</div>
-							<Heading small>
-								Plataforma omnichannel
-							</Heading>
+							<Heading small>Loja virtual</Heading>
 							<Text>
-								Com a VTEX, você pode integrar diversos canais de venda,
-								desde marketplaces até redes sociais, tornando a venda mais fácil e eficiente.
 							</Text>
 						</div>
 					</div>
 
 					<div className={`${styles.buttonsMore} row container mx-auto`}>
-						<Link href='#' className={`${styles.buttonPlatform} col-12 col-md-4`}>
+						<Link
+							href="#"
+							className={`${styles.buttonPlatform} col-12 col-md-4`}
+						>
 							CONHEÇA NOSSOS PROJETOS
 						</Link>
-						<Link href='https://vtex.com/br-pt/' className={`${styles.buttonPlatform} col-12 col-md-4 offset-md-1`}>
+						<Link
+							href="https://vtex.com/br-pt/"
+							className={`${styles.buttonPlatform} col-12 col-md-4 offset-md-1`}
+						>
 							ACESSE A VTEX
 						</Link>
 					</div>
 
 					<div className={styles.dottedPattern}>
-						<Image src={dottedPattern} className="w-100" alt='Textura de bolinhas' />
+						<Image
+							src={dottedPattern}
+							className="w-100"
+							alt="Textura de bolinhas"
+						/>
 					</div>
 				</section>
 			</div>
