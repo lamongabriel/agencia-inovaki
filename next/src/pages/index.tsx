@@ -22,6 +22,7 @@ import swiperTop2 from '../assets/images/Home/swiper-2.png';
 import swiperTop3 from '../assets/images/Home/swiper-3.png';
 import casesSwiper1 from '../assets/images/Home/swiper-cases-1.png';
 import casesSwiper2 from '../assets/images/Home/swiper-cases-2.png';
+import casesSwiper3 from '../assets/images/Home/swiper-cases-3.png';
 
 // Other images
 import dottedPattern from '../assets/images/dotted-pattern.png';
@@ -80,6 +81,13 @@ const casesSlides = [
     text: 'Atuamos diretamente no E-commerce da marca prestando Suporte e Manutenção na plataforma Vtex e desenvolvendo soluções inovadoras para o  público do varejo.',
     image: casesSwiper2,
     link: '/projetos/aquamar',
+  },
+  {
+    title: 'Fashion Masks',
+    tag: 'E-commerce',
+    text: 'Em 2020 fomos desafiados por uma pandemia e abraçamos um projeto com foco em ajudar pessoas e famílias. Em menos de 1 mês a primeira loja virtual da Fashion Masks já estava liberada para acesso e recebendo pedidos de todo Brasil. Chegamos também em um resultado incrível onde em menos de 6 meses alcançamos o resultado de arrecadação de mais de R$1 milhão.',
+    image: casesSwiper3,
+    link: '/projetos/fashionmasks',
   },
 ];
 
