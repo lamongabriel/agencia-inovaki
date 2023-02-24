@@ -149,7 +149,7 @@ export default function Projetos() {
 							<Accordion.Collapse eventKey="1" className={styles.accordionBody}>
 								<Card.Body className={`${styles.accordionBody} row pb-5`}>
 									<div className="col-lg-5">
-										<Link href='/projetos/ipb'>
+										<Link href='#'>
 											<Image src={ipbSites} alt="Imagem IPB Sites" />
 
 											<Heading small>
@@ -167,7 +167,7 @@ export default function Projetos() {
 									</div>
 
 									<div className="col-lg-5 offset-lg-2">
-										<Link href='/projetos/fashionmasks'>
+										<Link href='#'>
 											<Image src={Fashly} alt="Costureiras Fashion Masks" />
 
 											<Heading small>
