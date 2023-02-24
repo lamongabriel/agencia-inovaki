@@ -114,15 +114,17 @@ export default function Sobre() {
 							Veja o que fazemos pelo <span>seu negócio.</span>
 						</Heading>
 					</div>
-					<div className="col-lg-6 col-12 mb-3">
-					<Button onClick={() => router.push('/servicos')} rightIcon={FiArrowRightCircle}>
-						CONHEÇA NOSSOS SERVIÇOS
-					</Button>
-					</div>
-					<div className="col-lg-6 col-12">
-					<Button onClick={() => router.push('/contato')} rightIcon={FiArrowRightCircle}>
-						ENVIE-NOS UMA MENSAGEM
-					</Button>
+					<div className={styles.interactButton}>
+						<div>
+							<Button onClick={() => router.push('/servicos')} rightIcon={FiArrowRightCircle}>
+								CONHEÇA NOSSOS SERVIÇOS
+							</Button>
+						</div>
+						<div>
+							<Button onClick={() => router.push('/contato')} rightIcon={FiArrowRightCircle}>
+								ENVIE-NOS UMA MENSAGEM
+							</Button>
+						</div>
 					</div>
 				</div>
 			</section>
