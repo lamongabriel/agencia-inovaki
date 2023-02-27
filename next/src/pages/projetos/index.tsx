@@ -15,15 +15,17 @@ import Layout from '../../components/UI/Layout';
 
 // Images
 import bg from '../../assets/images/Sobre/bg-sobre.png';
-import aquamar from '../../assets/images/Projetos/aquamar.png';
-import custaPouco from '../../assets/images/Projetos/custa-pouco.png';
-import Fashly from '../../assets/images/Projetos/fashion-masks.png';
-import acaiMax from '../../assets/images/Projetos/acai-do-max.png';
-import granilha from '../../assets/images/Projetos/granilha.png';
-import ipb from '../../assets/images/Projetos/ipb.png';
-import ipbSites from '../../assets/images/Projetos/ipb-sites.png';
-import masterCar from '../../assets/images/Projetos/mastercar.png';
-import parKids from '../../assets/images/Projetos/parkids.png';
+import aquamar from '../../assets/images/Projetos/projeto-aquamar.jpg';
+import custaPouco from '../../assets/images/Projetos/projeto-custa.jpg';
+import fashly from '../../assets/images/Projetos/projeto-fashionBling.jpg';
+import fashionMasks from '../../assets/images/Projetos/projeto-fashionmasks.jpg';
+import acaiMax from '../../assets/images/Projetos/projeto-max.jpg';
+import granilha from '../../assets/images/Projetos/projeto-granilha.jpg';
+import granilhaFinanceiro from '../../assets/images/Projetos/projeto-granilhaFinanceiro.jpg';
+import ipb from '../../assets/images/Projetos/projeto-ipb.jpg';
+import ipbSites from '../../assets/images/Projetos/projeto-ipbsites.jpg';
+import masterCar from '../../assets/images/Projetos/projeto-mastercar.jpg';
+import parKids from '../../assets/images/Projetos/projeto-parkids.jpg';
 import vitorContabilidade from '../../assets/images/Projetos/vitor-contabilidade.png';
 
 // Styles
@@ -106,7 +108,7 @@ export default function Projetos() {
 
 									<div className="col-lg-5 offset-lg-2">
 										<Link href='/projetos/fashionmasks'>
-											<Image src={Fashly} alt="Costureiras Fashion Masks" />
+											<Image src={fashionMasks} alt="Costureiras Fashion Masks" />
 
 											<Heading small>
 												<strong>FASHION MASKS</strong>
@@ -149,7 +151,7 @@ export default function Projetos() {
 							<Accordion.Collapse eventKey="1" className={styles.accordionBody}>
 								<Card.Body className={`${styles.accordionBody} row pb-5`}>
 									<div className="col-lg-5">
-										<Link href='/projetos/ipb'>
+										<Link href='#'>
 											<Image src={ipbSites} alt="Imagem IPB Sites" />
 
 											<Heading small>
@@ -167,8 +169,8 @@ export default function Projetos() {
 									</div>
 
 									<div className="col-lg-5 offset-lg-2">
-										<Link href='/projetos/fashionmasks'>
-											<Image src={Fashly} alt="Costureiras Fashion Masks" />
+										<Link href='#'>
+											<Image src={fashly} alt="Costureiras Fashion Masks" />
 
 											<Heading small>
 												<strong>FASHION MASKS - BLING</strong>
@@ -232,7 +234,7 @@ export default function Projetos() {
 
 									<div className="col-lg-5">
 										<Link href='#'>
-											<Image src={granilha} alt="imagem Granilha" />
+											<Image src={granilhaFinanceiro} alt="imagem Granilha" />
 
 											<Heading small>
 												<strong>GRANILHA - GESTÃO FINANCEIRA</strong>
