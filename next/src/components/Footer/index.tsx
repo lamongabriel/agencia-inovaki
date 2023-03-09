@@ -82,7 +82,6 @@ export default function Footer() {
 										<li><Link href='/servicos'>Serviços</Link></li>
 										<li><Link href='/projetos'>Projetos</Link></li>
 										<li><Link href='/contato'>Contato</Link></li>
-										<li><Link href='/orcamento'>Orçamento</Link></li>
 									</ul>
 									<div className='justify-content-center justify-content-lg-start'>
 										<Link target="_blank" href="https://www.instagram.com/agenciainovaki/">

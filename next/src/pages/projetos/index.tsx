@@ -17,16 +17,10 @@ import Layout from '../../components/UI/Layout';
 import bg from '../../assets/images/Sobre/bg-sobre.png';
 import aquamar from '../../assets/images/Projetos/projeto-aquamar.jpg';
 import custaPouco from '../../assets/images/Projetos/projeto-custa.jpg';
-import fashly from '../../assets/images/Projetos/projeto-fashionBling.jpg';
 import fashionMasks from '../../assets/images/Projetos/projeto-fashionmasks.jpg';
-import acaiMax from '../../assets/images/Projetos/projeto-max.jpg';
-import granilha from '../../assets/images/Projetos/projeto-granilha.jpg';
-import granilhaFinanceiro from '../../assets/images/Projetos/projeto-granilhaFinanceiro.jpg';
 import ipb from '../../assets/images/Projetos/projeto-ipb.jpg';
 import ipbSites from '../../assets/images/Projetos/projeto-ipbsites.jpg';
 import masterCar from '../../assets/images/Projetos/projeto-mastercar.jpg';
-import parKids from '../../assets/images/Projetos/projeto-parkids.jpg';
-import vitorContabilidade from '../../assets/images/Projetos/vitor-contabilidade.png';
 
 // Styles
 import styles from '../../styles/pages/projetos.module.scss';
@@ -168,6 +162,7 @@ export default function Projetos() {
 										</Link>
 									</div>
 
+									{/*
 									<div className="col-lg-5 offset-lg-2">
 										<Link href='#'>
 											<Image src={fashly} alt="Costureiras Fashion Masks" />
@@ -185,16 +180,19 @@ export default function Projetos() {
 											</Text>
 										</Link>
 									</div>
+									 */}
+
 								</Card.Body>
 							</Accordion.Collapse>
 						</Card>
+						{/*
 						<Card className={styles.accordionItem}>
 							<Card.Header className={styles.accordionButton}>
 								<ContextAwareToggle eventKey="2">SISTEMAS</ContextAwareToggle>
 							</Card.Header>
 							<Accordion.Collapse eventKey="2" className={styles.accordionBody}>
 								<Card.Body className={`${styles.accordionBody} row pb-5`}>
-									<div className="col-lg-5">
+									 <div className="col-lg-5">
 										<Link href='#'>
 											<Image src={vitorContabilidade} alt="Imagem Vitor Contabilidades" />
 
@@ -246,9 +244,11 @@ export default function Projetos() {
 											</Text>
 										</Link>
 									</div>
+
 								</Card.Body>
 							</Accordion.Collapse>
 						</Card>
+						*/}
 						<Card className={styles.accordionItem}>
 							<Card.Header className={styles.accordionButton}>
 								<ContextAwareToggle eventKey="3">WEBSITES</ContextAwareToggle>
@@ -271,7 +271,7 @@ export default function Projetos() {
 										</Link>
 									</div>
 
-									<div className="col-lg-5 offset-lg-2">
+									{/* <div className="col-lg-5 offset-lg-2">
 										<Link href='#'>
 											<Image src={acaiMax} alt="Imagem Acaí do Max" />
 
@@ -285,9 +285,9 @@ export default function Projetos() {
 												capaz de disponibilizar.
 											</Text>
 										</Link>
-									</div>
+								</div> */}
 
-									<div className="col-lg-5">
+									<div className="col-lg-5 offset-lg-2">
 										<Link href='/projetos/mastercar'>
 											<Image src={masterCar} alt="Imagem Mastercar" />
 
@@ -303,7 +303,7 @@ export default function Projetos() {
 										</Link>
 									</div>
 
-									<div className="col-lg-5 offset-lg-2">
+									{/* <div className="col-lg-5 offset-lg-2">
 										<Link href='#'>
 											<Image src={parKids} alt="Imagem Parkids" />
 
@@ -317,7 +317,7 @@ export default function Projetos() {
 												assim como conforto e tranquilidade para os pais.
 											</Text>
 										</Link>
-									</div>
+							</div> */}
 								</Card.Body>
 							</Accordion.Collapse>
 						</Card>
