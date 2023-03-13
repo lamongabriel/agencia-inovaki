@@ -11,7 +11,6 @@ import MenuItem from './MenuItem';
 
 // images
 import imgContato from '../../assets/images/header/header-contato.png';
-import imgOrcamento from '../../assets/images/header/header-orcamentos.png';
 import imgProjetos from '../../assets/images/header/header-projetos.png';
 import imgServicos from '../../assets/images/header/header-servicos.png';
 import imgSobre from '../../assets/images/header/header-sobre.png';
@@ -42,11 +41,6 @@ const headerLinks: HeaderLink[] = [
     name: 'CONTATO',
     image: imgContato,
     href: '/contato',
-  },
-  {
-    name: 'ORÇAMENTO',
-    image: imgOrcamento,
-    href: '/404',
   },
 ];
 

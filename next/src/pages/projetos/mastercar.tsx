@@ -29,7 +29,7 @@ export default function MasterCar() {
 				pageUrl='https://inovaki.vercel.app/projetos/mastercar'
 				pageImage='/images/inovaki-bg.png'
 			/>
-			<BannerTop image={bg} auxiliaryText="CUSTA POUCO SEDUZIR">
+			<BannerTop image={bg} auxiliaryText="MASTERCAR">
 				<strong>CASES</strong> E PROJETOS
 			</BannerTop>
 			<section className={styles.contentArea}>
